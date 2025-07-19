@@ -196,7 +196,7 @@ public:
     //! \return     bool_t              True on success / False on failure
     //!
     bool_t init(
-            cuint32_t clockSpeed_p      = 10'000,
+            cuint32_t clockSpeed_p      = 10000,
             cuint8_t bufferSize_p       = 20
     );
 

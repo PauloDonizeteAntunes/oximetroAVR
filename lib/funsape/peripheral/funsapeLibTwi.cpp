@@ -25,8 +25,8 @@
 // File exclusive - Constants
 // =============================================================================
 
-cuint32_t   constTwiBitRateMax          = 400'000;
-cuint32_t   constTwiBitRateMin          = 1'000;
+cuint32_t   constTwiBitRateMax          = 400000;
+cuint32_t   constTwiBitRateMin          = 1000;
 cuint8_t    constTwiBufferSizeMax       = 100;
 cuint8_t    constTwiBufferSizeMin       = 10;
 cuint16_t   constTwiDefaultTimeout      = 20;

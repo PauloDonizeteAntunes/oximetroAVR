@@ -1,0 +1,14 @@
+{
+  "AVR.reporter.arguments": [
+    "-C"
+  ],
+  "AVR.source.compiler": "/usr/bin/avr-gcc",
+  "AVR.programmer.tool": "/usr/bin/avrdude",
+  "AVR.programmer.definitions": "/etc/avrdude.conf",
+  "AVR.source.libraries": ["/home/paulo/Code/oximetroAVR/lib"],
+  "AVR.device.type": "atmega328p",
+  "AVR.programmer.type": "arduino",
+  "AVR.programmer.port": "/dev/ttyUSB0",
+  "AVR.device.frequency": 16000000,
+  "AVR.programmer.rate": 115200
+}

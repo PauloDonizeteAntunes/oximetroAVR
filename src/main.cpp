@@ -1,4 +1,5 @@
-#include "lib/funsape/funsapeLibGlobalDefines.hpp"
+#include "../lib/funsape/funsapeLibGlobalDefines.hpp"
+#include "../lib/funsape/peripheral/funsapeLibUsart0.hpp"
 
 typedef union {
     struct {
@@ -10,39 +11,19 @@ typedef union {
 int main()
 {
 
-    //sei();
+    usart0.setBaudRate(Usart0::BaudRate::BAUD_RATE_9600);
+    usart0.init();
+
+    usart0.stdio();
+
+    sei();
 
     while(true) {
+
+    printf("teste");
+    delayMs(1000);
 
     }
 
     return 0;
-}
-
-void pcint0InterruptCallback(void)
-{
-    static uint8_t lastState = 0xFF;
-    uint8_t currentState = PINB & 0x0F;
-    uint8_t changed = lastState ^ currentState;
-
-    if(isBitClr(PINB, PB3) && changed & (1 << PB3)) {
-        systemFlags.incUni = !systemFlags.incUni;
-    }
-    if(isBitClr(PINB, PB2) && changed & (1 << PB2)) {
-        systemFlags.incDez = !systemFlags.incDez;
-    }
-    if(isBitClr(PINB, PB1) && changed & (1 << PB1)) {
-        systemFlags.incCen = !systemFlags.incCen;
-    }
-    if(isBitClr(PINB, PB0) && changed & (1 << PB0)) {
-        systemFlags.incMil = !systemFlags.incMil;
-    }
-
-    lastState = currentState;
-
-}
-
-void timer0CompareACallback(void)
-{
-    display.showNextDigit();
 }
