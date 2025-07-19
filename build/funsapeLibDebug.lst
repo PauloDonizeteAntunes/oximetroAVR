@@ -1,0 +1,36 @@
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccEsWlx9.s 			page 1
+
+
+   1               		.file	"funsapeLibDebug.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.7.0_1796) 7.3.0"
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccEsWlx9.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 funsapeLibDebug.cpp
+C:\Users\Docker\AppData\Local\Temp\ccEsWlx9.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\Docker\AppData\Local\Temp\ccEsWlx9.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\Docker\AppData\Local\Temp\ccEsWlx9.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\Docker\AppData\Local\Temp\ccEsWlx9.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\Docker\AppData\Local\Temp\ccEsWlx9.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\Docker\AppData\Local\Temp\ccEsWlx9.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+
+NO UNDEFINED SYMBOLS

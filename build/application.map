@@ -1,0 +1,2196 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+                              build/funsapeLibDs1307.o (__udivmodqi4)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+                              build/funsapeLibDs1307.o (__udivmodhi4)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+                              build/funsapeLibHd44780.o (__divmodhi4)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                              build/funsapeLibTwi.o (__udivmodsi4)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                              c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                              build/funsapeLibStepper.o (__tablejump2__)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                              build/funsapeLibHd44780.o (__do_copy_data)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                              build/funsapeLibHd44780.o (__do_clear_bss)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                              build/funsapeLibAdc.o (__do_global_ctors)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+                              build/main.o (__do_global_dtors)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+                              build/funsapeLibUsart0.o (__muluhisi3)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+                              build/funsapeLibUsart0.o (__lshrdi3)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+                              c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o) (__umulhisi3)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+                              build/funsapeLibTwi.o (calloc)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                              c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o) (malloc)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                              build/funsapeLibKeypad.o (realloc)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                              c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o) (memcpy)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memset.o)
+                              c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o) (memset)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(iob.o)
+                              build/funsapeLibHd44780.o (__iob)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+                              c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o) (__prologue_saves__)
+c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+                              c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+__brkval            0x2               c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+__flp               0x2               c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+__iob               0x6               c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(iob.o)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_abbrev  0x0000000000000000      0x5a2 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_info    0x0000000000000000      0x5f4 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_line    0x0000000000000000       0x1a c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_str     0x0000000000000000      0x208 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .text          0x0000000000000000        0x0 build/funsapeLibDs1307.o
+ .data          0x0000000000000000        0x0 build/funsapeLibDs1307.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibDs1307.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibDs1307.o
+ .text._ZN6Ds1307D2Ev
+                0x0000000000000000        0x6 build/funsapeLibDs1307.o
+ .text._ZN6Ds130712getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibDs1307.o
+ .text._ZN6Ds130710getRamDataEhPhh
+                0x0000000000000000       0xc4 build/funsapeLibDs1307.o
+ .text._ZN6Ds130710setRamDataEhPhh
+                0x0000000000000000       0xc4 build/funsapeLibDs1307.o
+ .text._ZN6Ds130710_clearDataEv
+                0x0000000000000000       0x56 build/funsapeLibDs1307.o
+ .text._ZN6Ds1307C2Ev
+                0x0000000000000000       0x1c build/funsapeLibDs1307.o
+ .text._ZN6Ds13074initEP3Bus
+                0x0000000000000000       0x54 build/funsapeLibDs1307.o
+ .text._ZN6Ds130714_isInitializedEv
+                0x0000000000000000       0x1e build/funsapeLibDs1307.o
+ .text._ZN6Ds130722setSquareWaveGeneratorENS_10SquareWaveE
+                0x0000000000000000      0x124 build/funsapeLibDs1307.o
+ .text._ZN6Ds13078_getDataEv
+                0x0000000000000000      0x1ac build/funsapeLibDs1307.o
+ .text._ZN6Ds13077getDateEPjPhS1_S1_
+                0x0000000000000000      0x122 build/funsapeLibDs1307.o
+ .text._ZN6Ds130711getDateTimeEP8DateTime
+                0x0000000000000000       0x50 build/funsapeLibDs1307.o
+ .text._ZN6Ds13077getTimeEPhS0_S0_N8DateTime10TimeFormatEPNS1_8AmPmFlagE
+                0x0000000000000000       0xaa build/funsapeLibDs1307.o
+ .text._ZN6Ds13079_sendDataEv
+                0x0000000000000000      0x1ec build/funsapeLibDs1307.o
+ .text._ZN6Ds13077setDateEjhh
+                0x0000000000000000       0x72 build/funsapeLibDs1307.o
+ .text._ZN6Ds130711setDateTimeE8DateTime
+                0x0000000000000000       0x62 build/funsapeLibDs1307.o
+ .text._ZN6Ds13077setTimeEhhhN8DateTime10TimeFormatENS0_8AmPmFlagE
+                0x0000000000000000       0x76 build/funsapeLibDs1307.o
+ .text._ZN6Ds130712_setCountingEb
+                0x0000000000000000      0x13e build/funsapeLibDs1307.o
+ .text._ZN6Ds130710clockStartEv
+                0x0000000000000000       0x1a build/funsapeLibDs1307.o
+ .text._ZN6Ds13079clockStopEv
+                0x0000000000000000       0x1a build/funsapeLibDs1307.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibDs1307.o
+ .text          0x0000000000000000        0x0 build/funsapeLibHd44780.o
+ .data          0x0000000000000000        0x0 build/funsapeLibHd44780.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibHd44780.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibHd44780.o
+ .text._ZN7Hd44780C2Ev
+                0x0000000000000000       0x56 build/funsapeLibHd44780.o
+ .text._ZN7Hd44780D2Ev
+                0x0000000000000000        0x2 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478014setControlPortEPK7GpioPinS2_S2_
+                0x0000000000000000       0x78 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478011setDataPortEPK7GpioBus
+                0x0000000000000000       0x7a build/funsapeLibHd44780.o
+ .text._ZN7Hd447805stdioEv
+                0x0000000000000000       0x26 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478012getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478017_functionSet8BitsEh
+                0x0000000000000000       0xc2 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478015_waitUntilReadyEv
+                0x0000000000000000      0x128 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478013_writeCommandEh
+                0x0000000000000000      0x132 build/funsapeLibHd44780.o
+ .text._ZN7Hd447804initENS_4SizeENS_4FontE
+                0x0000000000000000      0x1fa build/funsapeLibHd44780.o
+ .text._ZN7Hd4478011clearScreenEv
+                0x0000000000000000       0x3e build/funsapeLibHd44780.o
+ .text._ZN7Hd4478010cursorGoToEhh
+                0x0000000000000000       0xce build/funsapeLibHd44780.o
+ .text._ZN7Hd4478018cursorMoveNextLineEv
+                0x0000000000000000       0x4e build/funsapeLibHd44780.o
+ .text._ZN7Hd4478010cursorHomeEv
+                0x0000000000000000       0x3e build/funsapeLibHd44780.o
+ .text._ZN7Hd4478019cursorMoveFirstLineEv
+                0x0000000000000000        0x4 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478010cursorMoveE9Direction
+                0x0000000000000000       0x62 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478015setDisplayStateENS_12DisplayStateE
+                0x0000000000000000       0x86 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478012displayShiftE9Direction
+                0x0000000000000000       0x62 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478012setEntryModeENS_4StepENS_11DisplayModeE
+                0x0000000000000000       0x5c build/funsapeLibHd44780.o
+ .text._ZN7Hd4478015_writeCharacterEhb
+                0x0000000000000000      0x134 build/funsapeLibHd44780.o
+ .text._ZN7Hd4478018setCustomCharacterEhPKh
+                0x0000000000000000       0xa8 build/funsapeLibHd44780.o
+ .text._ZN7Hd447805printEc
+                0x0000000000000000       0x74 build/funsapeLibHd44780.o
+ .text._ZL11lcdWriteStdcP6__file
+                0x0000000000000000       0x14 build/funsapeLibHd44780.o
+ .text._ZN7Hd447805printEPKc
+                0x0000000000000000       0x52 build/funsapeLibHd44780.o
+ .rodata.CSWTCH.76
+                0x0000000000000000        0x3 build/funsapeLibHd44780.o
+ .rodata.CSWTCH.75
+                0x0000000000000000        0x3 build/funsapeLibHd44780.o
+ .bss.defaultDisplay
+                0x0000000000000000        0x2 build/funsapeLibHd44780.o
+ .bss.lcdStream
+                0x0000000000000000        0xe build/funsapeLibHd44780.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibHd44780.o
+ .text          0x0000000000000000        0x0 build/funsapeLibKeypad.o
+ .data          0x0000000000000000        0x0 build/funsapeLibKeypad.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibKeypad.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibKeypad.o
+ .text._ZN6KeypadC2Ev
+                0x0000000000000000       0x2c build/funsapeLibKeypad.o
+ .text._ZN6KeypadD2Ev
+                0x0000000000000000       0x10 build/funsapeLibKeypad.o
+ .text._ZN6Keypad4initEh
+                0x0000000000000000       0xc2 build/funsapeLibKeypad.o
+ .text._ZN6Keypad8setPortsEPK7GpioBusS2_
+                0x0000000000000000       0x58 build/funsapeLibKeypad.o
+ .text._ZN6Keypad12setKeyValuesENS_4TypeEz
+                0x0000000000000000      0x12c build/funsapeLibKeypad.o
+ .text._ZN6Keypad14readKeyPressedEPh
+                0x0000000000000000      0x18e build/funsapeLibKeypad.o
+ .text._ZN6Keypad12getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibKeypad.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibKeypad.o
+ .text          0x0000000000000000        0x0 build/funsapeLibSevenSegmentsDisplay.o
+ .data          0x0000000000000000        0x0 build/funsapeLibSevenSegmentsDisplay.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibSevenSegmentsDisplay.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibSevenSegmentsDisplay.o
+ .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType
+                0x0000000000000000        0x4 build/funsapeLibSevenSegmentsDisplay.o
+ .text          0x0000000000000000        0x0 build/funsapeLibSevenSegmentsMuxDisplay.o
+ .data          0x0000000000000000        0x0 build/funsapeLibSevenSegmentsMuxDisplay.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibSevenSegmentsMuxDisplay.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibSevenSegmentsMuxDisplay.o
+ .text          0x0000000000000000        0x0 build/funsapeLibSn74595.o
+ .data          0x0000000000000000        0x0 build/funsapeLibSn74595.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibSn74595.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibSn74595.o
+ .text._ZN7Sn74595C2Ev
+                0x0000000000000000       0x24 build/funsapeLibSn74595.o
+ .text._ZN7Sn74595D2Ev
+                0x0000000000000000        0x2 build/funsapeLibSn74595.o
+ .text._ZN7Sn7459512getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibSn74595.o
+ .text._ZN7Sn745954initENS_9DataOrderE
+                0x0000000000000000       0xea build/funsapeLibSn74595.o
+ .text._ZN7Sn745957setPortEPK7GpioPinS2_S2_S2_S2_
+                0x0000000000000000       0x6c build/funsapeLibSn74595.o
+ .text._ZN7Sn7459514disableOutputsEv
+                0x0000000000000000       0x4c build/funsapeLibSn74595.o
+ .text._ZN7Sn7459513enableOutputsEv
+                0x0000000000000000       0x4e build/funsapeLibSn74595.o
+ .text._ZN7Sn745959clearDataEv
+                0x0000000000000000       0x5e build/funsapeLibSn74595.o
+ .text._ZN7Sn745958sendByteEh
+                0x0000000000000000       0xde build/funsapeLibSn74595.o
+ .text._ZN7Sn745955storeEv
+                0x0000000000000000       0x48 build/funsapeLibSn74595.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibSn74595.o
+ .text          0x0000000000000000        0x0 build/funsapeLibStepper.o
+ .data          0x0000000000000000        0x0 build/funsapeLibStepper.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibStepper.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibStepper.o
+ .text._ZN7StepperC2Ev
+                0x0000000000000000       0x22 build/funsapeLibStepper.o
+ .text._ZN7StepperD2Ev
+                0x0000000000000000        0x2 build/funsapeLibStepper.o
+ .text._ZN7Stepper12getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibStepper.o
+ .text._ZN7Stepper7setModeENS_4ModeE
+                0x0000000000000000        0xc build/funsapeLibStepper.o
+ .text._ZN7Stepper7_doStepEh
+                0x0000000000000000      0x1a8 build/funsapeLibStepper.o
+ .text._ZN7Stepper4initEPK7GpioPinS2_S2_S2_
+                0x0000000000000000       0xcc build/funsapeLibStepper.o
+ .text._ZN7Stepper4moveE8Rotation
+                0x0000000000000000       0xb8 build/funsapeLibStepper.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibStepper.o
+ .avr.prop      0x0000000000000000       0x16 build/funsapeLibStepper.o
+ .text          0x0000000000000000        0x0 build/funsapeLibTm1637.o
+ .data          0x0000000000000000        0x0 build/funsapeLibTm1637.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibTm1637.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibTm1637.o
+ .text._ZN6Tm1637C2Ev
+                0x0000000000000000       0x22 build/funsapeLibTm1637.o
+ .text._ZN6Tm1637C2EPK7GpioPinS2_
+                0x0000000000000000       0x74 build/funsapeLibTm1637.o
+ .text._ZN6Tm1637D2Ev
+                0x0000000000000000        0x2 build/funsapeLibTm1637.o
+ .text._ZN6Tm163712getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibTm1637.o
+ .text._ZN6Tm16374initEPK7GpioPinS2_
+                0x0000000000000000       0x78 build/funsapeLibTm1637.o
+ .text._ZN6Tm163717setAddressingModeEb
+                0x0000000000000000       0x12 build/funsapeLibTm1637.o
+ .text._ZN6Tm163714readKeypadDataEPh
+                0x0000000000000000        0x4 build/funsapeLibTm1637.o
+ .text._ZN6Tm163714_isInitializedEv
+                0x0000000000000000       0x1c build/funsapeLibTm1637.o
+ .text._ZN6Tm163710_sendStartEv
+                0x0000000000000000       0x5e build/funsapeLibTm1637.o
+ .text._ZN6Tm16379_sendStopEv
+                0x0000000000000000       0x4e build/funsapeLibTm1637.o
+ .text._ZN6Tm163710_writeByteEh
+                0x0000000000000000       0x8c build/funsapeLibTm1637.o
+ .text._ZN6Tm16379_readByteEPh
+                0x0000000000000000        0x2 build/funsapeLibTm1637.o
+ .text._ZN6Tm16378_readAckEv
+                0x0000000000000000       0x62 build/funsapeLibTm1637.o
+ .text._ZN6Tm163718setDisplayContrastENS_8ContrastE
+                0x0000000000000000       0x64 build/funsapeLibTm1637.o
+ .text._ZN6Tm163711showDisplayEb
+                0x0000000000000000       0x62 build/funsapeLibTm1637.o
+ .text._ZN6Tm163716writeDisplayDataEjh
+                0x0000000000000000       0xde build/funsapeLibTm1637.o
+ .text._ZN6Tm163716writeDisplayDataEhhb
+                0x0000000000000000       0x76 build/funsapeLibTm1637.o
+ .rodata._ZL8segments
+                0x0000000000000000       0x10 build/funsapeLibTm1637.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibTm1637.o
+ .text          0x0000000000000000        0x0 build/funsapeLibAdc.o
+ .data          0x0000000000000000        0x0 build/funsapeLibAdc.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibAdc.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibAdc.o
+ .text._ZN3AdcD2Ev
+                0x0000000000000000        0x2 build/funsapeLibAdc.o
+ .text._ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE
+                0x0000000000000000       0x50 build/funsapeLibAdc.o
+ .text._ZN3Adc13setDataAdjustENS_10DataAdjustE
+                0x0000000000000000       0x24 build/funsapeLibAdc.o
+ .text._ZN3Adc7setModeENS_4ModeE
+                0x0000000000000000       0x2e build/funsapeLibAdc.o
+ .text._ZN3Adc12setPrescalerENS_9PrescalerE
+                0x0000000000000000       0x18 build/funsapeLibAdc.o
+ .text._ZN3Adc12setReferenceENS_9ReferenceE
+                0x0000000000000000       0x20 build/funsapeLibAdc.o
+ .text._ZN3Adc19disableDigitalInputENS_12DigitalInputE
+                0x0000000000000000        0xe build/funsapeLibAdc.o
+ .text._ZN3Adc18enableDigitalInputENS_12DigitalInputE
+                0x0000000000000000        0xe build/funsapeLibAdc.o
+ .text._ZN3Adc10setChannelENS_7ChannelE
+                0x0000000000000000       0x18 build/funsapeLibAdc.o
+ .text._ZN3Adc17activateInterruptEv
+                0x0000000000000000       0x1a build/funsapeLibAdc.o
+ .text._ZN3Adc21clearInterruptRequestEv
+                0x0000000000000000       0x14 build/funsapeLibAdc.o
+ .text._ZN3Adc19deactivateInterruptEv
+                0x0000000000000000       0x1a build/funsapeLibAdc.o
+ .text._ZN3Adc6enableEv
+                0x0000000000000000       0x1a build/funsapeLibAdc.o
+ .text._ZN3Adc7disableEv
+                0x0000000000000000       0x1a build/funsapeLibAdc.o
+ .text._ZN3Adc12getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibAdc.o
+ .text._ZN3Adc15startConversionEv
+                0x0000000000000000       0x14 build/funsapeLibAdc.o
+ .text._ZN3Adc25waitUntilConversionFinishEv
+                0x0000000000000000       0x12 build/funsapeLibAdc.o
+ .text          0x0000000000000000        0x0 build/funsapeLibGpioBus.o
+ .data          0x0000000000000000        0x0 build/funsapeLibGpioBus.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibGpioBus.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibGpioBus.o
+ .text._ZN7GpioBusD2Ev
+                0x0000000000000000        0x2 build/funsapeLibGpioBus.o
+ .text._ZN7GpioBus12getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibGpioBus.o
+ .text          0x0000000000000000        0x0 build/funsapeLibGpioPin.o
+ .data          0x0000000000000000        0x0 build/funsapeLibGpioPin.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibGpioPin.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibGpioPin.o
+ .text._ZN7GpioPinC2Ev
+                0x0000000000000000       0x22 build/funsapeLibGpioPin.o
+ .text._ZN7GpioPinD2Ev
+                0x0000000000000000        0x2 build/funsapeLibGpioPin.o
+ .text._ZN7GpioPin12getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibGpioPin.o
+ .text._ZN7GpioPin4initEPVhNS_8PinIndexE
+                0x0000000000000000       0x9e build/funsapeLibGpioPin.o
+ .text._ZN7GpioPin7setModeENS_4ModeE
+                0x0000000000000000       0x64 build/funsapeLibGpioPin.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibGpioPin.o
+ .text          0x0000000000000000        0x0 build/funsapeLibInt0.o
+ .data          0x0000000000000000        0x0 build/funsapeLibInt0.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibInt0.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibInt0.o
+ .text._ZN4Int0C2Ev
+                0x0000000000000000       0x10 build/funsapeLibInt0.o
+ .text._ZN4Int0D2Ev
+                0x0000000000000000        0x2 build/funsapeLibInt0.o
+ .text._ZN4Int04initENS_9SenseModeE
+                0x0000000000000000       0x1e build/funsapeLibInt0.o
+ .text._ZN4Int012setSenseModeENS_9SenseModeE
+                0x0000000000000000       0x18 build/funsapeLibInt0.o
+ .text._ZN4Int012getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibInt0.o
+ .text          0x0000000000000000        0x0 build/funsapeLibInt1.o
+ .data          0x0000000000000000        0x0 build/funsapeLibInt1.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibInt1.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibInt1.o
+ .text._ZN4Int1C2Ev
+                0x0000000000000000       0x10 build/funsapeLibInt1.o
+ .text._ZN4Int1D2Ev
+                0x0000000000000000        0x2 build/funsapeLibInt1.o
+ .text._ZN4Int14initENS_9SenseModeE
+                0x0000000000000000       0x26 build/funsapeLibInt1.o
+ .text._ZN4Int112setSenseModeENS_9SenseModeE
+                0x0000000000000000       0x20 build/funsapeLibInt1.o
+ .text._ZN4Int112getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibInt1.o
+ .text          0x0000000000000000        0x0 build/funsapeLibPcint0.o
+ .data          0x0000000000000000        0x0 build/funsapeLibPcint0.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibPcint0.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibPcint0.o
+ .text._ZN6Pcint0C2Ev
+                0x0000000000000000       0x10 build/funsapeLibPcint0.o
+ .text._ZN6Pcint0D2Ev
+                0x0000000000000000        0x2 build/funsapeLibPcint0.o
+ .text._ZN6Pcint010enablePinsENS_3PinE
+                0x0000000000000000       0x18 build/funsapeLibPcint0.o
+ .text._ZN6Pcint011disablePinsENS_3PinE
+                0x0000000000000000       0x1a build/funsapeLibPcint0.o
+ .text._ZN6Pcint012getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibPcint0.o
+ .text._Z23pcint0InterruptCallbackv
+                0x0000000000000000        0x2 build/funsapeLibPcint0.o
+ .text          0x0000000000000000        0x0 build/funsapeLibPcint1.o
+ .data          0x0000000000000000        0x0 build/funsapeLibPcint1.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibPcint1.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibPcint1.o
+ .text._ZN6Pcint1C2Ev
+                0x0000000000000000       0x10 build/funsapeLibPcint1.o
+ .text._ZN6Pcint1D2Ev
+                0x0000000000000000        0x2 build/funsapeLibPcint1.o
+ .text._ZN6Pcint14initENS_3PinE
+                0x0000000000000000       0x1e build/funsapeLibPcint1.o
+ .text._ZN6Pcint110enablePinsENS_3PinE
+                0x0000000000000000       0x1c build/funsapeLibPcint1.o
+ .text._ZN6Pcint111disablePinsENS_3PinE
+                0x0000000000000000       0x1e build/funsapeLibPcint1.o
+ .text._ZN6Pcint112getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibPcint1.o
+ .text          0x0000000000000000        0x0 build/funsapeLibPcint2.o
+ .data          0x0000000000000000        0x0 build/funsapeLibPcint2.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibPcint2.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibPcint2.o
+ .text._ZN6Pcint2C2Ev
+                0x0000000000000000       0x10 build/funsapeLibPcint2.o
+ .text._ZN6Pcint2D2Ev
+                0x0000000000000000        0x2 build/funsapeLibPcint2.o
+ .text._ZN6Pcint24initENS_3PinE
+                0x0000000000000000       0x1a build/funsapeLibPcint2.o
+ .text._ZN6Pcint210enablePinsENS_3PinE
+                0x0000000000000000       0x18 build/funsapeLibPcint2.o
+ .text._ZN6Pcint211disablePinsENS_3PinE
+                0x0000000000000000       0x1a build/funsapeLibPcint2.o
+ .text._ZN6Pcint212getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibPcint2.o
+ .text          0x0000000000000000        0x0 build/funsapeLibTimer0.o
+ .data          0x0000000000000000        0x0 build/funsapeLibTimer0.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibTimer0.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibTimer0.o
+ .text._ZN6Timer0C2Ev
+                0x0000000000000000       0x12 build/funsapeLibTimer0.o
+ .text._ZN6Timer0D2Ev
+                0x0000000000000000        0x2 build/funsapeLibTimer0.o
+ .text._ZN6Timer07setModeENS_4ModeE
+                0x0000000000000000       0x36 build/funsapeLibTimer0.o
+ .text._ZN6Timer014setClockSourceENS_11ClockSourceE
+                0x0000000000000000       0x14 build/funsapeLibTimer0.o
+ .text._ZN6Timer013setOutputModeENS_10OutputModeES0_
+                0x0000000000000000       0x26 build/funsapeLibTimer0.o
+ .text._ZN6Timer012getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibTimer0.o
+ .text._Z22timer0CompareACallbackv
+                0x0000000000000000        0x2 build/funsapeLibTimer0.o
+ .text          0x0000000000000000        0x0 build/funsapeLibTimer1.o
+ .data          0x0000000000000000        0x0 build/funsapeLibTimer1.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibTimer1.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibTimer1.o
+ .text._ZN6Timer1C2Ev
+                0x0000000000000000       0x12 build/funsapeLibTimer1.o
+ .text._ZN6Timer1D2Ev
+                0x0000000000000000        0x2 build/funsapeLibTimer1.o
+ .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE
+                0x0000000000000000       0x52 build/funsapeLibTimer1.o
+ .text._ZN6Timer17setModeENS_4ModeE
+                0x0000000000000000       0x46 build/funsapeLibTimer1.o
+ .text._ZN6Timer114setClockSourceENS_11ClockSourceE
+                0x0000000000000000       0x18 build/funsapeLibTimer1.o
+ .text._ZN6Timer113setOutputModeENS_10OutputModeES0_
+                0x0000000000000000       0x2a build/funsapeLibTimer1.o
+ .text._ZN6Timer119setInputCaptureModeE4Edgeb
+                0x0000000000000000       0x26 build/funsapeLibTimer1.o
+ .text._ZN6Timer112getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibTimer1.o
+ .text          0x0000000000000000        0x0 build/funsapeLibTimer2.o
+ .data          0x0000000000000000        0x0 build/funsapeLibTimer2.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibTimer2.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibTimer2.o
+ .text._ZN6Timer2C2Ev
+                0x0000000000000000       0x12 build/funsapeLibTimer2.o
+ .text._ZN6Timer2D2Ev
+                0x0000000000000000        0x2 build/funsapeLibTimer2.o
+ .text._ZN6Timer24initENS_4ModeENS_11ClockSourceE
+                0x0000000000000000       0x52 build/funsapeLibTimer2.o
+ .text._ZN6Timer27setModeENS_4ModeE
+                0x0000000000000000       0x46 build/funsapeLibTimer2.o
+ .text._ZN6Timer214setClockSourceENS_11ClockSourceE
+                0x0000000000000000       0x18 build/funsapeLibTimer2.o
+ .text._ZN6Timer213setOutputModeENS_10OutputModeES0_
+                0x0000000000000000       0x2a build/funsapeLibTimer2.o
+ .text._ZN6Timer212getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibTimer2.o
+ .group         0x0000000000000000        0x8 build/funsapeLibTwi.o
+ .group         0x0000000000000000        0x8 build/funsapeLibTwi.o
+ .group         0x0000000000000000        0x8 build/funsapeLibTwi.o
+ .group         0x0000000000000000        0x8 build/funsapeLibTwi.o
+ .text          0x0000000000000000        0x0 build/funsapeLibTwi.o
+ .data          0x0000000000000000        0x0 build/funsapeLibTwi.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibTwi.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibTwi.o
+ .text._ZN3TwiD2Ev
+                0x0000000000000000        0x2 build/funsapeLibTwi.o
+ .text._ZN3Twi4initEmh
+                0x0000000000000000      0x1c8 build/funsapeLibTwi.o
+ .text._ZN3Twi10setTimeoutEj
+                0x0000000000000000        0xe build/funsapeLibTwi.o
+ .text          0x0000000000000000        0x0 build/funsapeLibUsart0.o
+ .data          0x0000000000000000        0x0 build/funsapeLibUsart0.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibUsart0.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibUsart0.o
+ .text._ZN6Usart0D2Ev
+                0x0000000000000000        0x2 build/funsapeLibUsart0.o
+ .text._ZN6Usart04initEv
+                0x0000000000000000      0x1a0 build/funsapeLibUsart0.o
+ .text._ZN6Usart011setDataSizeENS_8DataSizeE
+                0x0000000000000000       0x26 build/funsapeLibUsart0.o
+ .text._ZN6Usart011setStopBitsENS_8StopBitsE
+                0x0000000000000000       0x22 build/funsapeLibUsart0.o
+ .text._ZN6Usart013setParityModeENS_10ParityModeE
+                0x0000000000000000       0x22 build/funsapeLibUsart0.o
+ .text._ZN6Usart018getReceptionErrorsEPNS_14ReceptionErrorE
+                0x0000000000000000       0x44 build/funsapeLibUsart0.o
+ .text._ZN6Usart015_receiveDataStdEP6__file
+                0x0000000000000000        0x4 build/funsapeLibUsart0.o
+ .text._ZN6Usart022_clearDataOverrunErrorEv
+                0x0000000000000000        0xc build/funsapeLibUsart0.o
+ .text._ZN6Usart016_clearFrameErrorEv
+                0x0000000000000000        0xc build/funsapeLibUsart0.o
+ .text._ZN6Usart017_clearParityErrorEv
+                0x0000000000000000        0xc build/funsapeLibUsart0.o
+ .text._ZN6Usart08sendDataEj
+                0x0000000000000000       0x42 build/funsapeLibUsart0.o
+ .text._ZN6Usart011receiveDataEPj
+                0x0000000000000000       0x6e build/funsapeLibUsart0.o
+ .text._ZN6Usart020flushReceptionBufferEv
+                0x0000000000000000       0x10 build/funsapeLibUsart0.o
+ .text._ZN6Usart014receiveDataStdEP6__file
+                0x0000000000000000        0xe build/funsapeLibUsart0.o
+ .text._ZN6Usart011sendDataStdEcP6__file
+                0x0000000000000000       0x12 build/funsapeLibUsart0.o
+ .bss.usartDefaultHandler
+                0x0000000000000000        0x2 build/funsapeLibUsart0.o
+ .avr.prop      0x0000000000000000       0x28 build/funsapeLibUsart0.o
+ .text          0x0000000000000000        0x0 build/funsapeLibDateTime.o
+ .data          0x0000000000000000        0x0 build/funsapeLibDateTime.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibDateTime.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibDateTime.o
+ .text._ZN8DateTimeD2Ev
+                0x0000000000000000        0x2 build/funsapeLibDateTime.o
+ .text._ZN8DateTime12getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibDateTime.o
+ .text._ZN8DateTime9isDateSetEv
+                0x0000000000000000        0xc build/funsapeLibDateTime.o
+ .text._ZN8DateTime9isTimeSetEv
+                0x0000000000000000        0xe build/funsapeLibDateTime.o
+ .text._ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE
+                0x0000000000000000       0x6a build/funsapeLibDateTime.o
+ .text._ZN8DateTime10getWeekDayEPNS_7WeekDayE
+                0x0000000000000000       0x34 build/funsapeLibDateTime.o
+ .text._ZN8DateTime10isLeapYearEv
+                0x0000000000000000       0x24 build/funsapeLibDateTime.o
+ .text._ZN8DateTime13getTimeFormatEPNS_10TimeFormatE
+                0x0000000000000000       0x36 build/funsapeLibDateTime.o
+ .text._ZN8DateTime11getTimeZoneEPNS_8TimeZoneE
+                0x0000000000000000       0x22 build/funsapeLibDateTime.o
+ .text._ZN8DateTime11setTimeZoneENS_8TimeZoneE
+                0x0000000000000000        0xc build/funsapeLibDateTime.o
+ .text._ZN8DateTime10_clearDataEv
+                0x0000000000000000       0x36 build/funsapeLibDateTime.o
+ .text._ZN8DateTimeC2Ev
+                0x0000000000000000       0x14 build/funsapeLibDateTime.o
+ .rodata._ZN8DateTime18_evaluateDayOfWeekEv.str1.1
+                0x0000000000000000        0xe build/funsapeLibDateTime.o
+ .text._ZN8DateTime18_evaluateDayOfWeekEv
+                0x0000000000000000       0x7c build/funsapeLibDateTime.o
+ .text._ZN8DateTime11_isLeapYearEj
+                0x0000000000000000       0x36 build/funsapeLibDateTime.o
+ .text._ZN8DateTime12_isValidDateEjNS_5MonthEh
+                0x0000000000000000       0x7c build/funsapeLibDateTime.o
+ .text._ZN8DateTime7setDateEjNS_5MonthEh
+                0x0000000000000000       0x76 build/funsapeLibDateTime.o
+ .text._ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_
+                0x0000000000000000       0x6e build/funsapeLibDateTime.o
+ .text._ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE
+                0x0000000000000000      0x104 build/funsapeLibDateTime.o
+ .text._ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE
+                0x0000000000000000      0x142 build/funsapeLibDateTime.o
+ .text._ZN8DateTime13setTimeFormatENS_10TimeFormatE
+                0x0000000000000000       0x88 build/funsapeLibDateTime.o
+ .text._ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE
+                0x0000000000000000       0x34 build/funsapeLibDateTime.o
+ .text._ZN8DateTime7setTimeEhhhNS_10TimeFormatENS_8AmPmFlagE
+                0x0000000000000000       0x7e build/funsapeLibDateTime.o
+ .text._ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE
+                0x0000000000000000       0xcc build/funsapeLibDateTime.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibDateTime.o
+ .avr.prop      0x0000000000000000       0x16 build/funsapeLibDateTime.o
+ .text          0x0000000000000000        0x0 build/funsapeLibDebug.o
+ .data          0x0000000000000000        0x0 build/funsapeLibDebug.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibDebug.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibDebug.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibDebug.o
+ .text          0x0000000000000000        0x0 build/funsapeLibMath.o
+ .data          0x0000000000000000        0x0 build/funsapeLibMath.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibMath.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibMath.o
+ .text._Z11integerSinej
+                0x0000000000000000       0x60 build/funsapeLibMath.o
+ .rodata._ZL9sineTable
+                0x0000000000000000       0xb6 build/funsapeLibMath.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibMath.o
+ .text          0x0000000000000000        0x0 build/funsapeLibSound.o
+ .data          0x0000000000000000        0x0 build/funsapeLibSound.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibSound.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibSound.o
+ .text._Z9playNotesP4Note
+                0x0000000000000000       0x9a build/funsapeLibSound.o
+ .rodata._ZL13notesOcrValue
+                0x0000000000000000       0xd8 build/funsapeLibSound.o
+ .data.notesPrescaler
+                0x0000000000000000       0x6c build/funsapeLibSound.o
+ .comment       0x0000000000000000       0x31 build/funsapeLibSound.o
+ .text          0x0000000000000000        0x0 build/funsapeLibSystemStatus.o
+ .data          0x0000000000000000        0x0 build/funsapeLibSystemStatus.o
+ .bss           0x0000000000000000        0x0 build/funsapeLibSystemStatus.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/funsapeLibSystemStatus.o
+ .text._ZN12SystemStatusD2Ev
+                0x0000000000000000        0x2 build/funsapeLibSystemStatus.o
+ .text._ZN12SystemStatus11getCpuClockEPm
+                0x0000000000000000       0x36 build/funsapeLibSystemStatus.o
+ .text._ZN12SystemStatus12getLastErrorEv
+                0x0000000000000000        0x8 build/funsapeLibSystemStatus.o
+ .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE
+                0x0000000000000000       0xbc build/funsapeLibSystemStatus.o
+ .avr.prop      0x0000000000000000       0x16 build/funsapeLibSystemStatus.o
+ .text          0x0000000000000000        0x0 build/main.o
+ .data          0x0000000000000000        0x0 build/main.o
+ .bss           0x0000000000000000        0x0 build/main.o
+ .text._Z7getTickv
+                0x0000000000000000        0x8 build/main.o
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x18 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x28 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x44 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x16 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000       0x3a c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x1e c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+ .text.avr-libc
+                0x0000000000000000       0x38 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+ .comment       0x0000000000000000       0x31 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .data          0x0000000000000000        0x6 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .text.avr-libc
+                0x0000000000000000      0x24a c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .comment       0x0000000000000000       0x31 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ COMMON         0x0000000000000000        0x4 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+ .text.avr-libc
+                0x0000000000000000      0x17a c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+ .comment       0x0000000000000000       0x31 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text.avr-libc
+                0x0000000000000000       0x12 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memset.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memset.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memset.o)
+ .text.avr-libc
+                0x0000000000000000        0xe c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memset.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(iob.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(iob.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(iob.o)
+ .comment       0x0000000000000000       0x31 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(iob.o)
+ COMMON         0x0000000000000000        0x6 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(iob.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.prologue
+                0x0000000000000000       0x38 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .data          0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .bss           0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.prologue
+                0x0000000000000000       0x36 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000008000 xr
+data             0x0000000000800100 0x0000000000000800 rw !x
+eeprom           0x0000000000810000 0x0000000000000400 rw !x
+fuse             0x0000000000820000 0x0000000000000003 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD build/funsapeLibDs1307.o
+LOAD build/funsapeLibHd44780.o
+LOAD build/funsapeLibKeypad.o
+LOAD build/funsapeLibSevenSegmentsDisplay.o
+LOAD build/funsapeLibSevenSegmentsMuxDisplay.o
+LOAD build/funsapeLibSn74595.o
+LOAD build/funsapeLibStepper.o
+LOAD build/funsapeLibTm1637.o
+LOAD build/funsapeLibAdc.o
+LOAD build/funsapeLibGpioBus.o
+LOAD build/funsapeLibGpioPin.o
+LOAD build/funsapeLibInt0.o
+LOAD build/funsapeLibInt1.o
+LOAD build/funsapeLibPcint0.o
+LOAD build/funsapeLibPcint1.o
+LOAD build/funsapeLibPcint2.o
+LOAD build/funsapeLibTimer0.o
+LOAD build/funsapeLibTimer1.o
+LOAD build/funsapeLibTimer2.o
+LOAD build/funsapeLibTwi.o
+LOAD build/funsapeLibUsart0.o
+LOAD build/funsapeLibDateTime.o
+LOAD build/funsapeLibDebug.o
+LOAD build/funsapeLibMath.o
+LOAD build/funsapeLibSound.o
+LOAD build/funsapeLibSystemStatus.o
+LOAD build/main.o
+LOAD c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
+LOAD c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
+START GROUP
+LOAD c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
+LOAD c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
+LOAD c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a
+LOAD c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libatmega328p.a
+END GROUP
+                0x0000000000000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x0000000000800100]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x0000000000008000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x0000000000000800]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000400]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x1720
+ *(.vectors)
+ .vectors       0x0000000000000000       0x68 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000000000000000                __vector_default
+                0x0000000000000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000000000000068                . = ALIGN (0x2)
+                0x0000000000000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000068        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x0000000000000068                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000068                __ctors_start = .
+ *(.ctors)
+ .ctors         0x0000000000000068        0x2 build/funsapeLibAdc.o
+ .ctors         0x000000000000006a        0x2 build/funsapeLibInt0.o
+ .ctors         0x000000000000006c        0x2 build/funsapeLibInt1.o
+ .ctors         0x000000000000006e        0x2 build/funsapeLibPcint0.o
+ .ctors         0x0000000000000070        0x2 build/funsapeLibPcint1.o
+ .ctors         0x0000000000000072        0x2 build/funsapeLibPcint2.o
+ .ctors         0x0000000000000074        0x2 build/funsapeLibTimer0.o
+ .ctors         0x0000000000000076        0x2 build/funsapeLibTimer1.o
+ .ctors         0x0000000000000078        0x2 build/funsapeLibTimer2.o
+ .ctors         0x000000000000007a        0x2 build/funsapeLibTwi.o
+ .ctors         0x000000000000007c        0x2 build/funsapeLibUsart0.o
+ .ctors         0x000000000000007e        0x2 build/funsapeLibSystemStatus.o
+ .ctors         0x0000000000000080        0x2 build/main.o
+                0x0000000000000082                __ctors_end = .
+                0x0000000000000082                __dtors_start = .
+ *(.dtors)
+ .dtors         0x0000000000000082        0x2 build/main.o
+                0x0000000000000084                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000084        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000000000000084                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000084        0xc c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000090       0x16 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000090                __do_copy_data
+ .init4         0x00000000000000a6       0x10 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000000000000a6                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x00000000000000b6       0x16 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                0x00000000000000b6                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000cc        0x8 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000d4        0x4 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000000000d4                __bad_interrupt
+                0x00000000000000d4                __vector_6
+                0x00000000000000d4                __vector_23
+                0x00000000000000d4                __vector_25
+                0x00000000000000d4                __vector_17
+                0x00000000000000d4                __vector_22
+                0x00000000000000d8                . = ALIGN (0x2)
+ *(.text.*)
+ .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+                0x00000000000000d8       0x16 build/funsapeLibSevenSegmentsDisplay.o
+                0x00000000000000d8                _Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+ .text._ZN23SevenSegmentsMuxDisplayC2Ev
+                0x00000000000000ee       0x3e build/funsapeLibSevenSegmentsMuxDisplay.o
+                0x00000000000000ee                _ZN23SevenSegmentsMuxDisplayC2Ev
+                0x00000000000000ee                _ZN23SevenSegmentsMuxDisplayC1Ev
+ .text._ZN23SevenSegmentsMuxDisplayD2Ev
+                0x000000000000012c        0x2 build/funsapeLibSevenSegmentsMuxDisplay.o
+                0x000000000000012c                _ZN23SevenSegmentsMuxDisplayD1Ev
+                0x000000000000012c                _ZN23SevenSegmentsMuxDisplayD2Ev
+ .text._ZN23SevenSegmentsMuxDisplay4initENS_6DigitsE24SevenSegmentsDisplayType
+                0x000000000000012e       0xda build/funsapeLibSevenSegmentsMuxDisplay.o
+                0x000000000000012e                _ZN23SevenSegmentsMuxDisplay4initENS_6DigitsE24SevenSegmentsDisplayType
+ .text._ZN23SevenSegmentsMuxDisplay8setPortsEP7GpioBusS1_10LogicLevel
+                0x0000000000000208       0x82 build/funsapeLibSevenSegmentsMuxDisplay.o
+                0x0000000000000208                _ZN23SevenSegmentsMuxDisplay8setPortsEP7GpioBusS1_10LogicLevel
+ .text._ZN23SevenSegmentsMuxDisplay13showNextDigitEv
+                0x000000000000028a      0x114 build/funsapeLibSevenSegmentsMuxDisplay.o
+                0x000000000000028a                _ZN23SevenSegmentsMuxDisplay13showNextDigitEv
+ .text._ZN23SevenSegmentsMuxDisplay17updateDigitValuesEPKhPKb
+                0x000000000000039e       0x68 build/funsapeLibSevenSegmentsMuxDisplay.o
+                0x000000000000039e                _ZN23SevenSegmentsMuxDisplay17updateDigitValuesEPKhPKb
+ .text._ZN3AdcC2Ev
+                0x0000000000000406       0x24 build/funsapeLibAdc.o
+                0x0000000000000406                _ZN3AdcC1Ev
+                0x0000000000000406                _ZN3AdcC2Ev
+ .text._Z29adcConversionCompleteCallbackv
+                0x000000000000042a        0x2 build/funsapeLibAdc.o
+                0x000000000000042a                _Z29adcConversionCompleteCallbackv
+ .text.__vector_21
+                0x000000000000042c       0x48 build/funsapeLibAdc.o
+                0x000000000000042c                __vector_21
+ .text.startup._GLOBAL__sub_I_adc
+                0x0000000000000474        0x8 build/funsapeLibAdc.o
+ .text._ZN7GpioBusC2Ev
+                0x000000000000047c       0x28 build/funsapeLibGpioBus.o
+                0x000000000000047c                _ZN7GpioBusC2Ev
+                0x000000000000047c                _ZN7GpioBusC1Ev
+ .text._ZN7GpioBus4initEPVhNS_8PinIndexEh
+                0x00000000000004a4       0xb8 build/funsapeLibGpioBus.o
+                0x00000000000004a4                _ZN7GpioBus4initEPVhNS_8PinIndexEh
+ .text._ZN7GpioBus7setModeENS_4ModeE
+                0x000000000000055c       0x64 build/funsapeLibGpioBus.o
+                0x000000000000055c                _ZN7GpioBus7setModeENS_4ModeE
+ .text._ZN7GpioBus5writeEh
+                0x00000000000005c0       0x36 build/funsapeLibGpioBus.o
+                0x00000000000005c0                _ZN7GpioBus5writeEh
+ .text._ZN7GpioBus10getBusSizeEv
+                0x00000000000005f6       0x12 build/funsapeLibGpioBus.o
+                0x00000000000005f6                _ZN7GpioBus10getBusSizeEv
+ .text._Z21int0InterruptCallbackv
+                0x0000000000000608        0x2 build/funsapeLibInt0.o
+                0x0000000000000608                _Z21int0InterruptCallbackv
+ .text.__vector_1
+                0x000000000000060a       0x48 build/funsapeLibInt0.o
+                0x000000000000060a                __vector_1
+ .text.startup._GLOBAL__sub_I_int0
+                0x0000000000000652       0x12 build/funsapeLibInt0.o
+ .text._Z21int1InterruptCallbackv
+                0x0000000000000664        0x2 build/funsapeLibInt1.o
+                0x0000000000000664                _Z21int1InterruptCallbackv
+ .text.__vector_2
+                0x0000000000000666       0x48 build/funsapeLibInt1.o
+                0x0000000000000666                __vector_2
+ .text.startup._GLOBAL__sub_I_int1
+                0x00000000000006ae       0x12 build/funsapeLibInt1.o
+ .text._ZN6Pcint04initENS_3PinE
+                0x00000000000006c0       0x1a build/funsapeLibPcint0.o
+                0x00000000000006c0                _ZN6Pcint04initENS_3PinE
+ .text.__vector_3
+                0x00000000000006da       0x48 build/funsapeLibPcint0.o
+                0x00000000000006da                __vector_3
+ .text.startup._GLOBAL__sub_I_pcint0
+                0x0000000000000722       0x12 build/funsapeLibPcint0.o
+ .text._Z23pcint1InterruptCallbackv
+                0x0000000000000734        0x2 build/funsapeLibPcint1.o
+                0x0000000000000734                _Z23pcint1InterruptCallbackv
+ .text.__vector_4
+                0x0000000000000736       0x48 build/funsapeLibPcint1.o
+                0x0000000000000736                __vector_4
+ .text.startup._GLOBAL__sub_I_pcint1
+                0x000000000000077e       0x12 build/funsapeLibPcint1.o
+ .text._Z23pcint2InterruptCallbackv
+                0x0000000000000790        0x2 build/funsapeLibPcint2.o
+                0x0000000000000790                _Z23pcint2InterruptCallbackv
+ .text.__vector_5
+                0x0000000000000792       0x48 build/funsapeLibPcint2.o
+                0x0000000000000792                __vector_5
+ .text.startup._GLOBAL__sub_I_pcint2
+                0x00000000000007da       0x12 build/funsapeLibPcint2.o
+ .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE
+                0x00000000000007ec       0x42 build/funsapeLibTimer0.o
+                0x00000000000007ec                _ZN6Timer04initENS_4ModeENS_11ClockSourceE
+ .text._Z22timer0CompareBCallbackv
+                0x000000000000082e        0x2 build/funsapeLibTimer0.o
+                0x000000000000082e                _Z22timer0CompareBCallbackv
+ .text._Z22timer0OverflowCallbackv
+                0x0000000000000830        0x2 build/funsapeLibTimer0.o
+                0x0000000000000830                _Z22timer0OverflowCallbackv
+ .text.__vector_14
+                0x0000000000000832       0x48 build/funsapeLibTimer0.o
+                0x0000000000000832                __vector_14
+ .text.__vector_15
+                0x000000000000087a       0x48 build/funsapeLibTimer0.o
+                0x000000000000087a                __vector_15
+ .text.__vector_16
+                0x00000000000008c2       0x48 build/funsapeLibTimer0.o
+                0x00000000000008c2                __vector_16
+ .text.startup._GLOBAL__sub_I_timer0
+                0x000000000000090a       0x14 build/funsapeLibTimer0.o
+ .text._Z22timer1CompareACallbackv
+                0x000000000000091e        0x2 build/funsapeLibTimer1.o
+                0x000000000000091e                _Z22timer1CompareACallbackv
+ .text._Z22timer1CompareBCallbackv
+                0x0000000000000920        0x2 build/funsapeLibTimer1.o
+                0x0000000000000920                _Z22timer1CompareBCallbackv
+ .text._Z26timer1InputCaptureCallbackv
+                0x0000000000000922        0x2 build/funsapeLibTimer1.o
+                0x0000000000000922                _Z26timer1InputCaptureCallbackv
+ .text._Z22timer1OverflowCallbackv
+                0x0000000000000924        0x2 build/funsapeLibTimer1.o
+                0x0000000000000924                _Z22timer1OverflowCallbackv
+ .text.__vector_11
+                0x0000000000000926       0x48 build/funsapeLibTimer1.o
+                0x0000000000000926                __vector_11
+ .text.__vector_12
+                0x000000000000096e       0x48 build/funsapeLibTimer1.o
+                0x000000000000096e                __vector_12
+ .text.__vector_10
+                0x00000000000009b6       0x48 build/funsapeLibTimer1.o
+                0x00000000000009b6                __vector_10
+ .text.__vector_13
+                0x00000000000009fe       0x48 build/funsapeLibTimer1.o
+                0x00000000000009fe                __vector_13
+ .text.startup._GLOBAL__sub_I_timer1
+                0x0000000000000a46       0x14 build/funsapeLibTimer1.o
+ .text._Z22timer2CompareACallbackv
+                0x0000000000000a5a        0x2 build/funsapeLibTimer2.o
+                0x0000000000000a5a                _Z22timer2CompareACallbackv
+ .text._Z22timer2CompareBCallbackv
+                0x0000000000000a5c        0x2 build/funsapeLibTimer2.o
+                0x0000000000000a5c                _Z22timer2CompareBCallbackv
+ .text._Z22timer2OverflowCallbackv
+                0x0000000000000a5e        0x2 build/funsapeLibTimer2.o
+                0x0000000000000a5e                _Z22timer2OverflowCallbackv
+ .text.__vector_7
+                0x0000000000000a60       0x48 build/funsapeLibTimer2.o
+                0x0000000000000a60                __vector_7
+ .text.__vector_8
+                0x0000000000000aa8       0x48 build/funsapeLibTimer2.o
+                0x0000000000000aa8                __vector_8
+ .text.__vector_9
+                0x0000000000000af0       0x48 build/funsapeLibTimer2.o
+                0x0000000000000af0                __vector_9
+ .text.startup._GLOBAL__sub_I_timer2
+                0x0000000000000b38       0x14 build/funsapeLibTimer2.o
+ .text._ZN3Bus8sendDataEPhj
+                0x0000000000000b4c        0xe build/funsapeLibTwi.o
+                0x0000000000000b4c                _ZN3Bus8sendDataEPhj
+ .text._ZN3Bus8sendDataEPKhPhj
+                0x0000000000000b5a        0xe build/funsapeLibTwi.o
+                0x0000000000000b5a                _ZN3Bus8sendDataEPKhPhj
+ .text._ZN3Bus9setDeviceEPFvvES1_
+                0x0000000000000b68        0xe build/funsapeLibTwi.o
+                0x0000000000000b68                _ZN3Bus9setDeviceEPFvvES1_
+ .text._ZN3Twi9setDeviceEjb
+                0x0000000000000b76       0x38 build/funsapeLibTwi.o
+                0x0000000000000b76                _ZN3Twi9setDeviceEjb
+ .text._ZN3Twi10getBusTypeEv
+                0x0000000000000bae        0x6 build/funsapeLibTwi.o
+                0x0000000000000bae                _ZN3Twi10getBusTypeEv
+ .text._ZN3Twi12getLastErrorEv
+                0x0000000000000bb4        0x8 build/funsapeLibTwi.o
+                0x0000000000000bb4                _ZN3Twi12getLastErrorEv
+ .text._ZN3TwiC2Ev
+                0x0000000000000bbc       0x40 build/funsapeLibTwi.o
+                0x0000000000000bbc                _ZN3TwiC1Ev
+                0x0000000000000bbc                _ZN3TwiC2Ev
+ .text._ZN3Twi16_waitWhileIsBusyEv
+                0x0000000000000bfc       0xae build/funsapeLibTwi.o
+                0x0000000000000bfc                _ZN3Twi16_waitWhileIsBusyEv
+ .text._ZN3Twi18_startTransmissionEv
+                0x0000000000000caa       0x1e build/funsapeLibTwi.o
+                0x0000000000000caa                _ZN3Twi18_startTransmissionEv
+ .text._ZN3Twi15_readFromBufferEPhh
+                0x0000000000000cc8       0x42 build/funsapeLibTwi.o
+                0x0000000000000cc8                _ZN3Twi15_readFromBufferEPhh
+ .text._ZN3Twi8sendDataEhNS_9OperationEhPhh
+                0x0000000000000d0a      0x12c build/funsapeLibTwi.o
+                0x0000000000000d0a                _ZN3Twi8sendDataEhNS_9OperationEhPhh
+ .text._ZN3Twi7readRegEhPhj
+                0x0000000000000e36       0x68 build/funsapeLibTwi.o
+                0x0000000000000e36                _ZN3Twi7readRegEhPhj
+ .text._ZN3Twi8writeRegEhPKhj
+                0x0000000000000e9e       0x68 build/funsapeLibTwi.o
+                0x0000000000000e9e                _ZN3Twi8writeRegEhPKhj
+ .text._ZN3Twi16interruptHandlerEv
+                0x0000000000000f06       0xd6 build/funsapeLibTwi.o
+                0x0000000000000f06                _ZN3Twi16interruptHandlerEv
+ .text.__vector_24
+                0x0000000000000fdc       0x4c build/funsapeLibTwi.o
+                0x0000000000000fdc                __vector_24
+ .text.startup._GLOBAL__sub_I_twi
+                0x0000000000001028        0x8 build/funsapeLibTwi.o
+ .text._Z23usartTransmitStdWrappercP6__file
+                0x0000000000001030       0x12 build/funsapeLibUsart0.o
+                0x0000000000001030                _Z23usartTransmitStdWrappercP6__file
+ .text._ZN6Usart07setModeENS_4ModeE
+                0x0000000000001042       0x22 build/funsapeLibUsart0.o
+                0x0000000000001042                _ZN6Usart07setModeENS_4ModeE
+ .text._ZN6Usart011setBaudRateENS_8BaudRateE
+                0x0000000000001064      0x100 build/funsapeLibUsart0.o
+                0x0000000000001064                _ZN6Usart011setBaudRateENS_8BaudRateE
+ .text._ZN6Usart014setFrameFormatENS_11FrameFormatE
+                0x0000000000001164      0x160 build/funsapeLibUsart0.o
+                0x0000000000001164                _ZN6Usart014setFrameFormatENS_11FrameFormatE
+ .text._ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+                0x00000000000012c4       0x5c build/funsapeLibUsart0.o
+                0x00000000000012c4                _ZN6Usart0C1ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+                0x00000000000012c4                _ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+ .text._Z30usartReceptionCompleteCallbackv
+                0x0000000000001320        0x2 build/funsapeLibUsart0.o
+                0x0000000000001320                _Z30usartReceptionCompleteCallbackv
+ .text._Z36usartTransmissionBufferEmptyCallbackv
+                0x0000000000001322        0x2 build/funsapeLibUsart0.o
+                0x0000000000001322                _Z36usartTransmissionBufferEmptyCallbackv
+ .text._Z33usartTransmissionCompleteCallbackv
+                0x0000000000001324        0x2 build/funsapeLibUsart0.o
+                0x0000000000001324                _Z33usartTransmissionCompleteCallbackv
+ .text.__vector_18
+                0x0000000000001326       0x48 build/funsapeLibUsart0.o
+                0x0000000000001326                __vector_18
+ .text.__vector_20
+                0x000000000000136e       0x48 build/funsapeLibUsart0.o
+                0x000000000000136e                __vector_20
+ .text.__vector_19
+                0x00000000000013b6       0x48 build/funsapeLibUsart0.o
+                0x00000000000013b6                __vector_19
+ .text.startup._GLOBAL__sub_I_usartDefaultHandler
+                0x00000000000013fe       0x1a build/funsapeLibUsart0.o
+ .text._ZN12SystemStatusC2Em
+                0x0000000000001418       0x60 build/funsapeLibSystemStatus.o
+                0x0000000000001418                _ZN12SystemStatusC2Em
+                0x0000000000001418                _ZN12SystemStatusC1Em
+ .text.startup._GLOBAL__sub_I_systemStatus
+                0x0000000000001478       0x10 build/funsapeLibSystemStatus.o
+ .text.startup.main
+                0x0000000000001488      0x1ba build/main.o
+                0x0000000000001488                main
+ .text._Z23pcint0InterruptCallbackv
+                0x0000000000001642       0x78 build/main.o
+                0x0000000000001642                _Z23pcint0InterruptCallbackv
+ .text._Z22timer0CompareACallbackv
+                0x00000000000016ba        0x8 build/main.o
+                0x00000000000016ba                _Z22timer0CompareACallbackv
+ .text.startup._GLOBAL__sub_I_counter
+                0x00000000000016c2        0x8 build/main.o
+ .text.exit._GLOBAL__sub_D_counter
+                0x00000000000016ca        0x8 build/main.o
+ .text.libgcc.div
+                0x00000000000016d2       0x28 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000000000016d2                __udivmodhi4
+ .text.libgcc   0x00000000000016fa        0xc c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000000000016fa                __tablejump2__
+                0x0000000000001706                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000001706        0x0 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x0000000000001706                _exit
+                0x0000000000001706                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ .fini6         0x0000000000001706       0x16 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+                0x0000000000001706                __do_global_dtors
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000171c        0x4 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000001720                _etext = .
+
+.data           0x0000000000800100      0x118 load address 0x0000000000001720
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data._ZZ23pcint0InterruptCallbackvE9lastState
+                0x0000000000800100        0x1 build/main.o
+ .data.counter  0x0000000000800101        0x2 build/main.o
+                0x0000000000800101                counter
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.CSWTCH.5
+                0x0000000000800103      0x100 build/funsapeLibSevenSegmentsDisplay.o
+ .rodata._ZTV3Twi
+                0x0000000000800203       0x14 build/funsapeLibTwi.o
+                0x0000000000800203                _ZTV3Twi
+ *(.gnu.linkonce.r*)
+                0x0000000000800218                . = ALIGN (0x2)
+ *fill*         0x0000000000800217        0x1 
+                0x0000000000800218                _edata = .
+                0x0000000000800218                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800218       0x8a
+                0x0000000000800218                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.adc       0x0000000000800218        0x9 build/funsapeLibAdc.o
+                0x0000000000800218                adc
+ .bss.int0      0x0000000000800221        0x4 build/funsapeLibInt0.o
+                0x0000000000800221                int0
+ .bss.int1      0x0000000000800225        0x4 build/funsapeLibInt1.o
+                0x0000000000800225                int1
+ .bss.pcint0    0x0000000000800229        0x4 build/funsapeLibPcint0.o
+                0x0000000000800229                pcint0
+ .bss.pcint1    0x000000000080022d        0x4 build/funsapeLibPcint1.o
+                0x000000000080022d                pcint1
+ .bss.pcint2    0x0000000000800231        0x4 build/funsapeLibPcint2.o
+                0x0000000000800231                pcint2
+ .bss.timer0    0x0000000000800235        0x5 build/funsapeLibTimer0.o
+                0x0000000000800235                timer0
+ .bss.timer1    0x000000000080023a        0x5 build/funsapeLibTimer1.o
+                0x000000000080023a                timer1
+ .bss.timer2    0x000000000080023f        0x5 build/funsapeLibTimer2.o
+                0x000000000080023f                timer2
+ .bss._ZZN3Twi16interruptHandlerEvE16twiBufferPointer
+                0x0000000000800244        0x1 build/funsapeLibTwi.o
+ .bss.twi       0x0000000000800245       0x13 build/funsapeLibTwi.o
+                0x0000000000800245                twi
+ .bss.usartStream
+                0x0000000000800258        0xe build/funsapeLibUsart0.o
+                0x0000000000800258                usartStream
+ .bss.usart0    0x0000000000800266        0xc build/funsapeLibUsart0.o
+                0x0000000000800266                usart0
+ .bss.systemStatus
+                0x0000000000800272       0x16 build/funsapeLibSystemStatus.o
+                0x0000000000800272                systemStatus
+ .bss.display   0x0000000000800288       0x18 build/main.o
+                0x0000000000800288                display
+ .bss.systemFlags
+                0x00000000008002a0        0x2 build/main.o
+                0x00000000008002a0                systemFlags
+ *(COMMON)
+                0x00000000008002a2                PROVIDE (__bss_end, .)
+                0x0000000000001720                __data_load_start = LOADADDR (.data)
+                0x0000000000001838                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008002a2        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x00000000008002a2                _end = .
+                0x00000000008002a2                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x30
+ *(.comment)
+ .comment       0x0000000000000000       0x30 build/funsapeLibSevenSegmentsDisplay.o
+                                         0x31 (size before relaxing)
+ .comment       0x0000000000000030       0x31 build/funsapeLibSevenSegmentsMuxDisplay.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibAdc.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibGpioBus.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibInt0.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibInt1.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibPcint0.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibPcint1.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibPcint2.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibTimer0.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibTimer1.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibTimer2.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibTwi.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibUsart0.o
+ .comment       0x0000000000000030       0x31 build/funsapeLibSystemStatus.o
+ .comment       0x0000000000000030       0x31 build/main.o
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(build/application.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+_Z11integerSinej                                  build/funsapeLibMath.o
+_Z21int0InterruptCallbackv                        build/funsapeLibInt0.o
+_Z21int1InterruptCallbackv                        build/funsapeLibInt1.o
+_Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType build/funsapeLibSevenSegmentsDisplay.o
+_Z22convertToSevenSegmentshb24SevenSegmentsDisplayType build/funsapeLibSevenSegmentsDisplay.o
+                                                  build/funsapeLibSevenSegmentsMuxDisplay.o
+_Z22timer0CompareACallbackv                       build/main.o
+                                                  build/funsapeLibTimer0.o
+_Z22timer0CompareBCallbackv                       build/funsapeLibTimer0.o
+_Z22timer0OverflowCallbackv                       build/funsapeLibTimer0.o
+_Z22timer1CompareACallbackv                       build/funsapeLibTimer1.o
+_Z22timer1CompareBCallbackv                       build/funsapeLibTimer1.o
+_Z22timer1OverflowCallbackv                       build/funsapeLibTimer1.o
+_Z22timer2CompareACallbackv                       build/funsapeLibTimer2.o
+_Z22timer2CompareBCallbackv                       build/funsapeLibTimer2.o
+_Z22timer2OverflowCallbackv                       build/funsapeLibTimer2.o
+_Z23pcint0InterruptCallbackv                      build/main.o
+                                                  build/funsapeLibPcint0.o
+_Z23pcint1InterruptCallbackv                      build/funsapeLibPcint1.o
+_Z23pcint2InterruptCallbackv                      build/funsapeLibPcint2.o
+_Z23usartTransmitStdWrappercP6__file              build/funsapeLibUsart0.o
+_Z26timer1InputCaptureCallbackv                   build/funsapeLibTimer1.o
+_Z29adcConversionCompleteCallbackv                build/funsapeLibAdc.o
+_Z30usartReceptionCompleteCallbackv               build/funsapeLibUsart0.o
+_Z33usartTransmissionCompleteCallbackv            build/funsapeLibUsart0.o
+_Z36usartTransmissionBufferEmptyCallbackv         build/funsapeLibUsart0.o
+_Z7getTickv                                       build/funsapeLibDs1307.o
+_Z9playNotesP4Note                                build/funsapeLibSound.o
+_ZN12SystemStatus11getCpuClockEPm                 build/funsapeLibSystemStatus.o
+                                                  build/funsapeLibUsart0.o
+                                                  build/funsapeLibTwi.o
+_ZN12SystemStatus12getLastErrorEv                 build/funsapeLibSystemStatus.o
+_ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE build/funsapeLibSystemStatus.o
+_ZN12SystemStatusC1Em                             build/funsapeLibSystemStatus.o
+_ZN12SystemStatusC2Em                             build/funsapeLibSystemStatus.o
+_ZN12SystemStatusD1Ev                             build/funsapeLibSystemStatus.o
+_ZN12SystemStatusD2Ev                             build/funsapeLibSystemStatus.o
+_ZN23SevenSegmentsMuxDisplay13showNextDigitEv     build/funsapeLibSevenSegmentsMuxDisplay.o
+                                                  build/main.o
+_ZN23SevenSegmentsMuxDisplay17updateDigitValuesEPKhPKb build/funsapeLibSevenSegmentsMuxDisplay.o
+                                                  build/main.o
+_ZN23SevenSegmentsMuxDisplay4initENS_6DigitsE24SevenSegmentsDisplayType build/funsapeLibSevenSegmentsMuxDisplay.o
+                                                  build/main.o
+_ZN23SevenSegmentsMuxDisplay8setPortsEP7GpioBusS1_10LogicLevel build/funsapeLibSevenSegmentsMuxDisplay.o
+                                                  build/main.o
+_ZN23SevenSegmentsMuxDisplayC1Ev                  build/funsapeLibSevenSegmentsMuxDisplay.o
+                                                  build/main.o
+_ZN23SevenSegmentsMuxDisplayC2Ev                  build/funsapeLibSevenSegmentsMuxDisplay.o
+_ZN23SevenSegmentsMuxDisplayD1Ev                  build/funsapeLibSevenSegmentsMuxDisplay.o
+                                                  build/main.o
+_ZN23SevenSegmentsMuxDisplayD2Ev                  build/funsapeLibSevenSegmentsMuxDisplay.o
+_ZN3Adc10setChannelENS_7ChannelE                  build/funsapeLibAdc.o
+_ZN3Adc12getLastErrorEv                           build/funsapeLibAdc.o
+_ZN3Adc12setPrescalerENS_9PrescalerE              build/funsapeLibAdc.o
+_ZN3Adc12setReferenceENS_9ReferenceE              build/funsapeLibAdc.o
+_ZN3Adc13setDataAdjustENS_10DataAdjustE           build/funsapeLibAdc.o
+_ZN3Adc15startConversionEv                        build/funsapeLibAdc.o
+_ZN3Adc17activateInterruptEv                      build/funsapeLibAdc.o
+_ZN3Adc18enableDigitalInputENS_12DigitalInputE    build/funsapeLibAdc.o
+_ZN3Adc19deactivateInterruptEv                    build/funsapeLibAdc.o
+_ZN3Adc19disableDigitalInputENS_12DigitalInputE   build/funsapeLibAdc.o
+_ZN3Adc21clearInterruptRequestEv                  build/funsapeLibAdc.o
+_ZN3Adc25waitUntilConversionFinishEv              build/funsapeLibAdc.o
+_ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE build/funsapeLibAdc.o
+_ZN3Adc6enableEv                                  build/funsapeLibAdc.o
+_ZN3Adc7disableEv                                 build/funsapeLibAdc.o
+_ZN3Adc7setModeENS_4ModeE                         build/funsapeLibAdc.o
+_ZN3AdcC1Ev                                       build/funsapeLibAdc.o
+_ZN3AdcC2Ev                                       build/funsapeLibAdc.o
+_ZN3AdcD1Ev                                       build/funsapeLibAdc.o
+_ZN3AdcD2Ev                                       build/funsapeLibAdc.o
+_ZN3Bus8sendDataEPKhPhj                           build/funsapeLibTwi.o
+_ZN3Bus8sendDataEPhj                              build/funsapeLibTwi.o
+_ZN3Bus9setDeviceEPFvvES1_                        build/funsapeLibTwi.o
+_ZN3Twi10getBusTypeEv                             build/funsapeLibTwi.o
+_ZN3Twi10setTimeoutEj                             build/funsapeLibTwi.o
+_ZN3Twi12getLastErrorEv                           build/funsapeLibTwi.o
+_ZN3Twi15_readFromBufferEPhh                      build/funsapeLibTwi.o
+_ZN3Twi16_waitWhileIsBusyEv                       build/funsapeLibTwi.o
+_ZN3Twi16interruptHandlerEv                       build/funsapeLibTwi.o
+_ZN3Twi18_startTransmissionEv                     build/funsapeLibTwi.o
+_ZN3Twi4initEmh                                   build/funsapeLibTwi.o
+_ZN3Twi7readRegEhPhj                              build/funsapeLibTwi.o
+_ZN3Twi8sendDataEhNS_9OperationEhPhh              build/funsapeLibTwi.o
+_ZN3Twi8writeRegEhPKhj                            build/funsapeLibTwi.o
+_ZN3Twi9setDeviceEjb                              build/funsapeLibTwi.o
+_ZN3TwiC1Ev                                       build/funsapeLibTwi.o
+_ZN3TwiC2Ev                                       build/funsapeLibTwi.o
+_ZN3TwiD1Ev                                       build/funsapeLibTwi.o
+_ZN3TwiD2Ev                                       build/funsapeLibTwi.o
+_ZN4Int012getLastErrorEv                          build/funsapeLibInt0.o
+_ZN4Int012setSenseModeENS_9SenseModeE             build/funsapeLibInt0.o
+_ZN4Int04initENS_9SenseModeE                      build/funsapeLibInt0.o
+_ZN4Int0C1Ev                                      build/funsapeLibInt0.o
+_ZN4Int0C2Ev                                      build/funsapeLibInt0.o
+_ZN4Int0D1Ev                                      build/funsapeLibInt0.o
+_ZN4Int0D2Ev                                      build/funsapeLibInt0.o
+_ZN4Int112getLastErrorEv                          build/funsapeLibInt1.o
+_ZN4Int112setSenseModeENS_9SenseModeE             build/funsapeLibInt1.o
+_ZN4Int14initENS_9SenseModeE                      build/funsapeLibInt1.o
+_ZN4Int1C1Ev                                      build/funsapeLibInt1.o
+_ZN4Int1C2Ev                                      build/funsapeLibInt1.o
+_ZN4Int1D1Ev                                      build/funsapeLibInt1.o
+_ZN4Int1D2Ev                                      build/funsapeLibInt1.o
+_ZN6Ds130710_clearDataEv                          build/funsapeLibDs1307.o
+_ZN6Ds130710clockStartEv                          build/funsapeLibDs1307.o
+_ZN6Ds130710getRamDataEhPhh                       build/funsapeLibDs1307.o
+_ZN6Ds130710setRamDataEhPhh                       build/funsapeLibDs1307.o
+_ZN6Ds130711getDateTimeEP8DateTime                build/funsapeLibDs1307.o
+_ZN6Ds130711setDateTimeE8DateTime                 build/funsapeLibDs1307.o
+_ZN6Ds130712_setCountingEb                        build/funsapeLibDs1307.o
+_ZN6Ds130712getLastErrorEv                        build/funsapeLibDs1307.o
+_ZN6Ds130714_isInitializedEv                      build/funsapeLibDs1307.o
+_ZN6Ds130722setSquareWaveGeneratorENS_10SquareWaveE build/funsapeLibDs1307.o
+_ZN6Ds13074initEP3Bus                             build/funsapeLibDs1307.o
+_ZN6Ds13077getDateEPjPhS1_S1_                     build/funsapeLibDs1307.o
+_ZN6Ds13077getTimeEPhS0_S0_N8DateTime10TimeFormatEPNS1_8AmPmFlagE build/funsapeLibDs1307.o
+_ZN6Ds13077setDateEjhh                            build/funsapeLibDs1307.o
+_ZN6Ds13077setTimeEhhhN8DateTime10TimeFormatENS0_8AmPmFlagE build/funsapeLibDs1307.o
+_ZN6Ds13078_getDataEv                             build/funsapeLibDs1307.o
+_ZN6Ds13079_sendDataEv                            build/funsapeLibDs1307.o
+_ZN6Ds13079clockStopEv                            build/funsapeLibDs1307.o
+_ZN6Ds1307C1Ev                                    build/funsapeLibDs1307.o
+_ZN6Ds1307C2Ev                                    build/funsapeLibDs1307.o
+_ZN6Ds1307D1Ev                                    build/funsapeLibDs1307.o
+_ZN6Ds1307D2Ev                                    build/funsapeLibDs1307.o
+_ZN6Keypad12getLastErrorEv                        build/funsapeLibKeypad.o
+_ZN6Keypad12setKeyValuesENS_4TypeEz               build/funsapeLibKeypad.o
+_ZN6Keypad14readKeyPressedEPh                     build/funsapeLibKeypad.o
+_ZN6Keypad4initEh                                 build/funsapeLibKeypad.o
+_ZN6Keypad8setPortsEPK7GpioBusS2_                 build/funsapeLibKeypad.o
+_ZN6KeypadC1Ev                                    build/funsapeLibKeypad.o
+_ZN6KeypadC2Ev                                    build/funsapeLibKeypad.o
+_ZN6KeypadD1Ev                                    build/funsapeLibKeypad.o
+_ZN6KeypadD2Ev                                    build/funsapeLibKeypad.o
+_ZN6Pcint010enablePinsENS_3PinE                   build/funsapeLibPcint0.o
+_ZN6Pcint011disablePinsENS_3PinE                  build/funsapeLibPcint0.o
+_ZN6Pcint012getLastErrorEv                        build/funsapeLibPcint0.o
+_ZN6Pcint04initENS_3PinE                          build/funsapeLibPcint0.o
+                                                  build/main.o
+_ZN6Pcint0C1Ev                                    build/funsapeLibPcint0.o
+_ZN6Pcint0C2Ev                                    build/funsapeLibPcint0.o
+_ZN6Pcint0D1Ev                                    build/funsapeLibPcint0.o
+_ZN6Pcint0D2Ev                                    build/funsapeLibPcint0.o
+_ZN6Pcint110enablePinsENS_3PinE                   build/funsapeLibPcint1.o
+_ZN6Pcint111disablePinsENS_3PinE                  build/funsapeLibPcint1.o
+_ZN6Pcint112getLastErrorEv                        build/funsapeLibPcint1.o
+_ZN6Pcint14initENS_3PinE                          build/funsapeLibPcint1.o
+_ZN6Pcint1C1Ev                                    build/funsapeLibPcint1.o
+_ZN6Pcint1C2Ev                                    build/funsapeLibPcint1.o
+_ZN6Pcint1D1Ev                                    build/funsapeLibPcint1.o
+_ZN6Pcint1D2Ev                                    build/funsapeLibPcint1.o
+_ZN6Pcint210enablePinsENS_3PinE                   build/funsapeLibPcint2.o
+_ZN6Pcint211disablePinsENS_3PinE                  build/funsapeLibPcint2.o
+_ZN6Pcint212getLastErrorEv                        build/funsapeLibPcint2.o
+_ZN6Pcint24initENS_3PinE                          build/funsapeLibPcint2.o
+_ZN6Pcint2C1Ev                                    build/funsapeLibPcint2.o
+_ZN6Pcint2C2Ev                                    build/funsapeLibPcint2.o
+_ZN6Pcint2D1Ev                                    build/funsapeLibPcint2.o
+_ZN6Pcint2D2Ev                                    build/funsapeLibPcint2.o
+_ZN6Timer012getLastErrorEv                        build/funsapeLibTimer0.o
+_ZN6Timer013setOutputModeENS_10OutputModeES0_     build/funsapeLibTimer0.o
+_ZN6Timer014setClockSourceENS_11ClockSourceE      build/funsapeLibTimer0.o
+_ZN6Timer04initENS_4ModeENS_11ClockSourceE        build/funsapeLibTimer0.o
+                                                  build/main.o
+_ZN6Timer07setModeENS_4ModeE                      build/funsapeLibTimer0.o
+_ZN6Timer0C1Ev                                    build/funsapeLibTimer0.o
+_ZN6Timer0C2Ev                                    build/funsapeLibTimer0.o
+_ZN6Timer0D1Ev                                    build/funsapeLibTimer0.o
+_ZN6Timer0D2Ev                                    build/funsapeLibTimer0.o
+_ZN6Timer112getLastErrorEv                        build/funsapeLibTimer1.o
+_ZN6Timer113setOutputModeENS_10OutputModeES0_     build/funsapeLibTimer1.o
+_ZN6Timer114setClockSourceENS_11ClockSourceE      build/funsapeLibTimer1.o
+                                                  build/funsapeLibSound.o
+_ZN6Timer119setInputCaptureModeE4Edgeb            build/funsapeLibTimer1.o
+_ZN6Timer14initENS_4ModeENS_11ClockSourceE        build/funsapeLibTimer1.o
+_ZN6Timer17setModeENS_4ModeE                      build/funsapeLibTimer1.o
+_ZN6Timer1C1Ev                                    build/funsapeLibTimer1.o
+_ZN6Timer1C2Ev                                    build/funsapeLibTimer1.o
+_ZN6Timer1D1Ev                                    build/funsapeLibTimer1.o
+_ZN6Timer1D2Ev                                    build/funsapeLibTimer1.o
+_ZN6Timer212getLastErrorEv                        build/funsapeLibTimer2.o
+_ZN6Timer213setOutputModeENS_10OutputModeES0_     build/funsapeLibTimer2.o
+_ZN6Timer214setClockSourceENS_11ClockSourceE      build/funsapeLibTimer2.o
+_ZN6Timer24initENS_4ModeENS_11ClockSourceE        build/funsapeLibTimer2.o
+_ZN6Timer27setModeENS_4ModeE                      build/funsapeLibTimer2.o
+_ZN6Timer2C1Ev                                    build/funsapeLibTimer2.o
+_ZN6Timer2C2Ev                                    build/funsapeLibTimer2.o
+_ZN6Timer2D1Ev                                    build/funsapeLibTimer2.o
+_ZN6Timer2D2Ev                                    build/funsapeLibTimer2.o
+_ZN6Tm163710_sendStartEv                          build/funsapeLibTm1637.o
+_ZN6Tm163710_writeByteEh                          build/funsapeLibTm1637.o
+_ZN6Tm163711showDisplayEb                         build/funsapeLibTm1637.o
+_ZN6Tm163712getLastErrorEv                        build/funsapeLibTm1637.o
+_ZN6Tm163714_isInitializedEv                      build/funsapeLibTm1637.o
+_ZN6Tm163714readKeypadDataEPh                     build/funsapeLibTm1637.o
+_ZN6Tm163716writeDisplayDataEhhb                  build/funsapeLibTm1637.o
+_ZN6Tm163716writeDisplayDataEjh                   build/funsapeLibTm1637.o
+_ZN6Tm163717setAddressingModeEb                   build/funsapeLibTm1637.o
+_ZN6Tm163718setDisplayContrastENS_8ContrastE      build/funsapeLibTm1637.o
+_ZN6Tm16374initEPK7GpioPinS2_                     build/funsapeLibTm1637.o
+_ZN6Tm16378_readAckEv                             build/funsapeLibTm1637.o
+_ZN6Tm16379_readByteEPh                           build/funsapeLibTm1637.o
+_ZN6Tm16379_sendStopEv                            build/funsapeLibTm1637.o
+_ZN6Tm1637C1EPK7GpioPinS2_                        build/funsapeLibTm1637.o
+_ZN6Tm1637C1Ev                                    build/funsapeLibTm1637.o
+_ZN6Tm1637C2EPK7GpioPinS2_                        build/funsapeLibTm1637.o
+_ZN6Tm1637C2Ev                                    build/funsapeLibTm1637.o
+_ZN6Tm1637D1Ev                                    build/funsapeLibTm1637.o
+_ZN6Tm1637D2Ev                                    build/funsapeLibTm1637.o
+_ZN6Usart011receiveDataEPj                        build/funsapeLibUsart0.o
+_ZN6Usart011sendDataStdEcP6__file                 build/funsapeLibUsart0.o
+_ZN6Usart011setBaudRateENS_8BaudRateE             build/funsapeLibUsart0.o
+_ZN6Usart011setDataSizeENS_8DataSizeE             build/funsapeLibUsart0.o
+_ZN6Usart011setStopBitsENS_8StopBitsE             build/funsapeLibUsart0.o
+_ZN6Usart013setParityModeENS_10ParityModeE        build/funsapeLibUsart0.o
+_ZN6Usart014receiveDataStdEP6__file               build/funsapeLibUsart0.o
+_ZN6Usart014setFrameFormatENS_11FrameFormatE      build/funsapeLibUsart0.o
+_ZN6Usart015_receiveDataStdEP6__file              build/funsapeLibUsart0.o
+_ZN6Usart016_clearFrameErrorEv                    build/funsapeLibUsart0.o
+_ZN6Usart017_clearParityErrorEv                   build/funsapeLibUsart0.o
+_ZN6Usart018getReceptionErrorsEPNS_14ReceptionErrorE build/funsapeLibUsart0.o
+_ZN6Usart020flushReceptionBufferEv                build/funsapeLibUsart0.o
+_ZN6Usart022_clearDataOverrunErrorEv              build/funsapeLibUsart0.o
+_ZN6Usart04initEv                                 build/funsapeLibUsart0.o
+_ZN6Usart07setModeENS_4ModeE                      build/funsapeLibUsart0.o
+_ZN6Usart08sendDataEj                             build/funsapeLibUsart0.o
+_ZN6Usart0C1ENS_8BaudRateENS_4ModeENS_11FrameFormatE build/funsapeLibUsart0.o
+_ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE build/funsapeLibUsart0.o
+_ZN6Usart0D1Ev                                    build/funsapeLibUsart0.o
+_ZN6Usart0D2Ev                                    build/funsapeLibUsart0.o
+_ZN7GpioBus10getBusSizeEv                         build/funsapeLibGpioBus.o
+                                                  build/funsapeLibSevenSegmentsMuxDisplay.o
+                                                  build/funsapeLibKeypad.o
+                                                  build/funsapeLibHd44780.o
+_ZN7GpioBus12getLastErrorEv                       build/funsapeLibGpioBus.o
+_ZN7GpioBus4initEPVhNS_8PinIndexEh                build/funsapeLibGpioBus.o
+                                                  build/main.o
+_ZN7GpioBus5writeEh                               build/funsapeLibGpioBus.o
+                                                  build/funsapeLibSevenSegmentsMuxDisplay.o
+                                                  build/funsapeLibHd44780.o
+_ZN7GpioBus7setModeENS_4ModeE                     build/funsapeLibGpioBus.o
+                                                  build/funsapeLibSevenSegmentsMuxDisplay.o
+                                                  build/funsapeLibKeypad.o
+                                                  build/funsapeLibHd44780.o
+_ZN7GpioBusC1Ev                                   build/funsapeLibGpioBus.o
+                                                  build/main.o
+_ZN7GpioBusC2Ev                                   build/funsapeLibGpioBus.o
+_ZN7GpioBusD1Ev                                   build/funsapeLibGpioBus.o
+_ZN7GpioBusD2Ev                                   build/funsapeLibGpioBus.o
+_ZN7GpioPin12getLastErrorEv                       build/funsapeLibGpioPin.o
+_ZN7GpioPin4initEPVhNS_8PinIndexE                 build/funsapeLibGpioPin.o
+_ZN7GpioPin7setModeENS_4ModeE                     build/funsapeLibGpioPin.o
+                                                  build/funsapeLibTm1637.o
+                                                  build/funsapeLibStepper.o
+                                                  build/funsapeLibSn74595.o
+                                                  build/funsapeLibHd44780.o
+_ZN7GpioPinC1Ev                                   build/funsapeLibGpioPin.o
+_ZN7GpioPinC2Ev                                   build/funsapeLibGpioPin.o
+_ZN7GpioPinD1Ev                                   build/funsapeLibGpioPin.o
+_ZN7GpioPinD2Ev                                   build/funsapeLibGpioPin.o
+_ZN7Hd4478010cursorGoToEhh                        build/funsapeLibHd44780.o
+_ZN7Hd4478010cursorHomeEv                         build/funsapeLibHd44780.o
+_ZN7Hd4478010cursorMoveE9Direction                build/funsapeLibHd44780.o
+_ZN7Hd4478011clearScreenEv                        build/funsapeLibHd44780.o
+_ZN7Hd4478011setDataPortEPK7GpioBus               build/funsapeLibHd44780.o
+_ZN7Hd4478012displayShiftE9Direction              build/funsapeLibHd44780.o
+_ZN7Hd4478012getLastErrorEv                       build/funsapeLibHd44780.o
+_ZN7Hd4478012setEntryModeENS_4StepENS_11DisplayModeE build/funsapeLibHd44780.o
+_ZN7Hd4478013_writeCommandEh                      build/funsapeLibHd44780.o
+_ZN7Hd4478014setControlPortEPK7GpioPinS2_S2_      build/funsapeLibHd44780.o
+_ZN7Hd4478015_waitUntilReadyEv                    build/funsapeLibHd44780.o
+_ZN7Hd4478015_writeCharacterEhb                   build/funsapeLibHd44780.o
+_ZN7Hd4478015setDisplayStateENS_12DisplayStateE   build/funsapeLibHd44780.o
+_ZN7Hd4478017_functionSet8BitsEh                  build/funsapeLibHd44780.o
+_ZN7Hd4478018cursorMoveNextLineEv                 build/funsapeLibHd44780.o
+_ZN7Hd4478018setCustomCharacterEhPKh              build/funsapeLibHd44780.o
+_ZN7Hd4478019cursorMoveFirstLineEv                build/funsapeLibHd44780.o
+_ZN7Hd447804initENS_4SizeENS_4FontE               build/funsapeLibHd44780.o
+_ZN7Hd447805printEPKc                             build/funsapeLibHd44780.o
+_ZN7Hd447805printEc                               build/funsapeLibHd44780.o
+_ZN7Hd447805stdioEv                               build/funsapeLibHd44780.o
+_ZN7Hd44780C1Ev                                   build/funsapeLibHd44780.o
+_ZN7Hd44780C2Ev                                   build/funsapeLibHd44780.o
+_ZN7Hd44780D1Ev                                   build/funsapeLibHd44780.o
+_ZN7Hd44780D2Ev                                   build/funsapeLibHd44780.o
+_ZN7Sn7459512getLastErrorEv                       build/funsapeLibSn74595.o
+_ZN7Sn7459513enableOutputsEv                      build/funsapeLibSn74595.o
+_ZN7Sn7459514disableOutputsEv                     build/funsapeLibSn74595.o
+_ZN7Sn745954initENS_9DataOrderE                   build/funsapeLibSn74595.o
+_ZN7Sn745955storeEv                               build/funsapeLibSn74595.o
+_ZN7Sn745957setPortEPK7GpioPinS2_S2_S2_S2_        build/funsapeLibSn74595.o
+_ZN7Sn745958sendByteEh                            build/funsapeLibSn74595.o
+_ZN7Sn745959clearDataEv                           build/funsapeLibSn74595.o
+_ZN7Sn74595C1Ev                                   build/funsapeLibSn74595.o
+_ZN7Sn74595C2Ev                                   build/funsapeLibSn74595.o
+_ZN7Sn74595D1Ev                                   build/funsapeLibSn74595.o
+_ZN7Sn74595D2Ev                                   build/funsapeLibSn74595.o
+_ZN7Stepper12getLastErrorEv                       build/funsapeLibStepper.o
+_ZN7Stepper4initEPK7GpioPinS2_S2_S2_              build/funsapeLibStepper.o
+_ZN7Stepper4moveE8Rotation                        build/funsapeLibStepper.o
+_ZN7Stepper7_doStepEh                             build/funsapeLibStepper.o
+_ZN7Stepper7setModeENS_4ModeE                     build/funsapeLibStepper.o
+_ZN7StepperC1Ev                                   build/funsapeLibStepper.o
+_ZN7StepperC2Ev                                   build/funsapeLibStepper.o
+_ZN7StepperD1Ev                                   build/funsapeLibStepper.o
+_ZN7StepperD2Ev                                   build/funsapeLibStepper.o
+_ZN8DateTime10_clearDataEv                        build/funsapeLibDateTime.o
+_ZN8DateTime10getWeekDayEPNS_7WeekDayE            build/funsapeLibDateTime.o
+_ZN8DateTime10isLeapYearEv                        build/funsapeLibDateTime.o
+_ZN8DateTime11_isLeapYearEj                       build/funsapeLibDateTime.o
+_ZN8DateTime11getTimeZoneEPNS_8TimeZoneE          build/funsapeLibDateTime.o
+_ZN8DateTime11setTimeZoneENS_8TimeZoneE           build/funsapeLibDateTime.o
+_ZN8DateTime12_isValidDateEjNS_5MonthEh           build/funsapeLibDateTime.o
+_ZN8DateTime12_isValidTimeEhhhNS_10TimeFormatE    build/funsapeLibDateTime.o
+_ZN8DateTime12getLastErrorEv                      build/funsapeLibDateTime.o
+                                                  build/funsapeLibDs1307.o
+_ZN8DateTime13getTimeFormatEPNS_10TimeFormatE     build/funsapeLibDateTime.o
+                                                  build/funsapeLibDs1307.o
+_ZN8DateTime13setTimeFormatENS_10TimeFormatE      build/funsapeLibDateTime.o
+_ZN8DateTime18_convertTimeFormatEPhPNS_8AmPmFlagENS_10TimeFormatES3_ build/funsapeLibDateTime.o
+_ZN8DateTime18_evaluateDayOfWeekEv                build/funsapeLibDateTime.o
+_ZN8DateTime7getDateEPjPNS_5MonthEPhPNS_7WeekDayE build/funsapeLibDateTime.o
+                                                  build/funsapeLibDs1307.o
+_ZN8DateTime7getTimeEPhS0_S0_NS_10TimeFormatEPNS_8AmPmFlagE build/funsapeLibDateTime.o
+                                                  build/funsapeLibDs1307.o
+_ZN8DateTime7getTimeEPhS0_S0_PjNS_10TimeFormatEPNS_8AmPmFlagE build/funsapeLibDateTime.o
+_ZN8DateTime7setDateEjNS_5MonthEh                 build/funsapeLibDateTime.o
+                                                  build/funsapeLibDs1307.o
+_ZN8DateTime7setTimeEhhhNS_10TimeFormatENS_8AmPmFlagE build/funsapeLibDateTime.o
+                                                  build/funsapeLibDs1307.o
+_ZN8DateTime7setTimeEhhhjNS_10TimeFormatENS_8AmPmFlagE build/funsapeLibDateTime.o
+_ZN8DateTime9isDateSetEv                          build/funsapeLibDateTime.o
+                                                  build/funsapeLibDs1307.o
+_ZN8DateTime9isTimeSetEv                          build/funsapeLibDateTime.o
+                                                  build/funsapeLibDs1307.o
+_ZN8DateTimeC1Ev                                  build/funsapeLibDateTime.o
+                                                  build/funsapeLibDs1307.o
+_ZN8DateTimeC2Ev                                  build/funsapeLibDateTime.o
+_ZN8DateTimeD1Ev                                  build/funsapeLibDateTime.o
+                                                  build/funsapeLibDs1307.o
+_ZN8DateTimeD2Ev                                  build/funsapeLibDateTime.o
+_ZTV3Twi                                          build/funsapeLibTwi.o
+__DATA_REGION_LENGTH__                            c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__DATA_REGION_ORIGIN__                            c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__EEPROM_REGION_LENGTH__                          c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__FUSE_REGION_LENGTH__                            c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__TEXT_REGION_LENGTH__                            c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__ashrdi3                                         c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+__bad_interrupt                                   c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__brkval                                          c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__bss_end                                         c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+__ctors_end                                       c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+__ctors_start                                     c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+__data_end                                        c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+__data_start                                      c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+__divmodhi4                                       c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+                                                  build/funsapeLibHd44780.o
+__do_clear_bss                                    c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(iob.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  build/main.o
+                                                  build/funsapeLibSystemStatus.o
+                                                  build/funsapeLibUsart0.o
+                                                  build/funsapeLibTwi.o
+                                                  build/funsapeLibTimer2.o
+                                                  build/funsapeLibTimer1.o
+                                                  build/funsapeLibTimer0.o
+                                                  build/funsapeLibPcint2.o
+                                                  build/funsapeLibPcint1.o
+                                                  build/funsapeLibPcint0.o
+                                                  build/funsapeLibInt1.o
+                                                  build/funsapeLibInt0.o
+                                                  build/funsapeLibAdc.o
+                                                  build/funsapeLibHd44780.o
+__do_copy_data                                    c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  build/main.o
+                                                  build/funsapeLibSound.o
+                                                  build/funsapeLibMath.o
+                                                  build/funsapeLibDateTime.o
+                                                  build/funsapeLibTwi.o
+                                                  build/funsapeLibTm1637.o
+                                                  build/funsapeLibSevenSegmentsDisplay.o
+                                                  build/funsapeLibHd44780.o
+__do_global_ctors                                 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                                                  build/main.o
+                                                  build/funsapeLibSystemStatus.o
+                                                  build/funsapeLibUsart0.o
+                                                  build/funsapeLibTwi.o
+                                                  build/funsapeLibTimer2.o
+                                                  build/funsapeLibTimer1.o
+                                                  build/funsapeLibTimer0.o
+                                                  build/funsapeLibPcint2.o
+                                                  build/funsapeLibPcint1.o
+                                                  build/funsapeLibPcint0.o
+                                                  build/funsapeLibInt1.o
+                                                  build/funsapeLibInt0.o
+                                                  build/funsapeLibAdc.o
+__do_global_dtors                                 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+                                                  build/main.o
+__dtors_end                                       c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+__dtors_start                                     c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+__epilogue_restores__                             c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__flp                                             c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__heap_end                                        c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+__heap_start                                      c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+__init                                            c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__iob                                             c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(iob.o)
+                                                  build/funsapeLibHd44780.o
+__lshrdi3                                         c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ashrdi3.o)
+                                                  build/funsapeLibUsart0.o
+__malloc_heap_end                                 c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__malloc_heap_start                               c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+__malloc_margin                                   c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__muluhisi3                                       c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+                                                  build/funsapeLibUsart0.o
+__prologue_saves__                                c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+__stack                                           c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__tablejump2__                                    c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_dtors.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                                                  build/funsapeLibSystemStatus.o
+                                                  build/funsapeLibDateTime.o
+                                                  build/funsapeLibUsart0.o
+                                                  build/funsapeLibStepper.o
+__udivmodhi4                                      c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodhi4.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+                                                  build/main.o
+                                                  build/funsapeLibMath.o
+                                                  build/funsapeLibDateTime.o
+                                                  build/funsapeLibGpioPin.o
+                                                  build/funsapeLibGpioBus.o
+                                                  build/funsapeLibTm1637.o
+                                                  build/funsapeLibDs1307.o
+__udivmodqi4                                      c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodqi4.o)
+                                                  build/funsapeLibDs1307.o
+__udivmodsi4                                      c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                                                  build/funsapeLibSystemStatus.o
+                                                  build/funsapeLibUsart0.o
+                                                  build/funsapeLibTwi.o
+__umulhisi3                                       c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_umulhisi3.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_muluhisi3.o)
+__vector_1                                        build/funsapeLibInt0.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_10                                       build/funsapeLibTimer1.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_11                                       build/funsapeLibTimer1.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_12                                       build/funsapeLibTimer1.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_13                                       build/funsapeLibTimer1.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_14                                       build/funsapeLibTimer0.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_15                                       build/funsapeLibTimer0.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_16                                       build/funsapeLibTimer0.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_17                                       c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_18                                       build/funsapeLibUsart0.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_19                                       build/funsapeLibUsart0.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_2                                        build/funsapeLibInt1.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_20                                       build/funsapeLibUsart0.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_21                                       build/funsapeLibAdc.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_22                                       c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_23                                       c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_24                                       build/funsapeLibTwi.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_25                                       c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_3                                        build/funsapeLibPcint0.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_4                                        build/funsapeLibPcint1.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_5                                        build/funsapeLibPcint2.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_6                                        c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_7                                        build/funsapeLibTimer2.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_8                                        build/funsapeLibTimer2.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_9                                        build/funsapeLibTimer2.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_default                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vectors                                         c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+_div                                              c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_divmodhi4.o)
+_exit                                             c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+adc                                               build/funsapeLibAdc.o
+calloc                                            c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+                                                  build/funsapeLibTwi.o
+counter                                           build/main.o
+defaultDisplay                                    build/funsapeLibHd44780.o
+display                                           build/main.o
+exit                                              c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+free                                              c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                                                  build/funsapeLibTwi.o
+                                                  build/funsapeLibKeypad.o
+int0                                              build/funsapeLibInt0.o
+int1                                              build/funsapeLibInt1.o
+lcdStream                                         build/funsapeLibHd44780.o
+main                                              build/main.o
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+malloc                                            c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+memcpy                                            c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+memset                                            c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(memset.o)
+                                                  c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(calloc.o)
+notesPrescaler                                    build/funsapeLibSound.o
+pcint0                                            build/funsapeLibPcint0.o
+                                                  build/main.o
+pcint1                                            build/funsapeLibPcint1.o
+pcint2                                            build/funsapeLibPcint2.o
+realloc                                           c:/users/docker/desktop/micro/vscode-win/toolchains/avr-gcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                                                  build/funsapeLibKeypad.o
+systemFlags                                       build/main.o
+systemStatus                                      build/funsapeLibSystemStatus.o
+                                                  build/funsapeLibUsart0.o
+                                                  build/funsapeLibTwi.o
+timer0                                            build/funsapeLibTimer0.o
+                                                  build/main.o
+timer1                                            build/funsapeLibTimer1.o
+                                                  build/funsapeLibSound.o
+timer2                                            build/funsapeLibTimer2.o
+twi                                               build/funsapeLibTwi.o
+usart0                                            build/funsapeLibUsart0.o
+usartDefaultHandler                               build/funsapeLibUsart0.o
+usartStream                                       build/funsapeLibUsart0.o

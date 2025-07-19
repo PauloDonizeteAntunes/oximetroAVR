@@ -1,0 +1,539 @@
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s 			page 1
+
+
+   1               		.file	"funsapeLibAdc.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN3AdcC2Ev,"ax",@progbits
+  23               	.global	_ZN3AdcC2Ev
+  25               	_ZN3AdcC2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 FC01      		movw r30,r24
+  31 0002 1582      		std Z+5,__zero_reg__
+  32 0004 8085      		ldd r24,Z+8
+  33 0006 8E7F      		andi r24,lo8(~(1<<0))
+  34 0008 8087      		std Z+8,r24
+  35 000a 8081      		ld r24,Z
+  36 000c 8C7F      		andi r24,lo8(-4)
+  37 000e 8B7F      		andi r24,lo8(~(1<<2))
+  38 0010 8083      		st Z,r24
+  39 0012 8FE0      		ldi r24,lo8(15)
+  40 0014 90E0      		ldi r25,0
+  41 0016 9783      		std Z+7,r25
+  42 0018 8683      		std Z+6,r24
+  43 001a 1382      		std Z+3,__zero_reg__
+  44 001c 1482      		std Z+4,__zero_reg__
+  45 001e 1282      		std Z+2,__zero_reg__
+  46 0020 1182      		std Z+1,__zero_reg__
+  47               	/* epilogue start */
+  48 0022 0895      		ret
+  50               	.global	_ZN3AdcC1Ev
+  51               		.set	_ZN3AdcC1Ev,_ZN3AdcC2Ev
+  52               		.section	.text._ZN3AdcD2Ev,"ax",@progbits
+  53               	.global	_ZN3AdcD2Ev
+  55               	_ZN3AdcD2Ev:
+  56               	/* prologue: function */
+  57               	/* frame size = 0 */
+  58               	/* stack size = 0 */
+  59               	.L__stack_usage = 0
+  60               	/* epilogue start */
+  61 0000 0895      		ret
+  63               	.global	_ZN3AdcD1Ev
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s 			page 2
+
+
+  64               		.set	_ZN3AdcD1Ev,_ZN3AdcD2Ev
+  65               		.section	.text._ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE,"ax",@progbits
+  66               	.global	_ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE
+  68               	_ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE:
+  69               	/* prologue: function */
+  70               	/* frame size = 0 */
+  71               	/* stack size = 0 */
+  72               	.L__stack_usage = 0
+  73 0000 FC01      		movw r30,r24
+  74 0002 9091 7A00 		lds r25,122
+  75 0006 8091 7B00 		lds r24,123
+  76 000a 3091 7C00 		lds r19,124
+  77 000e 887F      		andi r24,lo8(-8)
+  78 0010 6F30      		cpi r22,15
+  79 0012 7105      		cpc r23,__zero_reg__
+  80 0014 01F4      		brne .L5
+  81 0016 9F7D      		andi r25,lo8(-33)
+  82               	.L6:
+  83 0018 3F73      		andi r19,lo8(63)
+  84 001a 50E4      		ldi r21,lo8(64)
+  85 001c 459F      		mul r20,r21
+  86 001e D001      		movw r26,r0
+  87 0020 1124      		clr __zero_reg__
+  88 0022 3A2B      		or r19,r26
+  89 0024 987F      		andi r25,lo8(-8)
+  90 0026 922B      		or r25,r18
+  91 0028 3093 7C00 		sts 124,r19
+  92 002c 9093 7A00 		sts 122,r25
+  93 0030 8093 7B00 		sts 123,r24
+  94 0034 7783      		std Z+7,r23
+  95 0036 6683      		std Z+6,r22
+  96 0038 4483      		std Z+4,r20
+  97 003a 2383      		std Z+3,r18
+  98 003c 8081      		ld r24,Z
+  99 003e 8260      		ori r24,lo8(1<<1)
+ 100 0040 8083      		st Z,r24
+ 101 0042 1282      		std Z+2,__zero_reg__
+ 102 0044 1182      		std Z+1,__zero_reg__
+ 103 0046 81E0      		ldi r24,lo8(1)
+ 104               	/* epilogue start */
+ 105 0048 0895      		ret
+ 106               	.L5:
+ 107 004a 9062      		ori r25,lo8(32)
+ 108 004c 862B      		or r24,r22
+ 109 004e 00C0      		rjmp .L6
+ 111               		.section	.text._ZN3Adc13setDataAdjustENS_10DataAdjustE,"ax",@progbits
+ 112               	.global	_ZN3Adc13setDataAdjustENS_10DataAdjustE
+ 114               	_ZN3Adc13setDataAdjustENS_10DataAdjustE:
+ 115               	/* prologue: function */
+ 116               	/* frame size = 0 */
+ 117               	/* stack size = 0 */
+ 118               	.L__stack_usage = 0
+ 119 0000 FC01      		movw r30,r24
+ 120 0002 8091 7C00 		lds r24,124
+ 121 0006 6111      		cpse r22,__zero_reg__
+ 122 0008 00C0      		rjmp .L8
+ 123 000a 8F7D      		andi r24,lo8(-33)
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s 			page 3
+
+
+ 124               	.L10:
+ 125 000c 8093 7C00 		sts 124,r24
+ 126 0010 8085      		ldd r24,Z+8
+ 127 0012 60FB      		bst r22,0
+ 128 0014 80F9      		bld r24,0
+ 129 0016 8087      		std Z+8,r24
+ 130 0018 1282      		std Z+2,__zero_reg__
+ 131 001a 1182      		std Z+1,__zero_reg__
+ 132 001c 81E0      		ldi r24,lo8(1)
+ 133               	/* epilogue start */
+ 134 001e 0895      		ret
+ 135               	.L8:
+ 136 0020 8062      		ori r24,lo8(32)
+ 137 0022 00C0      		rjmp .L10
+ 139               		.section	.text._ZN3Adc7setModeENS_4ModeE,"ax",@progbits
+ 140               	.global	_ZN3Adc7setModeENS_4ModeE
+ 142               	_ZN3Adc7setModeENS_4ModeE:
+ 143               	/* prologue: function */
+ 144               	/* frame size = 0 */
+ 145               	/* stack size = 0 */
+ 146               	.L__stack_usage = 0
+ 147 0000 FC01      		movw r30,r24
+ 148 0002 2091 7A00 		lds r18,122
+ 149 0006 9091 7B00 		lds r25,123
+ 150 000a 987F      		andi r25,lo8(-8)
+ 151 000c 6F30      		cpi r22,15
+ 152 000e 7105      		cpc r23,__zero_reg__
+ 153 0010 01F4      		brne .L12
+ 154 0012 2F7D      		andi r18,lo8(-33)
+ 155               	.L13:
+ 156 0014 2093 7A00 		sts 122,r18
+ 157 0018 9093 7B00 		sts 123,r25
+ 158 001c 7783      		std Z+7,r23
+ 159 001e 6683      		std Z+6,r22
+ 160 0020 1282      		std Z+2,__zero_reg__
+ 161 0022 1182      		std Z+1,__zero_reg__
+ 162 0024 81E0      		ldi r24,lo8(1)
+ 163               	/* epilogue start */
+ 164 0026 0895      		ret
+ 165               	.L12:
+ 166 0028 2062      		ori r18,lo8(32)
+ 167 002a 962B      		or r25,r22
+ 168 002c 00C0      		rjmp .L13
+ 170               		.section	.text._ZN3Adc12setPrescalerENS_9PrescalerE,"ax",@progbits
+ 171               	.global	_ZN3Adc12setPrescalerENS_9PrescalerE
+ 173               	_ZN3Adc12setPrescalerENS_9PrescalerE:
+ 174               	/* prologue: function */
+ 175               	/* frame size = 0 */
+ 176               	/* stack size = 0 */
+ 177               	.L__stack_usage = 0
+ 178 0000 FC01      		movw r30,r24
+ 179 0002 AAE7      		ldi r26,lo8(122)
+ 180 0004 B0E0      		ldi r27,0
+ 181 0006 9C91      		ld r25,X
+ 182 0008 987F      		andi r25,lo8(-8)
+ 183 000a 962B      		or r25,r22
+ 184 000c 9C93      		st X,r25
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s 			page 4
+
+
+ 185 000e 6383      		std Z+3,r22
+ 186 0010 1282      		std Z+2,__zero_reg__
+ 187 0012 1182      		std Z+1,__zero_reg__
+ 188 0014 81E0      		ldi r24,lo8(1)
+ 189               	/* epilogue start */
+ 190 0016 0895      		ret
+ 192               		.section	.text._ZN3Adc12setReferenceENS_9ReferenceE,"ax",@progbits
+ 193               	.global	_ZN3Adc12setReferenceENS_9ReferenceE
+ 195               	_ZN3Adc12setReferenceENS_9ReferenceE:
+ 196               	/* prologue: function */
+ 197               	/* frame size = 0 */
+ 198               	/* stack size = 0 */
+ 199               	.L__stack_usage = 0
+ 200 0000 FC01      		movw r30,r24
+ 201 0002 ACE7      		ldi r26,lo8(124)
+ 202 0004 B0E0      		ldi r27,0
+ 203 0006 9C91      		ld r25,X
+ 204 0008 9F73      		andi r25,lo8(63)
+ 205 000a 80E4      		ldi r24,lo8(64)
+ 206 000c 689F      		mul r22,r24
+ 207 000e 9001      		movw r18,r0
+ 208 0010 1124      		clr __zero_reg__
+ 209 0012 922B      		or r25,r18
+ 210 0014 9C93      		st X,r25
+ 211 0016 6483      		std Z+4,r22
+ 212 0018 1282      		std Z+2,__zero_reg__
+ 213 001a 1182      		std Z+1,__zero_reg__
+ 214 001c 81E0      		ldi r24,lo8(1)
+ 215               	/* epilogue start */
+ 216 001e 0895      		ret
+ 218               		.section	.text._ZN3Adc19disableDigitalInputENS_12DigitalInputE,"ax",@progbits
+ 219               	.global	_ZN3Adc19disableDigitalInputENS_12DigitalInputE
+ 221               	_ZN3Adc19disableDigitalInputENS_12DigitalInputE:
+ 222               	/* prologue: function */
+ 223               	/* frame size = 0 */
+ 224               	/* stack size = 0 */
+ 225               	.L__stack_usage = 0
+ 226 0000 22E0      		ldi r18,lo8(2)
+ 227 0002 30E0      		ldi r19,0
+ 228 0004 FC01      		movw r30,r24
+ 229 0006 3283      		std Z+2,r19
+ 230 0008 2183      		std Z+1,r18
+ 231 000a 80E0      		ldi r24,0
+ 232               	/* epilogue start */
+ 233 000c 0895      		ret
+ 235               		.section	.text._ZN3Adc18enableDigitalInputENS_12DigitalInputE,"ax",@progbits
+ 236               	.global	_ZN3Adc18enableDigitalInputENS_12DigitalInputE
+ 238               	_ZN3Adc18enableDigitalInputENS_12DigitalInputE:
+ 239               	/* prologue: function */
+ 240               	/* frame size = 0 */
+ 241               	/* stack size = 0 */
+ 242               	.L__stack_usage = 0
+ 243 0000 22E0      		ldi r18,lo8(2)
+ 244 0002 30E0      		ldi r19,0
+ 245 0004 FC01      		movw r30,r24
+ 246 0006 3283      		std Z+2,r19
+ 247 0008 2183      		std Z+1,r18
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s 			page 5
+
+
+ 248 000a 80E0      		ldi r24,0
+ 249               	/* epilogue start */
+ 250 000c 0895      		ret
+ 252               		.section	.text._ZN3Adc10setChannelENS_7ChannelE,"ax",@progbits
+ 253               	.global	_ZN3Adc10setChannelENS_7ChannelE
+ 255               	_ZN3Adc10setChannelENS_7ChannelE:
+ 256               	/* prologue: function */
+ 257               	/* frame size = 0 */
+ 258               	/* stack size = 0 */
+ 259               	.L__stack_usage = 0
+ 260 0000 FC01      		movw r30,r24
+ 261 0002 ACE7      		ldi r26,lo8(124)
+ 262 0004 B0E0      		ldi r27,0
+ 263 0006 9C91      		ld r25,X
+ 264 0008 907F      		andi r25,lo8(-16)
+ 265 000a 962B      		or r25,r22
+ 266 000c 9C93      		st X,r25
+ 267 000e 6583      		std Z+5,r22
+ 268 0010 1282      		std Z+2,__zero_reg__
+ 269 0012 1182      		std Z+1,__zero_reg__
+ 270 0014 81E0      		ldi r24,lo8(1)
+ 271               	/* epilogue start */
+ 272 0016 0895      		ret
+ 274               		.section	.text._ZN3Adc17activateInterruptEv,"ax",@progbits
+ 275               	.global	_ZN3Adc17activateInterruptEv
+ 277               	_ZN3Adc17activateInterruptEv:
+ 278               	/* prologue: function */
+ 279               	/* frame size = 0 */
+ 280               	/* stack size = 0 */
+ 281               	.L__stack_usage = 0
+ 282 0000 FC01      		movw r30,r24
+ 283 0002 AAE7      		ldi r26,lo8(122)
+ 284 0004 B0E0      		ldi r27,0
+ 285 0006 8C91      		ld r24,X
+ 286 0008 8860      		ori r24,lo8(8)
+ 287 000a 8C93      		st X,r24
+ 288 000c 8081      		ld r24,Z
+ 289 000e 8460      		ori r24,lo8(1<<2)
+ 290 0010 8083      		st Z,r24
+ 291 0012 1282      		std Z+2,__zero_reg__
+ 292 0014 1182      		std Z+1,__zero_reg__
+ 293 0016 81E0      		ldi r24,lo8(1)
+ 294               	/* epilogue start */
+ 295 0018 0895      		ret
+ 297               		.section	.text._ZN3Adc21clearInterruptRequestEv,"ax",@progbits
+ 298               	.global	_ZN3Adc21clearInterruptRequestEv
+ 300               	_ZN3Adc21clearInterruptRequestEv:
+ 301               	/* prologue: function */
+ 302               	/* frame size = 0 */
+ 303               	/* stack size = 0 */
+ 304               	.L__stack_usage = 0
+ 305 0000 EAE7      		ldi r30,lo8(122)
+ 306 0002 F0E0      		ldi r31,0
+ 307 0004 2081      		ld r18,Z
+ 308 0006 2061      		ori r18,lo8(16)
+ 309 0008 2083      		st Z,r18
+ 310 000a FC01      		movw r30,r24
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s 			page 6
+
+
+ 311 000c 1282      		std Z+2,__zero_reg__
+ 312 000e 1182      		std Z+1,__zero_reg__
+ 313 0010 81E0      		ldi r24,lo8(1)
+ 314               	/* epilogue start */
+ 315 0012 0895      		ret
+ 317               		.section	.text._ZN3Adc19deactivateInterruptEv,"ax",@progbits
+ 318               	.global	_ZN3Adc19deactivateInterruptEv
+ 320               	_ZN3Adc19deactivateInterruptEv:
+ 321               	/* prologue: function */
+ 322               	/* frame size = 0 */
+ 323               	/* stack size = 0 */
+ 324               	.L__stack_usage = 0
+ 325 0000 FC01      		movw r30,r24
+ 326 0002 AAE7      		ldi r26,lo8(122)
+ 327 0004 B0E0      		ldi r27,0
+ 328 0006 8C91      		ld r24,X
+ 329 0008 877F      		andi r24,lo8(-9)
+ 330 000a 8C93      		st X,r24
+ 331 000c 8081      		ld r24,Z
+ 332 000e 8B7F      		andi r24,lo8(~(1<<2))
+ 333 0010 8083      		st Z,r24
+ 334 0012 1282      		std Z+2,__zero_reg__
+ 335 0014 1182      		std Z+1,__zero_reg__
+ 336 0016 81E0      		ldi r24,lo8(1)
+ 337               	/* epilogue start */
+ 338 0018 0895      		ret
+ 340               		.section	.text._ZN3Adc6enableEv,"ax",@progbits
+ 341               	.global	_ZN3Adc6enableEv
+ 343               	_ZN3Adc6enableEv:
+ 344               	/* prologue: function */
+ 345               	/* frame size = 0 */
+ 346               	/* stack size = 0 */
+ 347               	.L__stack_usage = 0
+ 348 0000 FC01      		movw r30,r24
+ 349 0002 AAE7      		ldi r26,lo8(122)
+ 350 0004 B0E0      		ldi r27,0
+ 351 0006 8C91      		ld r24,X
+ 352 0008 8068      		ori r24,lo8(-128)
+ 353 000a 8C93      		st X,r24
+ 354 000c 8081      		ld r24,Z
+ 355 000e 8160      		ori r24,lo8(1<<0)
+ 356 0010 8083      		st Z,r24
+ 357 0012 1282      		std Z+2,__zero_reg__
+ 358 0014 1182      		std Z+1,__zero_reg__
+ 359 0016 81E0      		ldi r24,lo8(1)
+ 360               	/* epilogue start */
+ 361 0018 0895      		ret
+ 363               		.section	.text._ZN3Adc7disableEv,"ax",@progbits
+ 364               	.global	_ZN3Adc7disableEv
+ 366               	_ZN3Adc7disableEv:
+ 367               	/* prologue: function */
+ 368               	/* frame size = 0 */
+ 369               	/* stack size = 0 */
+ 370               	.L__stack_usage = 0
+ 371 0000 FC01      		movw r30,r24
+ 372 0002 AAE7      		ldi r26,lo8(122)
+ 373 0004 B0E0      		ldi r27,0
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s 			page 7
+
+
+ 374 0006 8C91      		ld r24,X
+ 375 0008 8F77      		andi r24,lo8(127)
+ 376 000a 8C93      		st X,r24
+ 377 000c 8081      		ld r24,Z
+ 378 000e 8E7F      		andi r24,lo8(~(1<<0))
+ 379 0010 8083      		st Z,r24
+ 380 0012 1282      		std Z+2,__zero_reg__
+ 381 0014 1182      		std Z+1,__zero_reg__
+ 382 0016 81E0      		ldi r24,lo8(1)
+ 383               	/* epilogue start */
+ 384 0018 0895      		ret
+ 386               		.section	.text._ZN3Adc12getLastErrorEv,"ax",@progbits
+ 387               	.global	_ZN3Adc12getLastErrorEv
+ 389               	_ZN3Adc12getLastErrorEv:
+ 390               	/* prologue: function */
+ 391               	/* frame size = 0 */
+ 392               	/* stack size = 0 */
+ 393               	.L__stack_usage = 0
+ 394 0000 FC01      		movw r30,r24
+ 395 0002 8181      		ldd r24,Z+1
+ 396 0004 9281      		ldd r25,Z+2
+ 397               	/* epilogue start */
+ 398 0006 0895      		ret
+ 400               		.section	.text._ZN3Adc15startConversionEv,"ax",@progbits
+ 401               	.global	_ZN3Adc15startConversionEv
+ 403               	_ZN3Adc15startConversionEv:
+ 404               	/* prologue: function */
+ 405               	/* frame size = 0 */
+ 406               	/* stack size = 0 */
+ 407               	.L__stack_usage = 0
+ 408 0000 EAE7      		ldi r30,lo8(122)
+ 409 0002 F0E0      		ldi r31,0
+ 410 0004 2081      		ld r18,Z
+ 411 0006 2064      		ori r18,lo8(64)
+ 412 0008 2083      		st Z,r18
+ 413 000a FC01      		movw r30,r24
+ 414 000c 1282      		std Z+2,__zero_reg__
+ 415 000e 1182      		std Z+1,__zero_reg__
+ 416 0010 81E0      		ldi r24,lo8(1)
+ 417               	/* epilogue start */
+ 418 0012 0895      		ret
+ 420               		.section	.text._ZN3Adc25waitUntilConversionFinishEv,"ax",@progbits
+ 421               	.global	_ZN3Adc25waitUntilConversionFinishEv
+ 423               	_ZN3Adc25waitUntilConversionFinishEv:
+ 424               	/* prologue: function */
+ 425               	/* frame size = 0 */
+ 426               	/* stack size = 0 */
+ 427               	.L__stack_usage = 0
+ 428               	.L27:
+ 429 0000 2091 7A00 		lds r18,122
+ 430 0004 26FD      		sbrc r18,6
+ 431 0006 00C0      		rjmp .L27
+ 432 0008 FC01      		movw r30,r24
+ 433 000a 1282      		std Z+2,__zero_reg__
+ 434 000c 1182      		std Z+1,__zero_reg__
+ 435 000e 81E0      		ldi r24,lo8(1)
+ 436               	/* epilogue start */
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s 			page 8
+
+
+ 437 0010 0895      		ret
+ 439               		.section	.text._Z29adcConversionCompleteCallbackv,"ax",@progbits
+ 440               		.weak	_Z29adcConversionCompleteCallbackv
+ 442               	_Z29adcConversionCompleteCallbackv:
+ 443               	/* prologue: function */
+ 444               	/* frame size = 0 */
+ 445               	/* stack size = 0 */
+ 446               	.L__stack_usage = 0
+ 447               	/* epilogue start */
+ 448 0000 0895      		ret
+ 450               		.section	.text.__vector_21,"ax",@progbits
+ 451               	.global	__vector_21
+ 453               	__vector_21:
+ 454 0000 1F92      		push r1
+ 455 0002 0F92      		push r0
+ 456 0004 0FB6      		in r0,__SREG__
+ 457 0006 0F92      		push r0
+ 458 0008 1124      		clr __zero_reg__
+ 459 000a 2F93      		push r18
+ 460 000c 3F93      		push r19
+ 461 000e 4F93      		push r20
+ 462 0010 5F93      		push r21
+ 463 0012 6F93      		push r22
+ 464 0014 7F93      		push r23
+ 465 0016 8F93      		push r24
+ 466 0018 9F93      		push r25
+ 467 001a AF93      		push r26
+ 468 001c BF93      		push r27
+ 469 001e EF93      		push r30
+ 470 0020 FF93      		push r31
+ 471               	/* prologue: Signal */
+ 472               	/* frame size = 0 */
+ 473               	/* stack size = 15 */
+ 474               	.L__stack_usage = 15
+ 475 0022 0E94 0000 		call _Z29adcConversionCompleteCallbackv
+ 476               	/* epilogue start */
+ 477 0026 FF91      		pop r31
+ 478 0028 EF91      		pop r30
+ 479 002a BF91      		pop r27
+ 480 002c AF91      		pop r26
+ 481 002e 9F91      		pop r25
+ 482 0030 8F91      		pop r24
+ 483 0032 7F91      		pop r23
+ 484 0034 6F91      		pop r22
+ 485 0036 5F91      		pop r21
+ 486 0038 4F91      		pop r20
+ 487 003a 3F91      		pop r19
+ 488 003c 2F91      		pop r18
+ 489 003e 0F90      		pop r0
+ 490 0040 0FBE      		out __SREG__,r0
+ 491 0042 0F90      		pop r0
+ 492 0044 1F90      		pop r1
+ 493 0046 1895      		reti
+ 495               		.section	.text.startup._GLOBAL__sub_I_adc,"ax",@progbits
+ 497               	_GLOBAL__sub_I_adc:
+ 498               	/* prologue: function */
+ 499               	/* frame size = 0 */
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s 			page 9
+
+
+ 500               	/* stack size = 0 */
+ 501               	.L__stack_usage = 0
+ 502 0000 80E0      		ldi r24,lo8(adc)
+ 503 0002 90E0      		ldi r25,hi8(adc)
+ 504 0004 0C94 0000 		jmp _ZN3AdcC1Ev
+ 506               		.global __do_global_ctors
+ 507               		.section .ctors,"a",@progbits
+ 508               		.p2align	1
+ 509 0000 0000      		.word	gs(_GLOBAL__sub_I_adc)
+ 510               	.global	adc
+ 511               		.section	.bss.adc,"aw",@nobits
+ 514               	adc:
+ 515 0000 0000 0000 		.zero	9
+ 515      0000 0000 
+ 515      00
+ 516               		.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.7.0_1796) 7.3.0"
+ 517               	.global __do_clear_bss
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 funsapeLibAdc.cpp
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:25     .text._ZN3AdcC2Ev:0000000000000000 _ZN3AdcC2Ev
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:25     .text._ZN3AdcC2Ev:0000000000000000 _ZN3AdcC1Ev
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:55     .text._ZN3AdcD2Ev:0000000000000000 _ZN3AdcD2Ev
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:55     .text._ZN3AdcD2Ev:0000000000000000 _ZN3AdcD1Ev
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:68     .text._ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE:0000000000000000 _ZN3Adc4initENS_4ModeENS_9ReferenceENS_9PrescalerE
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:114    .text._ZN3Adc13setDataAdjustENS_10DataAdjustE:0000000000000000 _ZN3Adc13setDataAdjustENS_10DataAdjustE
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:142    .text._ZN3Adc7setModeENS_4ModeE:0000000000000000 _ZN3Adc7setModeENS_4ModeE
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:173    .text._ZN3Adc12setPrescalerENS_9PrescalerE:0000000000000000 _ZN3Adc12setPrescalerENS_9PrescalerE
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:195    .text._ZN3Adc12setReferenceENS_9ReferenceE:0000000000000000 _ZN3Adc12setReferenceENS_9ReferenceE
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:221    .text._ZN3Adc19disableDigitalInputENS_12DigitalInputE:0000000000000000 _ZN3Adc19disableDigitalInputENS_12DigitalInputE
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:238    .text._ZN3Adc18enableDigitalInputENS_12DigitalInputE:0000000000000000 _ZN3Adc18enableDigitalInputENS_12DigitalInputE
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:255    .text._ZN3Adc10setChannelENS_7ChannelE:0000000000000000 _ZN3Adc10setChannelENS_7ChannelE
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:277    .text._ZN3Adc17activateInterruptEv:0000000000000000 _ZN3Adc17activateInterruptEv
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:300    .text._ZN3Adc21clearInterruptRequestEv:0000000000000000 _ZN3Adc21clearInterruptRequestEv
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:320    .text._ZN3Adc19deactivateInterruptEv:0000000000000000 _ZN3Adc19deactivateInterruptEv
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:343    .text._ZN3Adc6enableEv:0000000000000000 _ZN3Adc6enableEv
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:366    .text._ZN3Adc7disableEv:0000000000000000 _ZN3Adc7disableEv
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:389    .text._ZN3Adc12getLastErrorEv:0000000000000000 _ZN3Adc12getLastErrorEv
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:403    .text._ZN3Adc15startConversionEv:0000000000000000 _ZN3Adc15startConversionEv
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:423    .text._ZN3Adc25waitUntilConversionFinishEv:0000000000000000 _ZN3Adc25waitUntilConversionFinishEv
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:442    .text._Z29adcConversionCompleteCallbackv:0000000000000000 _Z29adcConversionCompleteCallbackv
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:453    .text.__vector_21:0000000000000000 __vector_21
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:497    .text.startup._GLOBAL__sub_I_adc:0000000000000000 _GLOBAL__sub_I_adc
+C:\Users\Docker\AppData\Local\Temp\cc69AP6G.s:514    .bss.adc:0000000000000000 adc
+
+UNDEFINED SYMBOLS
+__do_global_ctors
+__do_clear_bss

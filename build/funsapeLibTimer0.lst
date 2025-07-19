@@ -1,0 +1,421 @@
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s 			page 1
+
+
+   1               		.file	"funsapeLibTimer0.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN6Timer0C2Ev,"ax",@progbits
+  23               	.global	_ZN6Timer0C2Ev
+  25               	_ZN6Timer0C2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 FC01      		movw r30,r24
+  31 0002 1182      		std Z+1,__zero_reg__
+  32 0004 1282      		std Z+2,__zero_reg__
+  33 0006 8081      		ld r24,Z
+  34 0008 8E7F      		andi r24,lo8(~(1<<0))
+  35 000a 8083      		st Z,r24
+  36 000c 1482      		std Z+4,__zero_reg__
+  37 000e 1382      		std Z+3,__zero_reg__
+  38               	/* epilogue start */
+  39 0010 0895      		ret
+  41               	.global	_ZN6Timer0C1Ev
+  42               		.set	_ZN6Timer0C1Ev,_ZN6Timer0C2Ev
+  43               		.section	.text._ZN6Timer0D2Ev,"ax",@progbits
+  44               	.global	_ZN6Timer0D2Ev
+  46               	_ZN6Timer0D2Ev:
+  47               	/* prologue: function */
+  48               	/* frame size = 0 */
+  49               	/* stack size = 0 */
+  50               	.L__stack_usage = 0
+  51               	/* epilogue start */
+  52 0000 0895      		ret
+  54               	.global	_ZN6Timer0D1Ev
+  55               		.set	_ZN6Timer0D1Ev,_ZN6Timer0D2Ev
+  56               		.section	.text._ZN6Timer04initENS_4ModeENS_11ClockSourceE,"ax",@progbits
+  57               	.global	_ZN6Timer04initENS_4ModeENS_11ClockSourceE
+  59               	_ZN6Timer04initENS_4ModeENS_11ClockSourceE:
+  60               	/* prologue: function */
+  61               	/* frame size = 0 */
+  62               	/* stack size = 0 */
+  63               	.L__stack_usage = 0
+  64 0000 FC01      		movw r30,r24
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s 			page 2
+
+
+  65 0002 84B5      		in r24,0x24
+  66 0004 95B5      		in r25,0x25
+  67 0006 8C7F      		andi r24,lo8(-4)
+  68 0008 262F      		mov r18,r22
+  69 000a 2370      		andi r18,lo8(3)
+  70 000c 822B      		or r24,r18
+  71 000e 262F      		mov r18,r22
+  72 0010 30E0      		ldi r19,0
+  73 0012 3595      		asr r19
+  74 0014 2795      		ror r18
+  75 0016 3595      		asr r19
+  76 0018 2795      		ror r18
+  77 001a 73E0      		ldi r23,3
+  78               		1:
+  79 001c 220F      		lsl r18
+  80 001e 331F      		rol r19
+  81 0020 7A95      		dec r23
+  82 0022 01F4      		brne 1b
+  83 0024 977F      		andi r25,lo8(-9)
+  84 0026 922B      		or r25,r18
+  85 0028 987F      		andi r25,lo8(-8)
+  86 002a 942B      		or r25,r20
+  87 002c 84BD      		out 0x24,r24
+  88 002e 95BD      		out 0x25,r25
+  89 0030 6283      		std Z+2,r22
+  90 0032 4183      		std Z+1,r20
+  91 0034 8081      		ld r24,Z
+  92 0036 8160      		ori r24,lo8(1<<0)
+  93 0038 8083      		st Z,r24
+  94 003a 1482      		std Z+4,__zero_reg__
+  95 003c 1382      		std Z+3,__zero_reg__
+  96 003e 81E0      		ldi r24,lo8(1)
+  97               	/* epilogue start */
+  98 0040 0895      		ret
+ 100               		.section	.text._ZN6Timer07setModeENS_4ModeE,"ax",@progbits
+ 101               	.global	_ZN6Timer07setModeENS_4ModeE
+ 103               	_ZN6Timer07setModeENS_4ModeE:
+ 104               	/* prologue: function */
+ 105               	/* frame size = 0 */
+ 106               	/* stack size = 0 */
+ 107               	.L__stack_usage = 0
+ 108 0000 FC01      		movw r30,r24
+ 109 0002 24B5      		in r18,0x24
+ 110 0004 95B5      		in r25,0x25
+ 111 0006 2C7F      		andi r18,lo8(-4)
+ 112 0008 862F      		mov r24,r22
+ 113 000a 8370      		andi r24,lo8(3)
+ 114 000c 282B      		or r18,r24
+ 115 000e 462F      		mov r20,r22
+ 116 0010 50E0      		ldi r21,0
+ 117 0012 5595      		asr r21
+ 118 0014 4795      		ror r20
+ 119 0016 5595      		asr r21
+ 120 0018 4795      		ror r20
+ 121 001a 33E0      		ldi r19,3
+ 122               		1:
+ 123 001c 440F      		lsl r20
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s 			page 3
+
+
+ 124 001e 551F      		rol r21
+ 125 0020 3A95      		dec r19
+ 126 0022 01F4      		brne 1b
+ 127 0024 977F      		andi r25,lo8(-9)
+ 128 0026 942B      		or r25,r20
+ 129 0028 24BD      		out 0x24,r18
+ 130 002a 95BD      		out 0x25,r25
+ 131 002c 6283      		std Z+2,r22
+ 132 002e 1482      		std Z+4,__zero_reg__
+ 133 0030 1382      		std Z+3,__zero_reg__
+ 134 0032 81E0      		ldi r24,lo8(1)
+ 135               	/* epilogue start */
+ 136 0034 0895      		ret
+ 138               		.section	.text._ZN6Timer014setClockSourceENS_11ClockSourceE,"ax",@progbits
+ 139               	.global	_ZN6Timer014setClockSourceENS_11ClockSourceE
+ 141               	_ZN6Timer014setClockSourceENS_11ClockSourceE:
+ 142               	/* prologue: function */
+ 143               	/* frame size = 0 */
+ 144               	/* stack size = 0 */
+ 145               	.L__stack_usage = 0
+ 146 0000 FC01      		movw r30,r24
+ 147 0002 95B5      		in r25,0x25
+ 148 0004 987F      		andi r25,lo8(-8)
+ 149 0006 962B      		or r25,r22
+ 150 0008 95BD      		out 0x25,r25
+ 151 000a 6183      		std Z+1,r22
+ 152 000c 1482      		std Z+4,__zero_reg__
+ 153 000e 1382      		std Z+3,__zero_reg__
+ 154 0010 81E0      		ldi r24,lo8(1)
+ 155               	/* epilogue start */
+ 156 0012 0895      		ret
+ 158               		.section	.text._ZN6Timer013setOutputModeENS_10OutputModeES0_,"ax",@progbits
+ 159               	.global	_ZN6Timer013setOutputModeENS_10OutputModeES0_
+ 161               	_ZN6Timer013setOutputModeENS_10OutputModeES0_:
+ 162               	/* prologue: function */
+ 163               	/* frame size = 0 */
+ 164               	/* stack size = 0 */
+ 165               	.L__stack_usage = 0
+ 166 0000 24B5      		in r18,0x24
+ 167 0002 2F73      		andi r18,lo8(63)
+ 168 0004 30E4      		ldi r19,lo8(64)
+ 169 0006 639F      		mul r22,r19
+ 170 0008 B001      		movw r22,r0
+ 171 000a 1124      		clr __zero_reg__
+ 172 000c 622B      		or r22,r18
+ 173 000e 6F7C      		andi r22,lo8(-49)
+ 174 0010 E0E1      		ldi r30,lo8(16)
+ 175 0012 4E9F      		mul r20,r30
+ 176 0014 A001      		movw r20,r0
+ 177 0016 1124      		clr __zero_reg__
+ 178 0018 462B      		or r20,r22
+ 179 001a 44BD      		out 0x24,r20
+ 180 001c FC01      		movw r30,r24
+ 181 001e 1482      		std Z+4,__zero_reg__
+ 182 0020 1382      		std Z+3,__zero_reg__
+ 183 0022 81E0      		ldi r24,lo8(1)
+ 184               	/* epilogue start */
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s 			page 4
+
+
+ 185 0024 0895      		ret
+ 187               		.section	.text._ZN6Timer012getLastErrorEv,"ax",@progbits
+ 188               	.global	_ZN6Timer012getLastErrorEv
+ 190               	_ZN6Timer012getLastErrorEv:
+ 191               	/* prologue: function */
+ 192               	/* frame size = 0 */
+ 193               	/* stack size = 0 */
+ 194               	.L__stack_usage = 0
+ 195 0000 FC01      		movw r30,r24
+ 196 0002 8381      		ldd r24,Z+3
+ 197 0004 9481      		ldd r25,Z+4
+ 198               	/* epilogue start */
+ 199 0006 0895      		ret
+ 201               		.section	.text._Z22timer0CompareACallbackv,"ax",@progbits
+ 202               		.weak	_Z22timer0CompareACallbackv
+ 204               	_Z22timer0CompareACallbackv:
+ 205               	/* prologue: function */
+ 206               	/* frame size = 0 */
+ 207               	/* stack size = 0 */
+ 208               	.L__stack_usage = 0
+ 209               	/* epilogue start */
+ 210 0000 0895      		ret
+ 212               		.section	.text._Z22timer0CompareBCallbackv,"ax",@progbits
+ 213               		.weak	_Z22timer0CompareBCallbackv
+ 215               	_Z22timer0CompareBCallbackv:
+ 216               	/* prologue: function */
+ 217               	/* frame size = 0 */
+ 218               	/* stack size = 0 */
+ 219               	.L__stack_usage = 0
+ 220               	/* epilogue start */
+ 221 0000 0895      		ret
+ 223               		.section	.text._Z22timer0OverflowCallbackv,"ax",@progbits
+ 224               		.weak	_Z22timer0OverflowCallbackv
+ 226               	_Z22timer0OverflowCallbackv:
+ 227               	/* prologue: function */
+ 228               	/* frame size = 0 */
+ 229               	/* stack size = 0 */
+ 230               	.L__stack_usage = 0
+ 231               	/* epilogue start */
+ 232 0000 0895      		ret
+ 234               		.section	.text.__vector_14,"ax",@progbits
+ 235               	.global	__vector_14
+ 237               	__vector_14:
+ 238 0000 1F92      		push r1
+ 239 0002 0F92      		push r0
+ 240 0004 0FB6      		in r0,__SREG__
+ 241 0006 0F92      		push r0
+ 242 0008 1124      		clr __zero_reg__
+ 243 000a 2F93      		push r18
+ 244 000c 3F93      		push r19
+ 245 000e 4F93      		push r20
+ 246 0010 5F93      		push r21
+ 247 0012 6F93      		push r22
+ 248 0014 7F93      		push r23
+ 249 0016 8F93      		push r24
+ 250 0018 9F93      		push r25
+ 251 001a AF93      		push r26
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s 			page 5
+
+
+ 252 001c BF93      		push r27
+ 253 001e EF93      		push r30
+ 254 0020 FF93      		push r31
+ 255               	/* prologue: Signal */
+ 256               	/* frame size = 0 */
+ 257               	/* stack size = 15 */
+ 258               	.L__stack_usage = 15
+ 259 0022 0E94 0000 		call _Z22timer0CompareACallbackv
+ 260               	/* epilogue start */
+ 261 0026 FF91      		pop r31
+ 262 0028 EF91      		pop r30
+ 263 002a BF91      		pop r27
+ 264 002c AF91      		pop r26
+ 265 002e 9F91      		pop r25
+ 266 0030 8F91      		pop r24
+ 267 0032 7F91      		pop r23
+ 268 0034 6F91      		pop r22
+ 269 0036 5F91      		pop r21
+ 270 0038 4F91      		pop r20
+ 271 003a 3F91      		pop r19
+ 272 003c 2F91      		pop r18
+ 273 003e 0F90      		pop r0
+ 274 0040 0FBE      		out __SREG__,r0
+ 275 0042 0F90      		pop r0
+ 276 0044 1F90      		pop r1
+ 277 0046 1895      		reti
+ 279               		.section	.text.__vector_15,"ax",@progbits
+ 280               	.global	__vector_15
+ 282               	__vector_15:
+ 283 0000 1F92      		push r1
+ 284 0002 0F92      		push r0
+ 285 0004 0FB6      		in r0,__SREG__
+ 286 0006 0F92      		push r0
+ 287 0008 1124      		clr __zero_reg__
+ 288 000a 2F93      		push r18
+ 289 000c 3F93      		push r19
+ 290 000e 4F93      		push r20
+ 291 0010 5F93      		push r21
+ 292 0012 6F93      		push r22
+ 293 0014 7F93      		push r23
+ 294 0016 8F93      		push r24
+ 295 0018 9F93      		push r25
+ 296 001a AF93      		push r26
+ 297 001c BF93      		push r27
+ 298 001e EF93      		push r30
+ 299 0020 FF93      		push r31
+ 300               	/* prologue: Signal */
+ 301               	/* frame size = 0 */
+ 302               	/* stack size = 15 */
+ 303               	.L__stack_usage = 15
+ 304 0022 0E94 0000 		call _Z22timer0CompareBCallbackv
+ 305               	/* epilogue start */
+ 306 0026 FF91      		pop r31
+ 307 0028 EF91      		pop r30
+ 308 002a BF91      		pop r27
+ 309 002c AF91      		pop r26
+ 310 002e 9F91      		pop r25
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s 			page 6
+
+
+ 311 0030 8F91      		pop r24
+ 312 0032 7F91      		pop r23
+ 313 0034 6F91      		pop r22
+ 314 0036 5F91      		pop r21
+ 315 0038 4F91      		pop r20
+ 316 003a 3F91      		pop r19
+ 317 003c 2F91      		pop r18
+ 318 003e 0F90      		pop r0
+ 319 0040 0FBE      		out __SREG__,r0
+ 320 0042 0F90      		pop r0
+ 321 0044 1F90      		pop r1
+ 322 0046 1895      		reti
+ 324               		.section	.text.__vector_16,"ax",@progbits
+ 325               	.global	__vector_16
+ 327               	__vector_16:
+ 328 0000 1F92      		push r1
+ 329 0002 0F92      		push r0
+ 330 0004 0FB6      		in r0,__SREG__
+ 331 0006 0F92      		push r0
+ 332 0008 1124      		clr __zero_reg__
+ 333 000a 2F93      		push r18
+ 334 000c 3F93      		push r19
+ 335 000e 4F93      		push r20
+ 336 0010 5F93      		push r21
+ 337 0012 6F93      		push r22
+ 338 0014 7F93      		push r23
+ 339 0016 8F93      		push r24
+ 340 0018 9F93      		push r25
+ 341 001a AF93      		push r26
+ 342 001c BF93      		push r27
+ 343 001e EF93      		push r30
+ 344 0020 FF93      		push r31
+ 345               	/* prologue: Signal */
+ 346               	/* frame size = 0 */
+ 347               	/* stack size = 15 */
+ 348               	.L__stack_usage = 15
+ 349 0022 0E94 0000 		call _Z22timer0OverflowCallbackv
+ 350               	/* epilogue start */
+ 351 0026 FF91      		pop r31
+ 352 0028 EF91      		pop r30
+ 353 002a BF91      		pop r27
+ 354 002c AF91      		pop r26
+ 355 002e 9F91      		pop r25
+ 356 0030 8F91      		pop r24
+ 357 0032 7F91      		pop r23
+ 358 0034 6F91      		pop r22
+ 359 0036 5F91      		pop r21
+ 360 0038 4F91      		pop r20
+ 361 003a 3F91      		pop r19
+ 362 003c 2F91      		pop r18
+ 363 003e 0F90      		pop r0
+ 364 0040 0FBE      		out __SREG__,r0
+ 365 0042 0F90      		pop r0
+ 366 0044 1F90      		pop r1
+ 367 0046 1895      		reti
+ 369               		.section	.text.startup._GLOBAL__sub_I_timer0,"ax",@progbits
+ 371               	_GLOBAL__sub_I_timer0:
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s 			page 7
+
+
+ 372               	/* prologue: function */
+ 373               	/* frame size = 0 */
+ 374               	/* stack size = 0 */
+ 375               	.L__stack_usage = 0
+ 376 0000 E0E0      		ldi r30,lo8(timer0)
+ 377 0002 F0E0      		ldi r31,hi8(timer0)
+ 378 0004 1182      		std Z+1,__zero_reg__
+ 379 0006 1282      		std Z+2,__zero_reg__
+ 380 0008 8081      		ld r24,Z
+ 381 000a 8E7F      		andi r24,lo8(~(1<<0))
+ 382 000c 8083      		st Z,r24
+ 383 000e 1482      		std Z+4,__zero_reg__
+ 384 0010 1382      		std Z+3,__zero_reg__
+ 385               	/* epilogue start */
+ 386 0012 0895      		ret
+ 388               		.global __do_global_ctors
+ 389               		.section .ctors,"a",@progbits
+ 390               		.p2align	1
+ 391 0000 0000      		.word	gs(_GLOBAL__sub_I_timer0)
+ 392               	.global	timer0
+ 393               		.section	.bss.timer0,"aw",@nobits
+ 396               	timer0:
+ 397 0000 0000 0000 		.zero	5
+ 397      00
+ 398               		.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.7.0_1796) 7.3.0"
+ 399               	.global __do_clear_bss
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s 			page 8
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 funsapeLibTimer0.cpp
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:25     .text._ZN6Timer0C2Ev:0000000000000000 _ZN6Timer0C2Ev
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:25     .text._ZN6Timer0C2Ev:0000000000000000 _ZN6Timer0C1Ev
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:46     .text._ZN6Timer0D2Ev:0000000000000000 _ZN6Timer0D2Ev
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:46     .text._ZN6Timer0D2Ev:0000000000000000 _ZN6Timer0D1Ev
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:59     .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000000000000000 _ZN6Timer04initENS_4ModeENS_11ClockSourceE
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:103    .text._ZN6Timer07setModeENS_4ModeE:0000000000000000 _ZN6Timer07setModeENS_4ModeE
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:141    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000000000000 _ZN6Timer014setClockSourceENS_11ClockSourceE
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:161    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000000000000000 _ZN6Timer013setOutputModeENS_10OutputModeES0_
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:190    .text._ZN6Timer012getLastErrorEv:0000000000000000 _ZN6Timer012getLastErrorEv
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:204    .text._Z22timer0CompareACallbackv:0000000000000000 _Z22timer0CompareACallbackv
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:215    .text._Z22timer0CompareBCallbackv:0000000000000000 _Z22timer0CompareBCallbackv
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:226    .text._Z22timer0OverflowCallbackv:0000000000000000 _Z22timer0OverflowCallbackv
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:237    .text.__vector_14:0000000000000000 __vector_14
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:282    .text.__vector_15:0000000000000000 __vector_15
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:327    .text.__vector_16:0000000000000000 __vector_16
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:371    .text.startup._GLOBAL__sub_I_timer0:0000000000000000 _GLOBAL__sub_I_timer0
+C:\Users\Docker\AppData\Local\Temp\cc16DnB8.s:396    .bss.timer0:0000000000000000 timer0
+
+UNDEFINED SYMBOLS
+__do_global_ctors
+__do_clear_bss

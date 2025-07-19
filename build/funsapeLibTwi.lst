@@ -1,0 +1,1159 @@
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 1
+
+
+   1               		.file	"funsapeLibTwi.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._ZN3Bus8sendDataEPhj,"axG",@progbits,_ZN3Bus8sendDataEPhj,comdat
+   9               		.weak	_ZN3Bus8sendDataEPhj
+  11               	_ZN3Bus8sendDataEPhj:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 27E0      		ldi r18,lo8(7)
+  17 0002 30E0      		ldi r19,0
+  18 0004 FC01      		movw r30,r24
+  19 0006 3383      		std Z+3,r19
+  20 0008 2283      		std Z+2,r18
+  21 000a 80E0      		ldi r24,0
+  22               	/* epilogue start */
+  23 000c 0895      		ret
+  25               		.section	.text._ZN3Bus8sendDataEPKhPhj,"axG",@progbits,_ZN3Bus8sendDataEPKhPhj,comdat
+  26               		.weak	_ZN3Bus8sendDataEPKhPhj
+  28               	_ZN3Bus8sendDataEPKhPhj:
+  29               	/* prologue: function */
+  30               	/* frame size = 0 */
+  31               	/* stack size = 0 */
+  32               	.L__stack_usage = 0
+  33 0000 27E0      		ldi r18,lo8(7)
+  34 0002 30E0      		ldi r19,0
+  35 0004 FC01      		movw r30,r24
+  36 0006 3383      		std Z+3,r19
+  37 0008 2283      		std Z+2,r18
+  38 000a 80E0      		ldi r24,0
+  39               	/* epilogue start */
+  40 000c 0895      		ret
+  42               		.section	.text._ZN3Bus9setDeviceEPFvvES1_,"axG",@progbits,_ZN3Bus9setDeviceEPFvvES1_,comdat
+  43               		.weak	_ZN3Bus9setDeviceEPFvvES1_
+  45               	_ZN3Bus9setDeviceEPFvvES1_:
+  46               	/* prologue: function */
+  47               	/* frame size = 0 */
+  48               	/* stack size = 0 */
+  49               	.L__stack_usage = 0
+  50 0000 27E0      		ldi r18,lo8(7)
+  51 0002 30E0      		ldi r19,0
+  52 0004 FC01      		movw r30,r24
+  53 0006 3383      		std Z+3,r19
+  54 0008 2283      		std Z+2,r18
+  55 000a 80E0      		ldi r24,0
+  56               	/* epilogue start */
+  57 000c 0895      		ret
+  59               		.section	.text._ZN3Twi9setDeviceEjb,"ax",@progbits
+  60               	.global	_ZN3Twi9setDeviceEjb
+  62               	_ZN3Twi9setDeviceEjb:
+  63               	/* prologue: function */
+  64               	/* frame size = 0 */
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 2
+
+
+  65               	/* stack size = 0 */
+  66               	.L__stack_usage = 0
+  67 0000 FC01      		movw r30,r24
+  68 0002 962F      		mov r25,r22
+  69 0004 990F      		lsl r25
+  70 0006 8485      		ldd r24,Z+12
+  71 0008 8170      		andi r24,lo8(1)
+  72 000a 892B      		or r24,r25
+  73 000c 8487      		std Z+12,r24
+  74 000e 661F      		rol r22
+  75 0010 6627      		clr r22
+  76 0012 661F      		rol r22
+  77 0014 9585      		ldd r25,Z+13
+  78 0016 987F      		andi r25,lo8(-8)
+  79 0018 7370      		andi r23,lo8(3)
+  80 001a 872F      		mov r24,r23
+  81 001c 880F      		lsl r24
+  82 001e 792F      		mov r23,r25
+  83 0020 762B      		or r23,r22
+  84 0022 782B      		or r23,r24
+  85 0024 40FB      		bst r20,0
+  86 0026 73F9      		bld r23,3
+  87 0028 7587      		std Z+13,r23
+  88 002a 8681      		ldd r24,Z+6
+  89 002c 8160      		ori r24,lo8(1<<0)
+  90 002e 8683      		std Z+6,r24
+  91 0030 1582      		std Z+5,__zero_reg__
+  92 0032 1482      		std Z+4,__zero_reg__
+  93 0034 81E0      		ldi r24,lo8(1)
+  94               	/* epilogue start */
+  95 0036 0895      		ret
+  97               		.section	.text._ZN3Twi10getBusTypeEv,"ax",@progbits
+  98               	.global	_ZN3Twi10getBusTypeEv
+ 100               	_ZN3Twi10getBusTypeEv:
+ 101               	/* prologue: function */
+ 102               	/* frame size = 0 */
+ 103               	/* stack size = 0 */
+ 104               	.L__stack_usage = 0
+ 105 0000 85E0      		ldi r24,lo8(5)
+ 106 0002 90E0      		ldi r25,0
+ 107               	/* epilogue start */
+ 108 0004 0895      		ret
+ 110               		.section	.text._ZN3Twi12getLastErrorEv,"ax",@progbits
+ 111               	.global	_ZN3Twi12getLastErrorEv
+ 113               	_ZN3Twi12getLastErrorEv:
+ 114               	/* prologue: function */
+ 115               	/* frame size = 0 */
+ 116               	/* stack size = 0 */
+ 117               	.L__stack_usage = 0
+ 118 0000 FC01      		movw r30,r24
+ 119 0002 8481      		ldd r24,Z+4
+ 120 0004 9581      		ldd r25,Z+5
+ 121               	/* epilogue start */
+ 122 0006 0895      		ret
+ 124               		.section	.text._Z7getTickv,"ax",@progbits
+ 125               		.weak	_Z7getTickv
+ 127               	_Z7getTickv:
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 3
+
+
+ 128               	/* prologue: function */
+ 129               	/* frame size = 0 */
+ 130               	/* stack size = 0 */
+ 131               	.L__stack_usage = 0
+ 132 0000 60E0      		ldi r22,0
+ 133 0002 70E0      		ldi r23,0
+ 134 0004 CB01      		movw r24,r22
+ 135               	/* epilogue start */
+ 136 0006 0895      		ret
+ 138               		.section	.text._ZN3TwiC2Ev,"ax",@progbits
+ 139               	.global	_ZN3TwiC2Ev
+ 141               	_ZN3TwiC2Ev:
+ 142               	/* prologue: function */
+ 143               	/* frame size = 0 */
+ 144               	/* stack size = 0 */
+ 145               	.L__stack_usage = 0
+ 146 0000 FC01      		movw r30,r24
+ 147 0002 80E0      		ldi r24,lo8(_ZTV3Twi+4)
+ 148 0004 90E0      		ldi r25,hi8(_ZTV3Twi+4)
+ 149 0006 9183      		std Z+1,r25
+ 150 0008 8083      		st Z,r24
+ 151 000a 108A      		std Z+16,__zero_reg__
+ 152 000c 1786      		std Z+15,__zero_reg__
+ 153 000e 8685      		ldd r24,Z+14
+ 154 0010 887F      		andi r24,lo8(-8)
+ 155 0012 8687      		std Z+14,r24
+ 156 0014 118A      		std Z+17,__zero_reg__
+ 157 0016 8289      		ldd r24,Z+18
+ 158 0018 807C      		andi r24,lo8(-64)
+ 159 001a 828B      		std Z+18,r24
+ 160 001c 8681      		ldd r24,Z+6
+ 161 001e 1486      		std Z+12,__zero_reg__
+ 162 0020 8E7F      		andi r24,lo8(-2)
+ 163 0022 8D7F      		andi r24,lo8(~(1<<1))
+ 164 0024 8683      		std Z+6,r24
+ 165 0026 88EF      		ldi r24,lo8(-8)
+ 166 0028 90E0      		ldi r25,0
+ 167 002a 9187      		std Z+9,r25
+ 168 002c 8087      		std Z+8,r24
+ 169 002e 84E1      		ldi r24,lo8(20)
+ 170 0030 90E0      		ldi r25,0
+ 171 0032 9387      		std Z+11,r25
+ 172 0034 8287      		std Z+10,r24
+ 173 0036 1782      		std Z+7,__zero_reg__
+ 174 0038 1586      		std Z+13,__zero_reg__
+ 175 003a 1582      		std Z+5,__zero_reg__
+ 176 003c 1482      		std Z+4,__zero_reg__
+ 177               	/* epilogue start */
+ 178 003e 0895      		ret
+ 180               	.global	_ZN3TwiC1Ev
+ 181               		.set	_ZN3TwiC1Ev,_ZN3TwiC2Ev
+ 182               		.section	.text._ZN3TwiD2Ev,"ax",@progbits
+ 183               	.global	_ZN3TwiD2Ev
+ 185               	_ZN3TwiD2Ev:
+ 186               	/* prologue: function */
+ 187               	/* frame size = 0 */
+ 188               	/* stack size = 0 */
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 4
+
+
+ 189               	.L__stack_usage = 0
+ 190               	/* epilogue start */
+ 191 0000 0895      		ret
+ 193               	.global	_ZN3TwiD1Ev
+ 194               		.set	_ZN3TwiD1Ev,_ZN3TwiD2Ev
+ 195               		.section	.text._ZN3Twi4initEmh,"ax",@progbits
+ 196               	.global	_ZN3Twi4initEmh
+ 198               	_ZN3Twi4initEmh:
+ 199 0000 8F92      		push r8
+ 200 0002 9F92      		push r9
+ 201 0004 AF92      		push r10
+ 202 0006 BF92      		push r11
+ 203 0008 FF92      		push r15
+ 204 000a 0F93      		push r16
+ 205 000c 1F93      		push r17
+ 206 000e CF93      		push r28
+ 207 0010 DF93      		push r29
+ 208 0012 00D0      		rcall .
+ 209 0014 00D0      		rcall .
+ 210 0016 CDB7      		in r28,__SP_L__
+ 211 0018 DEB7      		in r29,__SP_H__
+ 212               	/* prologue: function */
+ 213               	/* frame size = 4 */
+ 214               	/* stack size = 13 */
+ 215               	.L__stack_usage = 13
+ 216 001a FC01      		movw r30,r24
+ 217 001c 1982      		std Y+1,__zero_reg__
+ 218 001e 1A82      		std Y+2,__zero_reg__
+ 219 0020 1B82      		std Y+3,__zero_reg__
+ 220 0022 1C82      		std Y+4,__zero_reg__
+ 221 0024 8091 BC00 		lds r24,188
+ 222 0028 8B7F      		andi r24,lo8(-5)
+ 223 002a 8093 BC00 		sts 188,r24
+ 224 002e 1092 BC00 		sts 188,__zero_reg__
+ 225 0032 1092 B900 		sts 185,__zero_reg__
+ 226 0036 1092 B800 		sts 184,__zero_reg__
+ 227 003a 1092 BA00 		sts 186,__zero_reg__
+ 228 003e 1092 BD00 		sts 189,__zero_reg__
+ 229 0042 483E      		cpi r20,-24
+ 230 0044 83E0      		ldi r24,3
+ 231 0046 5807      		cpc r21,r24
+ 232 0048 6105      		cpc r22,__zero_reg__
+ 233 004a 7105      		cpc r23,__zero_reg__
+ 234 004c 00F4      		brsh .L11
+ 235 004e 83E3      		ldi r24,lo8(51)
+ 236 0050 90E0      		ldi r25,0
+ 237               	.L27:
+ 238 0052 9583      		std Z+5,r25
+ 239 0054 8483      		std Z+4,r24
+ 240 0056 80E0      		ldi r24,0
+ 241               	.L10:
+ 242               	/* epilogue start */
+ 243 0058 0F90      		pop __tmp_reg__
+ 244 005a 0F90      		pop __tmp_reg__
+ 245 005c 0F90      		pop __tmp_reg__
+ 246 005e 0F90      		pop __tmp_reg__
+ 247 0060 DF91      		pop r29
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 5
+
+
+ 248 0062 CF91      		pop r28
+ 249 0064 1F91      		pop r17
+ 250 0066 0F91      		pop r16
+ 251 0068 FF90      		pop r15
+ 252 006a BF90      		pop r11
+ 253 006c AF90      		pop r10
+ 254 006e 9F90      		pop r9
+ 255 0070 8F90      		pop r8
+ 256 0072 0895      		ret
+ 257               	.L11:
+ 258 0074 4138      		cpi r20,-127
+ 259 0076 8AE1      		ldi r24,26
+ 260 0078 5807      		cpc r21,r24
+ 261 007a 86E0      		ldi r24,6
+ 262 007c 6807      		cpc r22,r24
+ 263 007e 7105      		cpc r23,__zero_reg__
+ 264 0080 00F0      		brlo .L13
+ 265 0082 82E3      		ldi r24,lo8(50)
+ 266 0084 90E0      		ldi r25,0
+ 267 0086 00C0      		rjmp .L27
+ 268               	.L13:
+ 269 0088 86E2      		ldi r24,lo8(38)
+ 270 008a 90E0      		ldi r25,0
+ 271 008c 2A30      		cpi r18,lo8(10)
+ 272 008e 00F0      		brlo .L27
+ 273 0090 85E2      		ldi r24,lo8(37)
+ 274 0092 90E0      		ldi r25,0
+ 275 0094 2536      		cpi r18,lo8(101)
+ 276 0096 00F4      		brsh .L27
+ 277 0098 F22E      		mov r15,r18
+ 278 009a 4A01      		movw r8,r20
+ 279 009c 5B01      		movw r10,r22
+ 280 009e 8F01      		movw r16,r30
+ 281 00a0 8785      		ldd r24,Z+15
+ 282 00a2 9089      		ldd r25,Z+16
+ 283 00a4 0097      		sbiw r24,0
+ 284 00a6 01F0      		breq .L16
+ 285 00a8 0E94 0000 		call free
+ 286               	.L16:
+ 287 00ac 8F2D      		mov r24,r15
+ 288 00ae 90E0      		ldi r25,0
+ 289 00b0 61E0      		ldi r22,lo8(1)
+ 290 00b2 70E0      		ldi r23,0
+ 291 00b4 0296      		adiw r24,2
+ 292 00b6 0E94 0000 		call calloc
+ 293 00ba F801      		movw r30,r16
+ 294 00bc 908B      		std Z+16,r25
+ 295 00be 8787      		std Z+15,r24
+ 296 00c0 892B      		or r24,r25
+ 297 00c2 01F4      		brne .L17
+ 298 00c4 8BE0      		ldi r24,lo8(11)
+ 299 00c6 90E0      		ldi r25,0
+ 300 00c8 00C0      		rjmp .L27
+ 301               	.L17:
+ 302 00ca F394      		inc r15
+ 303 00cc F394      		inc r15
+ 304 00ce 9F2D      		mov r25,r15
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 6
+
+
+ 305 00d0 9695      		lsr r25
+ 306 00d2 9F73      		andi r25,lo8(63)
+ 307 00d4 8289      		ldd r24,Z+18
+ 308 00d6 807C      		andi r24,lo8(-64)
+ 309 00d8 892B      		or r24,r25
+ 310 00da 828B      		std Z+18,r24
+ 311 00dc F794      		ror r15
+ 312 00de FF24      		clr r15
+ 313 00e0 F794      		ror r15
+ 314 00e2 F18A      		std Z+17,r15
+ 315 00e4 8585      		ldd r24,Z+13
+ 316 00e6 8F70      		andi r24,lo8(15)
+ 317 00e8 8587      		std Z+13,r24
+ 318 00ea 8685      		ldd r24,Z+14
+ 319 00ec 887F      		andi r24,lo8(-8)
+ 320 00ee 8687      		std Z+14,r24
+ 321 00f0 BE01      		movw r22,r28
+ 322 00f2 6F5F      		subi r22,-1
+ 323 00f4 7F4F      		sbci r23,-1
+ 324 00f6 80E0      		ldi r24,lo8(systemStatus)
+ 325 00f8 90E0      		ldi r25,hi8(systemStatus)
+ 326 00fa 0E94 0000 		call _ZN12SystemStatus11getCpuClockEPm
+ 327 00fe 6981      		ldd r22,Y+1
+ 328 0100 7A81      		ldd r23,Y+2
+ 329 0102 8B81      		ldd r24,Y+3
+ 330 0104 9C81      		ldd r25,Y+4
+ 331 0106 A501      		movw r20,r10
+ 332 0108 9401      		movw r18,r8
+ 333 010a 0E94 0000 		call __udivmodsi4
+ 334 010e 2051      		subi r18,16
+ 335 0110 3109      		sbc r19,__zero_reg__
+ 336 0112 4109      		sbc r20,__zero_reg__
+ 337 0114 5109      		sbc r21,__zero_reg__
+ 338 0116 DA01      		movw r26,r20
+ 339 0118 C901      		movw r24,r18
+ 340 011a B695      		lsr r27
+ 341 011c A795      		ror r26
+ 342 011e 9795      		ror r25
+ 343 0120 8795      		ror r24
+ 344 0122 8983      		std Y+1,r24
+ 345 0124 9A83      		std Y+2,r25
+ 346 0126 AB83      		std Y+3,r26
+ 347 0128 BC83      		std Y+4,r27
+ 348 012a 8F3F      		cpi r24,-1
+ 349 012c 9105      		cpc r25,__zero_reg__
+ 350 012e A105      		cpc r26,__zero_reg__
+ 351 0130 B105      		cpc r27,__zero_reg__
+ 352 0132 01F0      		breq .+2
+ 353 0134 00F4      		brsh .L18
+ 354 0136 282F      		mov r18,r24
+ 355               	.L19:
+ 356 0138 2093 B800 		sts 184,r18
+ 357 013c 8FEF      		ldi r24,lo8(-1)
+ 358 013e 8093 BB00 		sts 187,r24
+ 359 0142 8091 BC00 		lds r24,188
+ 360 0146 8460      		ori r24,lo8(4)
+ 361 0148 8093 BC00 		sts 188,r24
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 7
+
+
+ 362 014c F801      		movw r30,r16
+ 363 014e 8485      		ldd r24,Z+12
+ 364 0150 8160      		ori r24,lo8(1<<0)
+ 365 0152 8487      		std Z+12,r24
+ 366 0154 1582      		std Z+5,__zero_reg__
+ 367 0156 1482      		std Z+4,__zero_reg__
+ 368 0158 81E0      		ldi r24,lo8(1)
+ 369 015a 00C0      		rjmp .L10
+ 370               	.L18:
+ 371 015c 8D3F      		cpi r24,-3
+ 372 015e F3E0      		ldi r31,3
+ 373 0160 9F07      		cpc r25,r31
+ 374 0162 A105      		cpc r26,__zero_reg__
+ 375 0164 B105      		cpc r27,__zero_reg__
+ 376 0166 00F4      		brsh .L20
+ 377 0168 63E0      		ldi r22,3
+ 378               		1:
+ 379 016a 5695      		lsr r21
+ 380 016c 4795      		ror r20
+ 381 016e 3795      		ror r19
+ 382 0170 2795      		ror r18
+ 383 0172 6A95      		dec r22
+ 384 0174 01F4      		brne 1b
+ 385 0176 8091 B900 		lds r24,185
+ 386 017a 8160      		ori r24,lo8(1)
+ 387               	.L26:
+ 388 017c 8093 B900 		sts 185,r24
+ 389 0180 00C0      		rjmp .L19
+ 390               	.L20:
+ 391 0182 813F      		cpi r24,-15
+ 392 0184 6FE0      		ldi r22,15
+ 393 0186 9607      		cpc r25,r22
+ 394 0188 A105      		cpc r26,__zero_reg__
+ 395 018a B105      		cpc r27,__zero_reg__
+ 396 018c 00F4      		brsh .L21
+ 397 018e 95E0      		ldi r25,5
+ 398               		1:
+ 399 0190 5695      		lsr r21
+ 400 0192 4795      		ror r20
+ 401 0194 3795      		ror r19
+ 402 0196 2795      		ror r18
+ 403 0198 9A95      		dec r25
+ 404 019a 01F4      		brne 1b
+ 405 019c 8091 B900 		lds r24,185
+ 406 01a0 8260      		ori r24,lo8(2)
+ 407 01a2 00C0      		rjmp .L26
+ 408               	.L21:
+ 409 01a4 813C      		cpi r24,-63
+ 410 01a6 9F43      		sbci r25,63
+ 411 01a8 A105      		cpc r26,__zero_reg__
+ 412 01aa B105      		cpc r27,__zero_reg__
+ 413 01ac 00F4      		brsh .L22
+ 414 01ae 87E0      		ldi r24,7
+ 415               		1:
+ 416 01b0 5695      		lsr r21
+ 417 01b2 4795      		ror r20
+ 418 01b4 3795      		ror r19
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 8
+
+
+ 419 01b6 2795      		ror r18
+ 420 01b8 8A95      		dec r24
+ 421 01ba 01F4      		brne 1b
+ 422 01bc 8091 B900 		lds r24,185
+ 423 01c0 8360      		ori r24,lo8(3)
+ 424 01c2 00C0      		rjmp .L26
+ 425               	.L22:
+ 426 01c4 20E0      		ldi r18,0
+ 427 01c6 00C0      		rjmp .L19
+ 429               		.section	.text._ZN3Twi10setTimeoutEj,"ax",@progbits
+ 430               	.global	_ZN3Twi10setTimeoutEj
+ 432               	_ZN3Twi10setTimeoutEj:
+ 433               	/* prologue: function */
+ 434               	/* frame size = 0 */
+ 435               	/* stack size = 0 */
+ 436               	.L__stack_usage = 0
+ 437 0000 FC01      		movw r30,r24
+ 438 0002 7387      		std Z+11,r23
+ 439 0004 6287      		std Z+10,r22
+ 440 0006 1582      		std Z+5,__zero_reg__
+ 441 0008 1482      		std Z+4,__zero_reg__
+ 442 000a 81E0      		ldi r24,lo8(1)
+ 443               	/* epilogue start */
+ 444 000c 0895      		ret
+ 446               		.section	.text._ZN3Twi16_waitWhileIsBusyEv,"ax",@progbits
+ 447               	.global	_ZN3Twi16_waitWhileIsBusyEv
+ 449               	_ZN3Twi16_waitWhileIsBusyEv:
+ 450 0000 CF92      		push r12
+ 451 0002 DF92      		push r13
+ 452 0004 EF92      		push r14
+ 453 0006 FF92      		push r15
+ 454               	/* prologue: function */
+ 455               	/* frame size = 0 */
+ 456               	/* stack size = 4 */
+ 457               	.L__stack_usage = 4
+ 458 0008 FC01      		movw r30,r24
+ 459 000a 2285      		ldd r18,Z+10
+ 460 000c 3385      		ldd r19,Z+11
+ 461 000e 9091 0000 		lds r25,systemStatus+10
+ 462 0012 9170      		andi r25,1
+ 463 0014 4FEF      		ldi r20,lo8(-1)
+ 464 0016 5FEF      		ldi r21,lo8(-1)
+ 465 0018 BA01      		movw r22,r20
+ 466 001a 2115      		cp r18,__zero_reg__
+ 467 001c 3105      		cpc r19,__zero_reg__
+ 468 001e 01F0      		breq .L30
+ 469 0020 9111      		cpse r25,__zero_reg__
+ 470 0022 00C0      		rjmp .L31
+ 471 0024 44E0      		ldi r20,lo8(4)
+ 472 0026 50E0      		ldi r21,0
+ 473 0028 5093 0000 		sts systemStatus+20+1,r21
+ 474 002c 4093 0000 		sts systemStatus+20,r20
+ 475 0030 40E0      		ldi r20,0
+ 476 0032 50E0      		ldi r21,0
+ 477 0034 BA01      		movw r22,r20
+ 478               	.L32:
+ 479 0036 420F      		add r20,r18
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 9
+
+
+ 480 0038 531F      		adc r21,r19
+ 481 003a 611D      		adc r22,__zero_reg__
+ 482 003c 711D      		adc r23,__zero_reg__
+ 483               	.L30:
+ 484 003e 24E0      		ldi r18,lo8(4)
+ 485 0040 30E0      		ldi r19,0
+ 486               	.L36:
+ 487 0042 9111      		cpse r25,__zero_reg__
+ 488 0044 00C0      		rjmp .L33
+ 489 0046 3093 0000 		sts systemStatus+20+1,r19
+ 490 004a 2093 0000 		sts systemStatus+20,r18
+ 491               	.L34:
+ 492 004e 8091 BC00 		lds r24,188
+ 493 0052 80FD      		sbrc r24,0
+ 494 0054 00C0      		rjmp .L36
+ 495 0056 1582      		std Z+5,__zero_reg__
+ 496 0058 1482      		std Z+4,__zero_reg__
+ 497 005a 81E0      		ldi r24,lo8(1)
+ 498 005c 00C0      		rjmp .L29
+ 499               	.L31:
+ 500 005e 4091 0000 		lds r20,systemStatus+11
+ 501 0062 5091 0000 		lds r21,systemStatus+11+1
+ 502 0066 6091 0000 		lds r22,systemStatus+11+2
+ 503 006a 7091 0000 		lds r23,systemStatus+11+3
+ 504 006e 1092 0000 		sts systemStatus+20+1,__zero_reg__
+ 505 0072 1092 0000 		sts systemStatus+20,__zero_reg__
+ 506 0076 00C0      		rjmp .L32
+ 507               	.L33:
+ 508 0078 C090 0000 		lds r12,systemStatus+11
+ 509 007c D090 0000 		lds r13,systemStatus+11+1
+ 510 0080 E090 0000 		lds r14,systemStatus+11+2
+ 511 0084 F090 0000 		lds r15,systemStatus+11+3
+ 512 0088 1092 0000 		sts systemStatus+20+1,__zero_reg__
+ 513 008c 1092 0000 		sts systemStatus+20,__zero_reg__
+ 514 0090 4C15      		cp r20,r12
+ 515 0092 5D05      		cpc r21,r13
+ 516 0094 6E05      		cpc r22,r14
+ 517 0096 7F05      		cpc r23,r15
+ 518 0098 00F4      		brsh .L34
+ 519 009a 83E4      		ldi r24,lo8(67)
+ 520 009c 90E0      		ldi r25,0
+ 521 009e 9583      		std Z+5,r25
+ 522 00a0 8483      		std Z+4,r24
+ 523 00a2 80E0      		ldi r24,0
+ 524               	.L29:
+ 525               	/* epilogue start */
+ 526 00a4 FF90      		pop r15
+ 527 00a6 EF90      		pop r14
+ 528 00a8 DF90      		pop r13
+ 529 00aa CF90      		pop r12
+ 530 00ac 0895      		ret
+ 532               		.section	.text._ZN3Twi18_startTransmissionEv,"ax",@progbits
+ 533               	.global	_ZN3Twi18_startTransmissionEv
+ 535               	_ZN3Twi18_startTransmissionEv:
+ 536               	/* prologue: function */
+ 537               	/* frame size = 0 */
+ 538               	/* stack size = 0 */
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 10
+
+
+ 539               	.L__stack_usage = 0
+ 540 0000 FC01      		movw r30,r24
+ 541 0002 8681      		ldd r24,Z+6
+ 542 0004 8D7F      		andi r24,lo8(~(1<<1))
+ 543 0006 8683      		std Z+6,r24
+ 544 0008 88EF      		ldi r24,lo8(-8)
+ 545 000a 90E0      		ldi r25,0
+ 546 000c 9187      		std Z+9,r25
+ 547 000e 8087      		std Z+8,r24
+ 548 0010 85EA      		ldi r24,lo8(-91)
+ 549 0012 8093 BC00 		sts 188,r24
+ 550 0016 1582      		std Z+5,__zero_reg__
+ 551 0018 1482      		std Z+4,__zero_reg__
+ 552 001a 81E0      		ldi r24,lo8(1)
+ 553               	/* epilogue start */
+ 554 001c 0895      		ret
+ 556               		.section	.text._ZN3Twi15_readFromBufferEPhh,"ax",@progbits
+ 557               	.global	_ZN3Twi15_readFromBufferEPhh
+ 559               	_ZN3Twi15_readFromBufferEPhh:
+ 560 0000 CF93      		push r28
+ 561 0002 DF93      		push r29
+ 562               	/* prologue: function */
+ 563               	/* frame size = 0 */
+ 564               	/* stack size = 2 */
+ 565               	.L__stack_usage = 2
+ 566 0004 FC01      		movw r30,r24
+ 567 0006 9681      		ldd r25,Z+6
+ 568 0008 91FB      		bst r25,1
+ 569 000a 8827      		clr r24
+ 570 000c 80F9      		bld r24,0
+ 571 000e 91FF      		sbrs r25,1
+ 572 0010 00C0      		rjmp .L41
+ 573 0012 DB01      		movw r26,r22
+ 574 0014 30E0      		ldi r19,0
+ 575 0016 20E0      		ldi r18,0
+ 576               	.L43:
+ 577 0018 2417      		cp r18,r20
+ 578 001a 00F4      		brsh .L42
+ 579 001c 2F5F      		subi r18,-1
+ 580 001e 3F4F      		sbci r19,-1
+ 581 0020 C785      		ldd r28,Z+15
+ 582 0022 D089      		ldd r29,Z+16
+ 583 0024 C20F      		add r28,r18
+ 584 0026 D31F      		adc r29,r19
+ 585 0028 9881      		ld r25,Y
+ 586 002a 9D93      		st X+,r25
+ 587 002c 00C0      		rjmp .L43
+ 588               	.L42:
+ 589 002e 1582      		std Z+5,__zero_reg__
+ 590 0030 1482      		std Z+4,__zero_reg__
+ 591               	.L40:
+ 592               	/* epilogue start */
+ 593 0032 DF91      		pop r29
+ 594 0034 CF91      		pop r28
+ 595 0036 0895      		ret
+ 596               	.L41:
+ 597 0038 20E4      		ldi r18,lo8(64)
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 11
+
+
+ 598 003a 30E0      		ldi r19,0
+ 599 003c 3583      		std Z+5,r19
+ 600 003e 2483      		std Z+4,r18
+ 601 0040 00C0      		rjmp .L40
+ 603               		.section	.text._ZN3Twi8sendDataEhNS_9OperationEhPhh,"ax",@progbits
+ 604               	.global	_ZN3Twi8sendDataEhNS_9OperationEhPhh
+ 606               	_ZN3Twi8sendDataEhNS_9OperationEhPhh:
+ 607 0000 BF92      		push r11
+ 608 0002 CF92      		push r12
+ 609 0004 DF92      		push r13
+ 610 0006 EF92      		push r14
+ 611 0008 FF92      		push r15
+ 612 000a 0F93      		push r16
+ 613 000c 1F93      		push r17
+ 614 000e CF93      		push r28
+ 615 0010 DF93      		push r29
+ 616               	/* prologue: function */
+ 617               	/* frame size = 0 */
+ 618               	/* stack size = 9 */
+ 619               	.L__stack_usage = 9
+ 620 0012 EC01      		movw r28,r24
+ 621 0014 8C85      		ldd r24,Y+12
+ 622 0016 80FB      		bst r24,0
+ 623 0018 DD24      		clr r13
+ 624 001a D0F8      		bld r13,0
+ 625 001c 80FD      		sbrc r24,0
+ 626 001e 00C0      		rjmp .L46
+ 627 0020 84E0      		ldi r24,lo8(4)
+ 628 0022 90E0      		ldi r25,0
+ 629 0024 9D83      		std Y+5,r25
+ 630 0026 8C83      		std Y+4,r24
+ 631               	.L45:
+ 632 0028 8D2D      		mov r24,r13
+ 633               	/* epilogue start */
+ 634 002a DF91      		pop r29
+ 635 002c CF91      		pop r28
+ 636 002e 1F91      		pop r17
+ 637 0030 0F91      		pop r16
+ 638 0032 FF90      		pop r15
+ 639 0034 EF90      		pop r14
+ 640 0036 DF90      		pop r13
+ 641 0038 CF90      		pop r12
+ 642 003a BF90      		pop r11
+ 643 003c 0895      		ret
+ 644               	.L46:
+ 645 003e EE20      		tst r14
+ 646 0040 01F0      		breq .L48
+ 647 0042 0115      		cp r16,__zero_reg__
+ 648 0044 1105      		cpc r17,__zero_reg__
+ 649 0046 01F4      		brne .L48
+ 650 0048 81E1      		ldi r24,lo8(17)
+ 651 004a 90E0      		ldi r25,0
+ 652 004c 9D83      		std Y+5,r25
+ 653 004e 8C83      		std Y+4,r24
+ 654               	.L54:
+ 655 0050 D12C      		mov r13,__zero_reg__
+ 656 0052 00C0      		rjmp .L45
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 12
+
+
+ 657               	.L48:
+ 658 0054 C22E      		mov r12,r18
+ 659 0056 B42E      		mov r11,r20
+ 660 0058 F62E      		mov r15,r22
+ 661 005a CE01      		movw r24,r28
+ 662 005c 0E94 0000 		call _ZN3Twi16_waitWhileIsBusyEv
+ 663 0060 D82E      		mov r13,r24
+ 664 0062 8823      		tst r24
+ 665 0064 01F0      		breq .L54
+ 666 0066 EF85      		ldd r30,Y+15
+ 667 0068 F889      		ldd r31,Y+16
+ 668 006a 8F2D      		mov r24,r15
+ 669 006c 880F      		lsl r24
+ 670 006e 8083      		st Z,r24
+ 671 0070 EF85      		ldd r30,Y+15
+ 672 0072 F889      		ldd r31,Y+16
+ 673 0074 C182      		std Z+1,r12
+ 674 0076 B110      		cpse r11,__zero_reg__
+ 675 0078 00C0      		rjmp .L50
+ 676 007a D801      		movw r26,r16
+ 677 007c 90E0      		ldi r25,0
+ 678 007e 80E0      		ldi r24,0
+ 679               	.L52:
+ 680 0080 8E15      		cp r24,r14
+ 681 0082 00F4      		brsh .L51
+ 682 0084 2D91      		ld r18,X+
+ 683 0086 EF85      		ldd r30,Y+15
+ 684 0088 F889      		ldd r31,Y+16
+ 685 008a E80F      		add r30,r24
+ 686 008c F91F      		adc r31,r25
+ 687 008e 2283      		std Z+2,r18
+ 688 0090 0196      		adiw r24,1
+ 689 0092 00C0      		rjmp .L52
+ 690               	.L51:
+ 691 0094 E394      		inc r14
+ 692 0096 E394      		inc r14
+ 693 0098 9E2D      		mov r25,r14
+ 694 009a 9295      		swap r25
+ 695 009c 907F      		andi r25,lo8(-16)
+ 696 009e 8D85      		ldd r24,Y+13
+ 697 00a0 8F70      		andi r24,lo8(15)
+ 698 00a2 892B      		or r24,r25
+ 699 00a4 8D87      		std Y+13,r24
+ 700 00a6 8E2D      		mov r24,r14
+ 701 00a8 8295      		swap r24
+ 702 00aa 8770      		andi r24,lo8(7)
+ 703 00ac 9E85      		ldd r25,Y+14
+ 704 00ae 987F      		andi r25,lo8(-8)
+ 705 00b0 892B      		or r24,r25
+ 706 00b2 8E87      		std Y+14,r24
+ 707 00b4 CE01      		movw r24,r28
+ 708 00b6 0E94 0000 		call _ZN3Twi18_startTransmissionEv
+ 709               	.L53:
+ 710 00ba 1D82      		std Y+5,__zero_reg__
+ 711 00bc 1C82      		std Y+4,__zero_reg__
+ 712 00be 00C0      		rjmp .L45
+ 713               	.L50:
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 13
+
+
+ 714 00c0 8D85      		ldd r24,Y+13
+ 715 00c2 8F70      		andi r24,lo8(15)
+ 716 00c4 8062      		ori r24,lo8(32)
+ 717 00c6 8D87      		std Y+13,r24
+ 718 00c8 8E85      		ldd r24,Y+14
+ 719 00ca 887F      		andi r24,lo8(-8)
+ 720 00cc 8E87      		std Y+14,r24
+ 721 00ce CE01      		movw r24,r28
+ 722 00d0 0E94 0000 		call _ZN3Twi18_startTransmissionEv
+ 723 00d4 CE01      		movw r24,r28
+ 724 00d6 0E94 0000 		call _ZN3Twi16_waitWhileIsBusyEv
+ 725 00da 8823      		tst r24
+ 726 00dc 01F4      		brne .+2
+ 727 00de 00C0      		rjmp .L54
+ 728 00e0 EF85      		ldd r30,Y+15
+ 729 00e2 F889      		ldd r31,Y+16
+ 730 00e4 6F2D      		mov r22,r15
+ 731 00e6 660F      		lsl r22
+ 732 00e8 6160      		ori r22,lo8(1)
+ 733 00ea 6083      		st Z,r22
+ 734 00ec 81E0      		ldi r24,lo8(1)
+ 735 00ee 8E0D      		add r24,r14
+ 736 00f0 282F      		mov r18,r24
+ 737 00f2 2295      		swap r18
+ 738 00f4 207F      		andi r18,lo8(-16)
+ 739 00f6 9D85      		ldd r25,Y+13
+ 740 00f8 9F70      		andi r25,lo8(15)
+ 741 00fa 922B      		or r25,r18
+ 742 00fc 9D87      		std Y+13,r25
+ 743 00fe 8295      		swap r24
+ 744 0100 8770      		andi r24,lo8(7)
+ 745 0102 9E85      		ldd r25,Y+14
+ 746 0104 987F      		andi r25,lo8(-8)
+ 747 0106 892B      		or r24,r25
+ 748 0108 8E87      		std Y+14,r24
+ 749 010a CE01      		movw r24,r28
+ 750 010c 0E94 0000 		call _ZN3Twi18_startTransmissionEv
+ 751 0110 CE01      		movw r24,r28
+ 752 0112 0E94 0000 		call _ZN3Twi16_waitWhileIsBusyEv
+ 753 0116 8823      		tst r24
+ 754 0118 01F4      		brne .+2
+ 755 011a 00C0      		rjmp .L54
+ 756 011c 4E2D      		mov r20,r14
+ 757 011e B801      		movw r22,r16
+ 758 0120 CE01      		movw r24,r28
+ 759 0122 0E94 0000 		call _ZN3Twi15_readFromBufferEPhh
+ 760 0126 8111      		cpse r24,__zero_reg__
+ 761 0128 00C0      		rjmp .L53
+ 762 012a 00C0      		rjmp .L54
+ 764               		.section	.text._ZN3Twi7readRegEhPhj,"ax",@progbits
+ 765               	.global	_ZN3Twi7readRegEhPhj
+ 767               	_ZN3Twi7readRegEhPhj:
+ 768 0000 EF92      		push r14
+ 769 0002 FF92      		push r15
+ 770 0004 0F93      		push r16
+ 771 0006 1F93      		push r17
+ 772 0008 CF93      		push r28
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 14
+
+
+ 773 000a DF93      		push r29
+ 774               	/* prologue: function */
+ 775               	/* frame size = 0 */
+ 776               	/* stack size = 6 */
+ 777               	.L__stack_usage = 6
+ 778 000c EC01      		movw r28,r24
+ 779 000e 8E81      		ldd r24,Y+6
+ 780 0010 80FB      		bst r24,0
+ 781 0012 FF24      		clr r15
+ 782 0014 F0F8      		bld r15,0
+ 783 0016 80FD      		sbrc r24,0
+ 784 0018 00C0      		rjmp .L68
+ 785 001a 81E4      		ldi r24,lo8(65)
+ 786 001c 90E0      		ldi r25,0
+ 787 001e 9D83      		std Y+5,r25
+ 788 0020 8C83      		std Y+4,r24
+ 789               	.L67:
+ 790 0022 8F2D      		mov r24,r15
+ 791               	/* epilogue start */
+ 792 0024 DF91      		pop r29
+ 793 0026 CF91      		pop r28
+ 794 0028 1F91      		pop r17
+ 795 002a 0F91      		pop r16
+ 796 002c FF90      		pop r15
+ 797 002e EF90      		pop r14
+ 798 0030 0895      		ret
+ 799               	.L68:
+ 800 0032 9D85      		ldd r25,Y+13
+ 801 0034 93FF      		sbrs r25,3
+ 802 0036 00C0      		rjmp .L70
+ 803 0038 82E0      		ldi r24,lo8(2)
+ 804 003a 90E0      		ldi r25,0
+ 805 003c 9D83      		std Y+5,r25
+ 806 003e 8C83      		std Y+4,r24
+ 807               	.L71:
+ 808 0040 F12C      		mov r15,__zero_reg__
+ 809 0042 00C0      		rjmp .L67
+ 810               	.L70:
+ 811 0044 E22E      		mov r14,r18
+ 812 0046 8A01      		movw r16,r20
+ 813 0048 262F      		mov r18,r22
+ 814 004a 6C85      		ldd r22,Y+12
+ 815 004c 6695      		lsr r22
+ 816 004e 9795      		ror r25
+ 817 0050 9927      		clr r25
+ 818 0052 9795      		ror r25
+ 819 0054 692B      		or r22,r25
+ 820 0056 41E0      		ldi r20,lo8(1)
+ 821 0058 CE01      		movw r24,r28
+ 822 005a 0E94 0000 		call _ZN3Twi8sendDataEhNS_9OperationEhPhh
+ 823 005e 8823      		tst r24
+ 824 0060 01F0      		breq .L71
+ 825 0062 1D82      		std Y+5,__zero_reg__
+ 826 0064 1C82      		std Y+4,__zero_reg__
+ 827 0066 00C0      		rjmp .L67
+ 829               		.section	.text._ZN3Twi8writeRegEhPKhj,"ax",@progbits
+ 830               	.global	_ZN3Twi8writeRegEhPKhj
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 15
+
+
+ 832               	_ZN3Twi8writeRegEhPKhj:
+ 833 0000 EF92      		push r14
+ 834 0002 FF92      		push r15
+ 835 0004 0F93      		push r16
+ 836 0006 1F93      		push r17
+ 837 0008 CF93      		push r28
+ 838 000a DF93      		push r29
+ 839               	/* prologue: function */
+ 840               	/* frame size = 0 */
+ 841               	/* stack size = 6 */
+ 842               	.L__stack_usage = 6
+ 843 000c EC01      		movw r28,r24
+ 844 000e 8E81      		ldd r24,Y+6
+ 845 0010 80FB      		bst r24,0
+ 846 0012 FF24      		clr r15
+ 847 0014 F0F8      		bld r15,0
+ 848 0016 80FD      		sbrc r24,0
+ 849 0018 00C0      		rjmp .L73
+ 850 001a 81E4      		ldi r24,lo8(65)
+ 851 001c 90E0      		ldi r25,0
+ 852 001e 9D83      		std Y+5,r25
+ 853 0020 8C83      		std Y+4,r24
+ 854               	.L72:
+ 855 0022 8F2D      		mov r24,r15
+ 856               	/* epilogue start */
+ 857 0024 DF91      		pop r29
+ 858 0026 CF91      		pop r28
+ 859 0028 1F91      		pop r17
+ 860 002a 0F91      		pop r16
+ 861 002c FF90      		pop r15
+ 862 002e EF90      		pop r14
+ 863 0030 0895      		ret
+ 864               	.L73:
+ 865 0032 9D85      		ldd r25,Y+13
+ 866 0034 93FF      		sbrs r25,3
+ 867 0036 00C0      		rjmp .L75
+ 868 0038 82E0      		ldi r24,lo8(2)
+ 869 003a 90E0      		ldi r25,0
+ 870 003c 9D83      		std Y+5,r25
+ 871 003e 8C83      		std Y+4,r24
+ 872               	.L76:
+ 873 0040 F12C      		mov r15,__zero_reg__
+ 874 0042 00C0      		rjmp .L72
+ 875               	.L75:
+ 876 0044 E22E      		mov r14,r18
+ 877 0046 8A01      		movw r16,r20
+ 878 0048 262F      		mov r18,r22
+ 879 004a 6C85      		ldd r22,Y+12
+ 880 004c 6695      		lsr r22
+ 881 004e 9795      		ror r25
+ 882 0050 9927      		clr r25
+ 883 0052 9795      		ror r25
+ 884 0054 692B      		or r22,r25
+ 885 0056 40E0      		ldi r20,0
+ 886 0058 CE01      		movw r24,r28
+ 887 005a 0E94 0000 		call _ZN3Twi8sendDataEhNS_9OperationEhPhh
+ 888 005e 8823      		tst r24
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 16
+
+
+ 889 0060 01F0      		breq .L76
+ 890 0062 1D82      		std Y+5,__zero_reg__
+ 891 0064 1C82      		std Y+4,__zero_reg__
+ 892 0066 00C0      		rjmp .L72
+ 894               		.section	.text._ZN3Twi16interruptHandlerEv,"ax",@progbits
+ 895               	.global	_ZN3Twi16interruptHandlerEv
+ 897               	_ZN3Twi16interruptHandlerEv:
+ 898               	/* prologue: function */
+ 899               	/* frame size = 0 */
+ 900               	/* stack size = 0 */
+ 901               	.L__stack_usage = 0
+ 902 0000 FC01      		movw r30,r24
+ 903 0002 8091 B900 		lds r24,185
+ 904 0006 8C7F      		andi r24,lo8(-4)
+ 905 0008 8832      		cpi r24,lo8(40)
+ 906 000a 01F0      		breq .L79
+ 907 000c 00F4      		brsh .L80
+ 908 000e 8031      		cpi r24,lo8(16)
+ 909 0010 01F0      		breq .L81
+ 910 0012 8831      		cpi r24,lo8(24)
+ 911 0014 01F0      		breq .L79
+ 912 0016 8830      		cpi r24,lo8(8)
+ 913 0018 01F4      		brne .L78
+ 914               	.L81:
+ 915 001a 1092 0000 		sts _ZZN3Twi16interruptHandlerEvE16twiBufferPointer,__zero_reg__
+ 916               	.L79:
+ 917 001e 9091 0000 		lds r25,_ZZN3Twi16interruptHandlerEvE16twiBufferPointer
+ 918 0022 8585      		ldd r24,Z+13
+ 919 0024 282F      		mov r18,r24
+ 920 0026 2295      		swap r18
+ 921 0028 2F70      		andi r18,lo8(15)
+ 922 002a 8685      		ldd r24,Z+14
+ 923 002c 8770      		andi r24,lo8(7)
+ 924 002e 8295      		swap r24
+ 925 0030 807F      		andi r24,lo8(-16)
+ 926 0032 822B      		or r24,r18
+ 927 0034 9817      		cp r25,r24
+ 928 0036 00F4      		brsh .L106
+ 929 0038 0784      		ldd __tmp_reg__,Z+15
+ 930 003a F089      		ldd r31,Z+16
+ 931 003c E02D      		mov r30,__tmp_reg__
+ 932 003e 81E0      		ldi r24,lo8(1)
+ 933 0040 890F      		add r24,r25
+ 934 0042 8093 0000 		sts _ZZN3Twi16interruptHandlerEvE16twiBufferPointer,r24
+ 935 0046 E90F      		add r30,r25
+ 936 0048 F11D      		adc r31,__zero_reg__
+ 937 004a 8081      		ld r24,Z
+ 938 004c 8093 BB00 		sts 187,r24
+ 939               	.L89:
+ 940 0050 85E8      		ldi r24,lo8(-123)
+ 941 0052 00C0      		rjmp .L105
+ 942               	.L80:
+ 943 0054 8034      		cpi r24,lo8(64)
+ 944 0056 01F0      		breq .L82
+ 945 0058 00F4      		brsh .L83
+ 946 005a 8833      		cpi r24,lo8(56)
+ 947 005c 01F0      		breq .L84
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 17
+
+
+ 948               	.L78:
+ 949 005e 8091 B900 		lds r24,185
+ 950 0062 8783      		std Z+7,r24
+ 951 0064 84E0      		ldi r24,lo8(4)
+ 952 0066 00C0      		rjmp .L105
+ 953               	.L83:
+ 954 0068 8035      		cpi r24,lo8(80)
+ 955 006a 01F0      		breq .L85
+ 956 006c 8835      		cpi r24,lo8(88)
+ 957 006e 01F4      		brne .L78
+ 958 0070 8091 BB00 		lds r24,187
+ 959 0074 A091 0000 		lds r26,_ZZN3Twi16interruptHandlerEvE16twiBufferPointer
+ 960 0078 2785      		ldd r18,Z+15
+ 961 007a 3089      		ldd r19,Z+16
+ 962 007c A20F      		add r26,r18
+ 963 007e B32F      		mov r27,r19
+ 964 0080 B11D      		adc r27,__zero_reg__
+ 965 0082 8C93      		st X,r24
+ 966               	.L106:
+ 967 0084 8681      		ldd r24,Z+6
+ 968 0086 8260      		ori r24,lo8(1<<1)
+ 969 0088 8683      		std Z+6,r24
+ 970 008a 84E9      		ldi r24,lo8(-108)
+ 971 008c 00C0      		rjmp .L105
+ 972               	.L85:
+ 973 008e 8091 BB00 		lds r24,187
+ 974 0092 2785      		ldd r18,Z+15
+ 975 0094 3089      		ldd r19,Z+16
+ 976 0096 A091 0000 		lds r26,_ZZN3Twi16interruptHandlerEvE16twiBufferPointer
+ 977 009a 91E0      		ldi r25,lo8(1)
+ 978 009c 9A0F      		add r25,r26
+ 979 009e 9093 0000 		sts _ZZN3Twi16interruptHandlerEvE16twiBufferPointer,r25
+ 980 00a2 A20F      		add r26,r18
+ 981 00a4 B32F      		mov r27,r19
+ 982 00a6 B11D      		adc r27,__zero_reg__
+ 983 00a8 8C93      		st X,r24
+ 984               	.L82:
+ 985 00aa 2091 0000 		lds r18,_ZZN3Twi16interruptHandlerEvE16twiBufferPointer
+ 986 00ae 8585      		ldd r24,Z+13
+ 987 00b0 982F      		mov r25,r24
+ 988 00b2 9295      		swap r25
+ 989 00b4 9F70      		andi r25,lo8(15)
+ 990 00b6 8685      		ldd r24,Z+14
+ 991 00b8 8770      		andi r24,lo8(7)
+ 992 00ba 8295      		swap r24
+ 993 00bc 807F      		andi r24,lo8(-16)
+ 994 00be 892B      		or r24,r25
+ 995 00c0 8150      		subi r24,1
+ 996 00c2 990B      		sbc r25,r25
+ 997 00c4 2817      		cp r18,r24
+ 998 00c6 1906      		cpc __zero_reg__,r25
+ 999 00c8 04F4      		brge .L89
+ 1000 00ca 85EC      		ldi r24,lo8(-59)
+ 1001               	.L105:
+ 1002 00cc 8093 BC00 		sts 188,r24
+ 1003               	/* epilogue start */
+ 1004 00d0 0895      		ret
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 18
+
+
+ 1005               	.L84:
+ 1006 00d2 85EA      		ldi r24,lo8(-91)
+ 1007 00d4 00C0      		rjmp .L105
+ 1009               		.section	.text.__vector_24,"ax",@progbits
+ 1010               	.global	__vector_24
+ 1012               	__vector_24:
+ 1013 0000 1F92      		push r1
+ 1014 0002 0F92      		push r0
+ 1015 0004 0FB6      		in r0,__SREG__
+ 1016 0006 0F92      		push r0
+ 1017 0008 1124      		clr __zero_reg__
+ 1018 000a 2F93      		push r18
+ 1019 000c 3F93      		push r19
+ 1020 000e 4F93      		push r20
+ 1021 0010 5F93      		push r21
+ 1022 0012 6F93      		push r22
+ 1023 0014 7F93      		push r23
+ 1024 0016 8F93      		push r24
+ 1025 0018 9F93      		push r25
+ 1026 001a AF93      		push r26
+ 1027 001c BF93      		push r27
+ 1028 001e EF93      		push r30
+ 1029 0020 FF93      		push r31
+ 1030               	/* prologue: Signal */
+ 1031               	/* frame size = 0 */
+ 1032               	/* stack size = 15 */
+ 1033               	.L__stack_usage = 15
+ 1034 0022 80E0      		ldi r24,lo8(twi)
+ 1035 0024 90E0      		ldi r25,hi8(twi)
+ 1036 0026 0E94 0000 		call _ZN3Twi16interruptHandlerEv
+ 1037               	/* epilogue start */
+ 1038 002a FF91      		pop r31
+ 1039 002c EF91      		pop r30
+ 1040 002e BF91      		pop r27
+ 1041 0030 AF91      		pop r26
+ 1042 0032 9F91      		pop r25
+ 1043 0034 8F91      		pop r24
+ 1044 0036 7F91      		pop r23
+ 1045 0038 6F91      		pop r22
+ 1046 003a 5F91      		pop r21
+ 1047 003c 4F91      		pop r20
+ 1048 003e 3F91      		pop r19
+ 1049 0040 2F91      		pop r18
+ 1050 0042 0F90      		pop r0
+ 1051 0044 0FBE      		out __SREG__,r0
+ 1052 0046 0F90      		pop r0
+ 1053 0048 1F90      		pop r1
+ 1054 004a 1895      		reti
+ 1056               		.section	.text.startup._GLOBAL__sub_I_twi,"ax",@progbits
+ 1058               	_GLOBAL__sub_I_twi:
+ 1059               	/* prologue: function */
+ 1060               	/* frame size = 0 */
+ 1061               	/* stack size = 0 */
+ 1062               	.L__stack_usage = 0
+ 1063 0000 80E0      		ldi r24,lo8(twi)
+ 1064 0002 90E0      		ldi r25,hi8(twi)
+ 1065 0004 0C94 0000 		jmp _ZN3TwiC1Ev
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 19
+
+
+ 1067               		.global __do_global_ctors
+ 1068               		.section .ctors,"a",@progbits
+ 1069               		.p2align	1
+ 1070 0000 0000      		.word	gs(_GLOBAL__sub_I_twi)
+ 1071               		.weak	_ZTV3Twi
+ 1072               		.section	.rodata._ZTV3Twi,"aG",@progbits,_ZTV3Twi,comdat
+ 1075               	_ZTV3Twi:
+ 1076 0000 0000      		.word	0
+ 1077 0002 0000      		.word	0
+ 1078 0004 0000      		.word	gs(_ZN3Twi7readRegEhPhj)
+ 1079 0006 0000      		.word	gs(_ZN3Bus8sendDataEPhj)
+ 1080 0008 0000      		.word	gs(_ZN3Bus8sendDataEPKhPhj)
+ 1081 000a 0000      		.word	gs(_ZN3Twi8writeRegEhPKhj)
+ 1082 000c 0000      		.word	gs(_ZN3Twi9setDeviceEjb)
+ 1083 000e 0000      		.word	gs(_ZN3Bus9setDeviceEPFvvES1_)
+ 1084 0010 0000      		.word	gs(_ZN3Twi10getBusTypeEv)
+ 1085 0012 0000      		.word	gs(_ZN3Twi12getLastErrorEv)
+ 1086               		.section	.bss._ZZN3Twi16interruptHandlerEvE16twiBufferPointer,"aw",@nobits
+ 1089               	_ZZN3Twi16interruptHandlerEvE16twiBufferPointer:
+ 1090 0000 00        		.zero	1
+ 1091               	.global	twi
+ 1092               		.section	.bss.twi,"aw",@nobits
+ 1095               	twi:
+ 1096 0000 0000 0000 		.zero	19
+ 1096      0000 0000 
+ 1096      0000 0000 
+ 1096      0000 0000 
+ 1096      0000 00
+ 1097               		.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.7.0_1796) 7.3.0"
+ 1098               	.global __do_copy_data
+ 1099               	.global __do_clear_bss
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s 			page 20
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 funsapeLibTwi.cpp
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:11     .text._ZN3Bus8sendDataEPhj:0000000000000000 _ZN3Bus8sendDataEPhj
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:28     .text._ZN3Bus8sendDataEPKhPhj:0000000000000000 _ZN3Bus8sendDataEPKhPhj
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:45     .text._ZN3Bus9setDeviceEPFvvES1_:0000000000000000 _ZN3Bus9setDeviceEPFvvES1_
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:62     .text._ZN3Twi9setDeviceEjb:0000000000000000 _ZN3Twi9setDeviceEjb
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:100    .text._ZN3Twi10getBusTypeEv:0000000000000000 _ZN3Twi10getBusTypeEv
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:113    .text._ZN3Twi12getLastErrorEv:0000000000000000 _ZN3Twi12getLastErrorEv
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:127    .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:141    .text._ZN3TwiC2Ev:0000000000000000 _ZN3TwiC2Ev
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:1075   .rodata._ZTV3Twi:0000000000000000 _ZTV3Twi
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:141    .text._ZN3TwiC2Ev:0000000000000000 _ZN3TwiC1Ev
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:185    .text._ZN3TwiD2Ev:0000000000000000 _ZN3TwiD2Ev
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:185    .text._ZN3TwiD2Ev:0000000000000000 _ZN3TwiD1Ev
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:198    .text._ZN3Twi4initEmh:0000000000000000 _ZN3Twi4initEmh
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:432    .text._ZN3Twi10setTimeoutEj:0000000000000000 _ZN3Twi10setTimeoutEj
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:449    .text._ZN3Twi16_waitWhileIsBusyEv:0000000000000000 _ZN3Twi16_waitWhileIsBusyEv
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:535    .text._ZN3Twi18_startTransmissionEv:0000000000000000 _ZN3Twi18_startTransmissionEv
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:559    .text._ZN3Twi15_readFromBufferEPhh:0000000000000000 _ZN3Twi15_readFromBufferEPhh
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:606    .text._ZN3Twi8sendDataEhNS_9OperationEhPhh:0000000000000000 _ZN3Twi8sendDataEhNS_9OperationEhPhh
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:767    .text._ZN3Twi7readRegEhPhj:0000000000000000 _ZN3Twi7readRegEhPhj
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:832    .text._ZN3Twi8writeRegEhPKhj:0000000000000000 _ZN3Twi8writeRegEhPKhj
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:897    .text._ZN3Twi16interruptHandlerEv:0000000000000000 _ZN3Twi16interruptHandlerEv
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:1089   .bss._ZZN3Twi16interruptHandlerEvE16twiBufferPointer:0000000000000000 _ZZN3Twi16interruptHandlerEvE16twiBufferPointer
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:1012   .text.__vector_24:0000000000000000 __vector_24
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:1095   .bss.twi:0000000000000000 twi
+C:\Users\Docker\AppData\Local\Temp\ccyzEYzz.s:1058   .text.startup._GLOBAL__sub_I_twi:0000000000000000 _GLOBAL__sub_I_twi
+
+UNDEFINED SYMBOLS
+free
+calloc
+systemStatus
+_ZN12SystemStatus11getCpuClockEPm
+__udivmodsi4
+__do_global_ctors
+__do_copy_data
+__do_clear_bss

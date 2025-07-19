@@ -1,0 +1,372 @@
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s 			page 1
+
+
+   1               		.file	"main.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text.startup.main,"ax",@progbits
+  23               	.global	main
+  25               	main:
+  26 0000 CF93      		push r28
+  27 0002 DF93      		push r29
+  28 0004 CDB7      		in r28,__SP_L__
+  29 0006 DEB7      		in r29,__SP_H__
+  30 0008 6E97      		sbiw r28,30
+  31 000a 0FB6      		in __tmp_reg__,__SREG__
+  32 000c F894      		cli
+  33 000e DEBF      		out __SP_H__,r29
+  34 0010 0FBE      		out __SREG__,__tmp_reg__
+  35 0012 CDBF      		out __SP_L__,r28
+  36               	/* prologue: function */
+  37               	/* frame size = 30 */
+  38               	/* stack size = 32 */
+  39               	.L__stack_usage = 32
+  40 0014 CE01      		movw r24,r28
+  41 0016 0E96      		adiw r24,14
+  42 0018 0E94 0000 		call _ZN7GpioBusC1Ev
+  43 001c CE01      		movw r24,r28
+  44 001e 0196      		adiw r24,1
+  45 0020 0E94 0000 		call _ZN7GpioBusC1Ev
+  46 0024 1092 0000 		sts systemFlags,__zero_reg__
+  47 0028 28E0      		ldi r18,lo8(8)
+  48 002a 40E0      		ldi r20,0
+  49 002c 6AE2      		ldi r22,lo8(42)
+  50 002e 70E0      		ldi r23,0
+  51 0030 CE01      		movw r24,r28
+  52 0032 0E96      		adiw r24,14
+  53 0034 0E94 0000 		call _ZN7GpioBus4initEPVhNS_8PinIndexEh
+  54 0038 24E0      		ldi r18,lo8(4)
+  55 003a 40E0      		ldi r20,0
+  56 003c 67E2      		ldi r22,lo8(39)
+  57 003e 70E0      		ldi r23,0
+  58 0040 CE01      		movw r24,r28
+  59 0042 0196      		adiw r24,1
+  60 0044 0E94 0000 		call _ZN7GpioBus4initEPVhNS_8PinIndexEh
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s 			page 2
+
+
+  61 0048 20E0      		ldi r18,0
+  62 004a AE01      		movw r20,r28
+  63 004c 4F5F      		subi r20,-1
+  64 004e 5F4F      		sbci r21,-1
+  65 0050 BE01      		movw r22,r28
+  66 0052 625F      		subi r22,-14
+  67 0054 7F4F      		sbci r23,-1
+  68 0056 80E0      		ldi r24,lo8(display)
+  69 0058 90E0      		ldi r25,hi8(display)
+  70 005a 0E94 0000 		call _ZN23SevenSegmentsMuxDisplay8setPortsEP7GpioBusS1_10LogicLevel
+  71 005e 40E0      		ldi r20,0
+  72 0060 64E0      		ldi r22,lo8(4)
+  73 0062 70E0      		ldi r23,0
+  74 0064 80E0      		ldi r24,lo8(display)
+  75 0066 90E0      		ldi r25,hi8(display)
+  76 0068 0E94 0000 		call _ZN23SevenSegmentsMuxDisplay4initENS_6DigitsE24SevenSegmentsDisplayType
+  77 006c 289A      		sbi 0x5,0
+  78 006e 299A      		sbi 0x5,1
+  79 0070 2A9A      		sbi 0x5,2
+  80 0072 2B9A      		sbi 0x5,3
+  81 0074 6FE0      		ldi r22,lo8(15)
+  82 0076 80E0      		ldi r24,lo8(pcint0)
+  83 0078 90E0      		ldi r25,hi8(pcint0)
+  84 007a 0E94 0000 		call _ZN6Pcint04initENS_3PinE
+  85 007e D89A      		sbi 0x1b,0
+  86 0080 8091 6800 		lds r24,104
+  87 0084 8160      		ori r24,lo8(1)
+  88 0086 8093 6800 		sts 104,r24
+  89 008a 45E0      		ldi r20,lo8(5)
+  90 008c 62E0      		ldi r22,lo8(2)
+  91 008e 80E0      		ldi r24,lo8(timer0)
+  92 0090 90E0      		ldi r25,hi8(timer0)
+  93 0092 0E94 0000 		call _ZN6Timer04initENS_4ModeENS_11ClockSourceE
+  94 0096 8FE0      		ldi r24,lo8(15)
+  95 0098 87BD      		out 0x27,r24
+  96 009a A99A      		sbi 0x15,1
+  97 009c 8091 6E00 		lds r24,110
+  98 00a0 8260      		ori r24,lo8(2)
+  99 00a2 8093 6E00 		sts 110,r24
+ 100               	/* #APP */
+ 101               	 ;  65 "main.cpp" 1
+ 102 00a6 7894      		sei
+ 103               	 ;  0 "" 2
+ 104               	/* #NOAPP */
+ 105 00a8 0AE0      		ldi r16,lo8(10)
+ 106 00aa 10E0      		ldi r17,0
+ 107 00ac 84E6      		ldi r24,lo8(100)
+ 108 00ae C82E      		mov r12,r24
+ 109 00b0 D12C      		mov r13,__zero_reg__
+ 110 00b2 98EE      		ldi r25,lo8(-24)
+ 111 00b4 E92E      		mov r14,r25
+ 112 00b6 93E0      		ldi r25,lo8(3)
+ 113 00b8 F92E      		mov r15,r25
+ 114               	.L7:
+ 115 00ba 8091 0000 		lds r24,systemFlags
+ 116 00be 81FF      		sbrs r24,1
+ 117 00c0 00C0      		rjmp .L3
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s 			page 3
+
+
+ 118 00c2 8091 0000 		lds r24,counter
+ 119 00c6 9091 0000 		lds r25,counter+1
+ 120 00ca 0196      		adiw r24,1
+ 121 00cc 9093 0000 		sts counter+1,r25
+ 122 00d0 8093 0000 		sts counter,r24
+ 123 00d4 8091 0000 		lds r24,systemFlags
+ 124 00d8 8D7F      		andi r24,lo8(~(1<<1))
+ 125 00da 8093 0000 		sts systemFlags,r24
+ 126               	.L3:
+ 127 00de 8091 0000 		lds r24,systemFlags
+ 128 00e2 82FF      		sbrs r24,2
+ 129 00e4 00C0      		rjmp .L4
+ 130 00e6 8091 0000 		lds r24,counter
+ 131 00ea 9091 0000 		lds r25,counter+1
+ 132 00ee 0A96      		adiw r24,10
+ 133 00f0 9093 0000 		sts counter+1,r25
+ 134 00f4 8093 0000 		sts counter,r24
+ 135 00f8 8091 0000 		lds r24,systemFlags
+ 136 00fc 8B7F      		andi r24,lo8(~(1<<2))
+ 137 00fe 8093 0000 		sts systemFlags,r24
+ 138               	.L4:
+ 139 0102 8091 0000 		lds r24,systemFlags
+ 140 0106 83FF      		sbrs r24,3
+ 141 0108 00C0      		rjmp .L5
+ 142 010a 8091 0000 		lds r24,counter
+ 143 010e 9091 0000 		lds r25,counter+1
+ 144 0112 8C59      		subi r24,-100
+ 145 0114 9F4F      		sbci r25,-1
+ 146 0116 9093 0000 		sts counter+1,r25
+ 147 011a 8093 0000 		sts counter,r24
+ 148 011e 8091 0000 		lds r24,systemFlags
+ 149 0122 877F      		andi r24,lo8(~(1<<3))
+ 150 0124 8093 0000 		sts systemFlags,r24
+ 151               	.L5:
+ 152 0128 8091 0000 		lds r24,systemFlags
+ 153 012c 84FF      		sbrs r24,4
+ 154 012e 00C0      		rjmp .L6
+ 155 0130 8091 0000 		lds r24,counter
+ 156 0134 9091 0000 		lds r25,counter+1
+ 157 0138 8851      		subi r24,24
+ 158 013a 9C4F      		sbci r25,-4
+ 159 013c 9093 0000 		sts counter+1,r25
+ 160 0140 8093 0000 		sts counter,r24
+ 161 0144 8091 0000 		lds r24,systemFlags
+ 162 0148 8F7E      		andi r24,lo8(~(1<<4))
+ 163 014a 8093 0000 		sts systemFlags,r24
+ 164               	.L6:
+ 165 014e 8091 0000 		lds r24,counter
+ 166 0152 9091 0000 		lds r25,counter+1
+ 167 0156 B801      		movw r22,r16
+ 168 0158 0E94 0000 		call __udivmodhi4
+ 169 015c 8B8F      		std Y+27,r24
+ 170 015e 8091 0000 		lds r24,counter
+ 171 0162 9091 0000 		lds r25,counter+1
+ 172 0166 B801      		movw r22,r16
+ 173 0168 0E94 0000 		call __udivmodhi4
+ 174 016c CB01      		movw r24,r22
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s 			page 4
+
+
+ 175 016e B801      		movw r22,r16
+ 176 0170 0E94 0000 		call __udivmodhi4
+ 177 0174 8C8F      		std Y+28,r24
+ 178 0176 8091 0000 		lds r24,counter
+ 179 017a 9091 0000 		lds r25,counter+1
+ 180 017e B601      		movw r22,r12
+ 181 0180 0E94 0000 		call __udivmodhi4
+ 182 0184 CB01      		movw r24,r22
+ 183 0186 B801      		movw r22,r16
+ 184 0188 0E94 0000 		call __udivmodhi4
+ 185 018c 8D8F      		std Y+29,r24
+ 186 018e 8091 0000 		lds r24,counter
+ 187 0192 9091 0000 		lds r25,counter+1
+ 188 0196 B701      		movw r22,r14
+ 189 0198 0E94 0000 		call __udivmodhi4
+ 190 019c CB01      		movw r24,r22
+ 191 019e B801      		movw r22,r16
+ 192 01a0 0E94 0000 		call __udivmodhi4
+ 193 01a4 8E8F      		std Y+30,r24
+ 194 01a6 50E0      		ldi r21,0
+ 195 01a8 40E0      		ldi r20,0
+ 196 01aa BE01      		movw r22,r28
+ 197 01ac 655E      		subi r22,-27
+ 198 01ae 7F4F      		sbci r23,-1
+ 199 01b0 80E0      		ldi r24,lo8(display)
+ 200 01b2 90E0      		ldi r25,hi8(display)
+ 201 01b4 0E94 0000 		call _ZN23SevenSegmentsMuxDisplay17updateDigitValuesEPKhPKb
+ 202 01b8 00C0      		rjmp .L7
+ 204               		.section	.text._Z23pcint0InterruptCallbackv,"ax",@progbits
+ 205               	.global	_Z23pcint0InterruptCallbackv
+ 207               	_Z23pcint0InterruptCallbackv:
+ 208               	/* prologue: function */
+ 209               	/* frame size = 0 */
+ 210               	/* stack size = 0 */
+ 211               	.L__stack_usage = 0
+ 212 0000 93B1      		in r25,0x3
+ 213 0002 9F70      		andi r25,lo8(15)
+ 214 0004 8091 0000 		lds r24,_ZZ23pcint0InterruptCallbackvE9lastState
+ 215 0008 8927      		eor r24,r25
+ 216 000a 1B99      		sbic 0x3,3
+ 217 000c 00C0      		rjmp .L21
+ 218 000e 83FF      		sbrs r24,3
+ 219 0010 00C0      		rjmp .L21
+ 220 0012 3091 0000 		lds r19,systemFlags
+ 221 0016 2091 0000 		lds r18,systemFlags
+ 222 001a 2D7F      		andi r18,~(1<<1)
+ 223 001c 31FF      		sbrs r19,1
+ 224 001e 2260      		ori r18,1<<1
+ 225 0020 2093 0000 		sts systemFlags,r18
+ 226               	.L21:
+ 227 0024 1A99      		sbic 0x3,2
+ 228 0026 00C0      		rjmp .L22
+ 229 0028 82FF      		sbrs r24,2
+ 230 002a 00C0      		rjmp .L22
+ 231 002c 3091 0000 		lds r19,systemFlags
+ 232 0030 2091 0000 		lds r18,systemFlags
+ 233 0034 2B7F      		andi r18,~(1<<2)
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s 			page 5
+
+
+ 234 0036 32FF      		sbrs r19,2
+ 235 0038 2460      		ori r18,1<<2
+ 236 003a 2093 0000 		sts systemFlags,r18
+ 237               	.L22:
+ 238 003e 1999      		sbic 0x3,1
+ 239 0040 00C0      		rjmp .L23
+ 240 0042 81FF      		sbrs r24,1
+ 241 0044 00C0      		rjmp .L23
+ 242 0046 3091 0000 		lds r19,systemFlags
+ 243 004a 2091 0000 		lds r18,systemFlags
+ 244 004e 277F      		andi r18,~(1<<3)
+ 245 0050 33FF      		sbrs r19,3
+ 246 0052 2860      		ori r18,1<<3
+ 247 0054 2093 0000 		sts systemFlags,r18
+ 248               	.L23:
+ 249 0058 1899      		sbic 0x3,0
+ 250 005a 00C0      		rjmp .L24
+ 251 005c 80FF      		sbrs r24,0
+ 252 005e 00C0      		rjmp .L24
+ 253 0060 2091 0000 		lds r18,systemFlags
+ 254 0064 8091 0000 		lds r24,systemFlags
+ 255 0068 8F7E      		andi r24,~(1<<4)
+ 256 006a 24FF      		sbrs r18,4
+ 257 006c 8061      		ori r24,1<<4
+ 258 006e 8093 0000 		sts systemFlags,r24
+ 259               	.L24:
+ 260 0072 9093 0000 		sts _ZZ23pcint0InterruptCallbackvE9lastState,r25
+ 261               	/* epilogue start */
+ 262 0076 0895      		ret
+ 264               		.section	.text._Z22timer0CompareACallbackv,"ax",@progbits
+ 265               	.global	_Z22timer0CompareACallbackv
+ 267               	_Z22timer0CompareACallbackv:
+ 268               	/* prologue: function */
+ 269               	/* frame size = 0 */
+ 270               	/* stack size = 0 */
+ 271               	.L__stack_usage = 0
+ 272 0000 80E0      		ldi r24,lo8(display)
+ 273 0002 90E0      		ldi r25,hi8(display)
+ 274 0004 0C94 0000 		jmp _ZN23SevenSegmentsMuxDisplay13showNextDigitEv
+ 276               		.section	.text.startup._GLOBAL__sub_I_counter,"ax",@progbits
+ 278               	_GLOBAL__sub_I_counter:
+ 279               	/* prologue: function */
+ 280               	/* frame size = 0 */
+ 281               	/* stack size = 0 */
+ 282               	.L__stack_usage = 0
+ 283 0000 80E0      		ldi r24,lo8(display)
+ 284 0002 90E0      		ldi r25,hi8(display)
+ 285 0004 0C94 0000 		jmp _ZN23SevenSegmentsMuxDisplayC1Ev
+ 287               		.global __do_global_ctors
+ 288               		.section .ctors,"a",@progbits
+ 289               		.p2align	1
+ 290 0000 0000      		.word	gs(_GLOBAL__sub_I_counter)
+ 291               		.section	.text.exit._GLOBAL__sub_D_counter,"ax",@progbits
+ 293               	_GLOBAL__sub_D_counter:
+ 294               	/* prologue: function */
+ 295               	/* frame size = 0 */
+ 296               	/* stack size = 0 */
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s 			page 6
+
+
+ 297               	.L__stack_usage = 0
+ 298 0000 80E0      		ldi r24,lo8(display)
+ 299 0002 90E0      		ldi r25,hi8(display)
+ 300 0004 0C94 0000 		jmp _ZN23SevenSegmentsMuxDisplayD1Ev
+ 302               		.global __do_global_dtors
+ 303               		.section .dtors,"a",@progbits
+ 304               		.p2align	1
+ 305 0000 0000      		.word	gs(_GLOBAL__sub_D_counter)
+ 306               		.section	.data._ZZ23pcint0InterruptCallbackvE9lastState,"aw",@progbits
+ 309               	_ZZ23pcint0InterruptCallbackvE9lastState:
+ 310 0000 FF        		.byte	-1
+ 311               	.global	display
+ 312               		.section	.bss.display,"aw",@nobits
+ 315               	display:
+ 316 0000 0000 0000 		.zero	24
+ 316      0000 0000 
+ 316      0000 0000 
+ 316      0000 0000 
+ 316      0000 0000 
+ 317               	.global	systemFlags
+ 318               		.section	.bss.systemFlags,"aw",@nobits
+ 321               	systemFlags:
+ 322 0000 0000      		.zero	2
+ 323               	.global	counter
+ 324               		.section	.data.counter,"aw",@progbits
+ 327               	counter:
+ 328 0000 6809      		.word	2408
+ 329               		.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.7.0_1796) 7.3.0"
+ 330               	.global __do_copy_data
+ 331               	.global __do_clear_bss
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 main.cpp
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:25     .text.startup.main:0000000000000000 main
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:321    .bss.systemFlags:0000000000000000 systemFlags
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:315    .bss.display:0000000000000000 display
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:327    .data.counter:0000000000000000 counter
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:207    .text._Z23pcint0InterruptCallbackv:0000000000000000 _Z23pcint0InterruptCallbackv
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:309    .data._ZZ23pcint0InterruptCallbackvE9lastState:0000000000000000 _ZZ23pcint0InterruptCallbackvE9lastState
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:267    .text._Z22timer0CompareACallbackv:0000000000000000 _Z22timer0CompareACallbackv
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:278    .text.startup._GLOBAL__sub_I_counter:0000000000000000 _GLOBAL__sub_I_counter
+C:\Users\Docker\AppData\Local\Temp\cctrPq8N.s:293    .text.exit._GLOBAL__sub_D_counter:0000000000000000 _GLOBAL__sub_D_counter
+
+UNDEFINED SYMBOLS
+_ZN7GpioBusC1Ev
+_ZN7GpioBus4initEPVhNS_8PinIndexEh
+_ZN23SevenSegmentsMuxDisplay8setPortsEP7GpioBusS1_10LogicLevel
+_ZN23SevenSegmentsMuxDisplay4initENS_6DigitsE24SevenSegmentsDisplayType
+pcint0
+_ZN6Pcint04initENS_3PinE
+timer0
+_ZN6Timer04initENS_4ModeENS_11ClockSourceE
+__udivmodhi4
+_ZN23SevenSegmentsMuxDisplay17updateDigitValuesEPKhPKb
+_ZN23SevenSegmentsMuxDisplay13showNextDigitEv
+_ZN23SevenSegmentsMuxDisplayC1Ev
+__do_global_ctors
+_ZN23SevenSegmentsMuxDisplayD1Ev
+__do_global_dtors
+__do_copy_data
+__do_clear_bss

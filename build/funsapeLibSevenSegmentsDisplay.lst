@@ -1,0 +1,343 @@
+GAS LISTING C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s 			page 1
+
+
+   1               		.file	"funsapeLibSevenSegmentsDisplay.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType,"ax",@progbits
+  23               	.global	_Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+  25               	_Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 E82F      		mov r30,r24
+  31 0002 F0E0      		ldi r31,0
+  32 0004 E050      		subi r30,lo8(-(CSWTCH.5))
+  33 0006 F040      		sbci r31,hi8(-(CSWTCH.5))
+  34 0008 8081      		ld r24,Z
+  35 000a 6111      		cpse r22,__zero_reg__
+  36 000c 8068      		ori r24,lo8(-128)
+  37               	.L3:
+  38 000e 4111      		cpse r20,__zero_reg__
+  39 0010 00C0      		rjmp .L2
+  40 0012 8095      		com r24
+  41               	.L2:
+  42               	/* epilogue start */
+  43 0014 0895      		ret
+  45               		.section	.text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType,"ax",@prog
+  46               	.global	_Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType
+  48               	_Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:
+  49               	/* prologue: function */
+  50               	/* frame size = 0 */
+  51               	/* stack size = 0 */
+  52               	.L__stack_usage = 0
+  53 0000 0C94 0000 		jmp _Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+  55               		.section	.rodata.CSWTCH.5,"a",@progbits
+  58               	CSWTCH.5:
+  59 0000 3F        		.byte	63
+  60 0001 06        		.byte	6
+  61 0002 5B        		.byte	91
+  62 0003 4F        		.byte	79
+  63 0004 66        		.byte	102
+  64 0005 6D        		.byte	109
+  65 0006 7D        		.byte	125
+GAS LISTING C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s 			page 2
+
+
+  66 0007 07        		.byte	7
+  67 0008 7F        		.byte	127
+  68 0009 6F        		.byte	111
+  69 000a 77        		.byte	119
+  70 000b 7C        		.byte	124
+  71 000c 39        		.byte	57
+  72 000d 5E        		.byte	94
+  73 000e 79        		.byte	121
+  74 000f 71        		.byte	113
+  75 0010 00        		.byte	0
+  76 0011 00        		.byte	0
+  77 0012 00        		.byte	0
+  78 0013 00        		.byte	0
+  79 0014 00        		.byte	0
+  80 0015 00        		.byte	0
+  81 0016 00        		.byte	0
+  82 0017 00        		.byte	0
+  83 0018 00        		.byte	0
+  84 0019 00        		.byte	0
+  85 001a 00        		.byte	0
+  86 001b 00        		.byte	0
+  87 001c 00        		.byte	0
+  88 001d 00        		.byte	0
+  89 001e 00        		.byte	0
+  90 001f 00        		.byte	0
+  91 0020 00        		.byte	0
+  92 0021 00        		.byte	0
+  93 0022 00        		.byte	0
+  94 0023 00        		.byte	0
+  95 0024 00        		.byte	0
+  96 0025 00        		.byte	0
+  97 0026 00        		.byte	0
+  98 0027 00        		.byte	0
+  99 0028 00        		.byte	0
+ 100 0029 00        		.byte	0
+ 101 002a 00        		.byte	0
+ 102 002b 00        		.byte	0
+ 103 002c 00        		.byte	0
+ 104 002d 40        		.byte	64
+ 105 002e 00        		.byte	0
+ 106 002f 00        		.byte	0
+ 107 0030 00        		.byte	0
+ 108 0031 00        		.byte	0
+ 109 0032 00        		.byte	0
+ 110 0033 00        		.byte	0
+ 111 0034 00        		.byte	0
+ 112 0035 00        		.byte	0
+ 113 0036 00        		.byte	0
+ 114 0037 00        		.byte	0
+ 115 0038 00        		.byte	0
+ 116 0039 00        		.byte	0
+ 117 003a 00        		.byte	0
+ 118 003b 00        		.byte	0
+ 119 003c 00        		.byte	0
+ 120 003d 00        		.byte	0
+ 121 003e 00        		.byte	0
+ 122 003f 00        		.byte	0
+GAS LISTING C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s 			page 3
+
+
+ 123 0040 00        		.byte	0
+ 124 0041 77        		.byte	119
+ 125 0042 7C        		.byte	124
+ 126 0043 39        		.byte	57
+ 127 0044 5E        		.byte	94
+ 128 0045 79        		.byte	121
+ 129 0046 71        		.byte	113
+ 130 0047 00        		.byte	0
+ 131 0048 76        		.byte	118
+ 132 0049 00        		.byte	0
+ 133 004a 00        		.byte	0
+ 134 004b 00        		.byte	0
+ 135 004c 38        		.byte	56
+ 136 004d 00        		.byte	0
+ 137 004e 00        		.byte	0
+ 138 004f 3F        		.byte	63
+ 139 0050 73        		.byte	115
+ 140 0051 00        		.byte	0
+ 141 0052 00        		.byte	0
+ 142 0053 6D        		.byte	109
+ 143 0054 00        		.byte	0
+ 144 0055 3E        		.byte	62
+ 145 0056 00        		.byte	0
+ 146 0057 00        		.byte	0
+ 147 0058 00        		.byte	0
+ 148 0059 00        		.byte	0
+ 149 005a 00        		.byte	0
+ 150 005b 00        		.byte	0
+ 151 005c 00        		.byte	0
+ 152 005d 00        		.byte	0
+ 153 005e 00        		.byte	0
+ 154 005f 00        		.byte	0
+ 155 0060 00        		.byte	0
+ 156 0061 00        		.byte	0
+ 157 0062 00        		.byte	0
+ 158 0063 00        		.byte	0
+ 159 0064 00        		.byte	0
+ 160 0065 00        		.byte	0
+ 161 0066 00        		.byte	0
+ 162 0067 00        		.byte	0
+ 163 0068 00        		.byte	0
+ 164 0069 04        		.byte	4
+ 165 006a 1E        		.byte	30
+ 166 006b 00        		.byte	0
+ 167 006c 00        		.byte	0
+ 168 006d 00        		.byte	0
+ 169 006e 54        		.byte	84
+ 170 006f 00        		.byte	0
+ 171 0070 00        		.byte	0
+ 172 0071 67        		.byte	103
+ 173 0072 50        		.byte	80
+ 174 0073 00        		.byte	0
+ 175 0074 78        		.byte	120
+ 176 0075 00        		.byte	0
+ 177 0076 00        		.byte	0
+ 178 0077 00        		.byte	0
+ 179 0078 00        		.byte	0
+GAS LISTING C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s 			page 4
+
+
+ 180 0079 6E        		.byte	110
+ 181 007a 00        		.byte	0
+ 182 007b 00        		.byte	0
+ 183 007c 00        		.byte	0
+ 184 007d 00        		.byte	0
+ 185 007e 00        		.byte	0
+ 186 007f 00        		.byte	0
+ 187 0080 00        		.byte	0
+ 188 0081 00        		.byte	0
+ 189 0082 00        		.byte	0
+ 190 0083 00        		.byte	0
+ 191 0084 00        		.byte	0
+ 192 0085 00        		.byte	0
+ 193 0086 00        		.byte	0
+ 194 0087 00        		.byte	0
+ 195 0088 00        		.byte	0
+ 196 0089 00        		.byte	0
+ 197 008a 00        		.byte	0
+ 198 008b 00        		.byte	0
+ 199 008c 00        		.byte	0
+ 200 008d 00        		.byte	0
+ 201 008e 00        		.byte	0
+ 202 008f 00        		.byte	0
+ 203 0090 00        		.byte	0
+ 204 0091 00        		.byte	0
+ 205 0092 00        		.byte	0
+ 206 0093 00        		.byte	0
+ 207 0094 00        		.byte	0
+ 208 0095 00        		.byte	0
+ 209 0096 00        		.byte	0
+ 210 0097 00        		.byte	0
+ 211 0098 00        		.byte	0
+ 212 0099 00        		.byte	0
+ 213 009a 00        		.byte	0
+ 214 009b 00        		.byte	0
+ 215 009c 00        		.byte	0
+ 216 009d 00        		.byte	0
+ 217 009e 00        		.byte	0
+ 218 009f 00        		.byte	0
+ 219 00a0 00        		.byte	0
+ 220 00a1 00        		.byte	0
+ 221 00a2 00        		.byte	0
+ 222 00a3 00        		.byte	0
+ 223 00a4 00        		.byte	0
+ 224 00a5 00        		.byte	0
+ 225 00a6 00        		.byte	0
+ 226 00a7 00        		.byte	0
+ 227 00a8 00        		.byte	0
+ 228 00a9 00        		.byte	0
+ 229 00aa 00        		.byte	0
+ 230 00ab 00        		.byte	0
+ 231 00ac 00        		.byte	0
+ 232 00ad 00        		.byte	0
+ 233 00ae 00        		.byte	0
+ 234 00af 00        		.byte	0
+ 235 00b0 00        		.byte	0
+ 236 00b1 00        		.byte	0
+GAS LISTING C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s 			page 5
+
+
+ 237 00b2 00        		.byte	0
+ 238 00b3 00        		.byte	0
+ 239 00b4 00        		.byte	0
+ 240 00b5 00        		.byte	0
+ 241 00b6 00        		.byte	0
+ 242 00b7 00        		.byte	0
+ 243 00b8 00        		.byte	0
+ 244 00b9 00        		.byte	0
+ 245 00ba 00        		.byte	0
+ 246 00bb 00        		.byte	0
+ 247 00bc 00        		.byte	0
+ 248 00bd 00        		.byte	0
+ 249 00be 00        		.byte	0
+ 250 00bf 00        		.byte	0
+ 251 00c0 00        		.byte	0
+ 252 00c1 00        		.byte	0
+ 253 00c2 00        		.byte	0
+ 254 00c3 00        		.byte	0
+ 255 00c4 00        		.byte	0
+ 256 00c5 00        		.byte	0
+ 257 00c6 00        		.byte	0
+ 258 00c7 00        		.byte	0
+ 259 00c8 00        		.byte	0
+ 260 00c9 00        		.byte	0
+ 261 00ca 00        		.byte	0
+ 262 00cb 00        		.byte	0
+ 263 00cc 00        		.byte	0
+ 264 00cd 00        		.byte	0
+ 265 00ce 00        		.byte	0
+ 266 00cf 00        		.byte	0
+ 267 00d0 00        		.byte	0
+ 268 00d1 00        		.byte	0
+ 269 00d2 00        		.byte	0
+ 270 00d3 00        		.byte	0
+ 271 00d4 00        		.byte	0
+ 272 00d5 00        		.byte	0
+ 273 00d6 00        		.byte	0
+ 274 00d7 00        		.byte	0
+ 275 00d8 00        		.byte	0
+ 276 00d9 00        		.byte	0
+ 277 00da 00        		.byte	0
+ 278 00db 00        		.byte	0
+ 279 00dc 00        		.byte	0
+ 280 00dd 00        		.byte	0
+ 281 00de 00        		.byte	0
+ 282 00df 00        		.byte	0
+ 283 00e0 00        		.byte	0
+ 284 00e1 00        		.byte	0
+ 285 00e2 00        		.byte	0
+ 286 00e3 00        		.byte	0
+ 287 00e4 00        		.byte	0
+ 288 00e5 00        		.byte	0
+ 289 00e6 00        		.byte	0
+ 290 00e7 00        		.byte	0
+ 291 00e8 00        		.byte	0
+ 292 00e9 00        		.byte	0
+ 293 00ea 00        		.byte	0
+GAS LISTING C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s 			page 6
+
+
+ 294 00eb 00        		.byte	0
+ 295 00ec 00        		.byte	0
+ 296 00ed 00        		.byte	0
+ 297 00ee 00        		.byte	0
+ 298 00ef 00        		.byte	0
+ 299 00f0 00        		.byte	0
+ 300 00f1 00        		.byte	0
+ 301 00f2 00        		.byte	0
+ 302 00f3 00        		.byte	0
+ 303 00f4 00        		.byte	0
+ 304 00f5 00        		.byte	0
+ 305 00f6 00        		.byte	0
+ 306 00f7 00        		.byte	0
+ 307 00f8 00        		.byte	0
+ 308 00f9 00        		.byte	0
+ 309 00fa 00        		.byte	0
+ 310 00fb 00        		.byte	0
+ 311 00fc 00        		.byte	0
+ 312 00fd FF        		.byte	-1
+ 313 00fe 00        		.byte	0
+ 314 00ff 00        		.byte	0
+ 315               		.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.7.0_1796) 7.3.0"
+ 316               	.global __do_copy_data
+GAS LISTING C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 funsapeLibSevenSegmentsDisplay.cpp
+C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s:25     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 _Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s:58     .rodata.CSWTCH.5:0000000000000000 CSWTCH.5
+C:\Users\Aluno\AppData\Local\Temp\ccjgcSZ6.s:48     .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 _Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType
+
+UNDEFINED SYMBOLS
+__do_copy_data

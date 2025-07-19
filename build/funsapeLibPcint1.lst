@@ -1,0 +1,245 @@
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s 			page 1
+
+
+   1               		.file	"funsapeLibPcint1.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               		.section	.text._Z7getTickv,"ax",@progbits
+   9               		.weak	_Z7getTickv
+  11               	_Z7getTickv:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 60E0      		ldi r22,0
+  17 0002 70E0      		ldi r23,0
+  18 0004 CB01      		movw r24,r22
+  19               	/* epilogue start */
+  20 0006 0895      		ret
+  22               		.section	.text._ZN6Pcint1C2Ev,"ax",@progbits
+  23               	.global	_ZN6Pcint1C2Ev
+  25               	_ZN6Pcint1C2Ev:
+  26               	/* prologue: function */
+  27               	/* frame size = 0 */
+  28               	/* stack size = 0 */
+  29               	.L__stack_usage = 0
+  30 0000 FC01      		movw r30,r24
+  31 0002 1182      		std Z+1,__zero_reg__
+  32 0004 8081      		ld r24,Z
+  33 0006 8E7F      		andi r24,lo8(~(1<<0))
+  34 0008 8083      		st Z,r24
+  35 000a 1382      		std Z+3,__zero_reg__
+  36 000c 1282      		std Z+2,__zero_reg__
+  37               	/* epilogue start */
+  38 000e 0895      		ret
+  40               	.global	_ZN6Pcint1C1Ev
+  41               		.set	_ZN6Pcint1C1Ev,_ZN6Pcint1C2Ev
+  42               		.section	.text._ZN6Pcint1D2Ev,"ax",@progbits
+  43               	.global	_ZN6Pcint1D2Ev
+  45               	_ZN6Pcint1D2Ev:
+  46               	/* prologue: function */
+  47               	/* frame size = 0 */
+  48               	/* stack size = 0 */
+  49               	.L__stack_usage = 0
+  50               	/* epilogue start */
+  51 0000 0895      		ret
+  53               	.global	_ZN6Pcint1D1Ev
+  54               		.set	_ZN6Pcint1D1Ev,_ZN6Pcint1D2Ev
+  55               		.section	.text._ZN6Pcint14initENS_3PinE,"ax",@progbits
+  56               	.global	_ZN6Pcint14initENS_3PinE
+  58               	_ZN6Pcint14initENS_3PinE:
+  59               	/* prologue: function */
+  60               	/* frame size = 0 */
+  61               	/* stack size = 0 */
+  62               	.L__stack_usage = 0
+  63 0000 FC01      		movw r30,r24
+  64 0002 ACE6      		ldi r26,lo8(108)
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s 			page 2
+
+
+  65 0004 B0E0      		ldi r27,0
+  66 0006 9C91      		ld r25,X
+  67 0008 9078      		andi r25,lo8(-128)
+  68 000a 962B      		or r25,r22
+  69 000c 9C93      		st X,r25
+  70 000e 6183      		std Z+1,r22
+  71 0010 8081      		ld r24,Z
+  72 0012 8160      		ori r24,lo8(1<<0)
+  73 0014 8083      		st Z,r24
+  74 0016 1382      		std Z+3,__zero_reg__
+  75 0018 1282      		std Z+2,__zero_reg__
+  76 001a 81E0      		ldi r24,lo8(1)
+  77               	/* epilogue start */
+  78 001c 0895      		ret
+  80               		.section	.text._ZN6Pcint110enablePinsENS_3PinE,"ax",@progbits
+  81               	.global	_ZN6Pcint110enablePinsENS_3PinE
+  83               	_ZN6Pcint110enablePinsENS_3PinE:
+  84               	/* prologue: function */
+  85               	/* frame size = 0 */
+  86               	/* stack size = 0 */
+  87               	.L__stack_usage = 0
+  88 0000 FC01      		movw r30,r24
+  89 0002 ACE6      		ldi r26,lo8(108)
+  90 0004 B0E0      		ldi r27,0
+  91 0006 9C91      		ld r25,X
+  92 0008 8181      		ldd r24,Z+1
+  93 000a 682B      		or r22,r24
+  94 000c 9078      		andi r25,lo8(-128)
+  95 000e 962B      		or r25,r22
+  96 0010 9C93      		st X,r25
+  97 0012 6183      		std Z+1,r22
+  98 0014 1382      		std Z+3,__zero_reg__
+  99 0016 1282      		std Z+2,__zero_reg__
+ 100 0018 81E0      		ldi r24,lo8(1)
+ 101               	/* epilogue start */
+ 102 001a 0895      		ret
+ 104               		.section	.text._ZN6Pcint111disablePinsENS_3PinE,"ax",@progbits
+ 105               	.global	_ZN6Pcint111disablePinsENS_3PinE
+ 107               	_ZN6Pcint111disablePinsENS_3PinE:
+ 108               	/* prologue: function */
+ 109               	/* frame size = 0 */
+ 110               	/* stack size = 0 */
+ 111               	.L__stack_usage = 0
+ 112 0000 FC01      		movw r30,r24
+ 113 0002 ACE6      		ldi r26,lo8(108)
+ 114 0004 B0E0      		ldi r27,0
+ 115 0006 9C91      		ld r25,X
+ 116 0008 6095      		com r22
+ 117 000a 8181      		ldd r24,Z+1
+ 118 000c 6823      		and r22,r24
+ 119 000e 9078      		andi r25,lo8(-128)
+ 120 0010 962B      		or r25,r22
+ 121 0012 9C93      		st X,r25
+ 122 0014 6183      		std Z+1,r22
+ 123 0016 1382      		std Z+3,__zero_reg__
+ 124 0018 1282      		std Z+2,__zero_reg__
+ 125 001a 81E0      		ldi r24,lo8(1)
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s 			page 3
+
+
+ 126               	/* epilogue start */
+ 127 001c 0895      		ret
+ 129               		.section	.text._ZN6Pcint112getLastErrorEv,"ax",@progbits
+ 130               	.global	_ZN6Pcint112getLastErrorEv
+ 132               	_ZN6Pcint112getLastErrorEv:
+ 133               	/* prologue: function */
+ 134               	/* frame size = 0 */
+ 135               	/* stack size = 0 */
+ 136               	.L__stack_usage = 0
+ 137 0000 FC01      		movw r30,r24
+ 138 0002 8281      		ldd r24,Z+2
+ 139 0004 9381      		ldd r25,Z+3
+ 140               	/* epilogue start */
+ 141 0006 0895      		ret
+ 143               		.section	.text._Z23pcint1InterruptCallbackv,"ax",@progbits
+ 144               		.weak	_Z23pcint1InterruptCallbackv
+ 146               	_Z23pcint1InterruptCallbackv:
+ 147               	/* prologue: function */
+ 148               	/* frame size = 0 */
+ 149               	/* stack size = 0 */
+ 150               	.L__stack_usage = 0
+ 151               	/* epilogue start */
+ 152 0000 0895      		ret
+ 154               		.section	.text.__vector_4,"ax",@progbits
+ 155               	.global	__vector_4
+ 157               	__vector_4:
+ 158 0000 1F92      		push r1
+ 159 0002 0F92      		push r0
+ 160 0004 0FB6      		in r0,__SREG__
+ 161 0006 0F92      		push r0
+ 162 0008 1124      		clr __zero_reg__
+ 163 000a 2F93      		push r18
+ 164 000c 3F93      		push r19
+ 165 000e 4F93      		push r20
+ 166 0010 5F93      		push r21
+ 167 0012 6F93      		push r22
+ 168 0014 7F93      		push r23
+ 169 0016 8F93      		push r24
+ 170 0018 9F93      		push r25
+ 171 001a AF93      		push r26
+ 172 001c BF93      		push r27
+ 173 001e EF93      		push r30
+ 174 0020 FF93      		push r31
+ 175               	/* prologue: Signal */
+ 176               	/* frame size = 0 */
+ 177               	/* stack size = 15 */
+ 178               	.L__stack_usage = 15
+ 179 0022 0E94 0000 		call _Z23pcint1InterruptCallbackv
+ 180               	/* epilogue start */
+ 181 0026 FF91      		pop r31
+ 182 0028 EF91      		pop r30
+ 183 002a BF91      		pop r27
+ 184 002c AF91      		pop r26
+ 185 002e 9F91      		pop r25
+ 186 0030 8F91      		pop r24
+ 187 0032 7F91      		pop r23
+ 188 0034 6F91      		pop r22
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s 			page 4
+
+
+ 189 0036 5F91      		pop r21
+ 190 0038 4F91      		pop r20
+ 191 003a 3F91      		pop r19
+ 192 003c 2F91      		pop r18
+ 193 003e 0F90      		pop r0
+ 194 0040 0FBE      		out __SREG__,r0
+ 195 0042 0F90      		pop r0
+ 196 0044 1F90      		pop r1
+ 197 0046 1895      		reti
+ 199               		.section	.text.startup._GLOBAL__sub_I_pcint1,"ax",@progbits
+ 201               	_GLOBAL__sub_I_pcint1:
+ 202               	/* prologue: function */
+ 203               	/* frame size = 0 */
+ 204               	/* stack size = 0 */
+ 205               	.L__stack_usage = 0
+ 206 0000 E0E0      		ldi r30,lo8(pcint1)
+ 207 0002 F0E0      		ldi r31,hi8(pcint1)
+ 208 0004 1182      		std Z+1,__zero_reg__
+ 209 0006 8081      		ld r24,Z
+ 210 0008 8E7F      		andi r24,lo8(~(1<<0))
+ 211 000a 8083      		st Z,r24
+ 212 000c 1382      		std Z+3,__zero_reg__
+ 213 000e 1282      		std Z+2,__zero_reg__
+ 214               	/* epilogue start */
+ 215 0010 0895      		ret
+ 217               		.global __do_global_ctors
+ 218               		.section .ctors,"a",@progbits
+ 219               		.p2align	1
+ 220 0000 0000      		.word	gs(_GLOBAL__sub_I_pcint1)
+ 221               	.global	pcint1
+ 222               		.section	.bss.pcint1,"aw",@nobits
+ 225               	pcint1:
+ 226 0000 0000 0000 		.zero	4
+ 227               		.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.7.0_1796) 7.3.0"
+ 228               	.global __do_clear_bss
+GAS LISTING C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 funsapeLibPcint1.cpp
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:11     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:25     .text._ZN6Pcint1C2Ev:0000000000000000 _ZN6Pcint1C2Ev
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:25     .text._ZN6Pcint1C2Ev:0000000000000000 _ZN6Pcint1C1Ev
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:45     .text._ZN6Pcint1D2Ev:0000000000000000 _ZN6Pcint1D2Ev
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:45     .text._ZN6Pcint1D2Ev:0000000000000000 _ZN6Pcint1D1Ev
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:58     .text._ZN6Pcint14initENS_3PinE:0000000000000000 _ZN6Pcint14initENS_3PinE
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:83     .text._ZN6Pcint110enablePinsENS_3PinE:0000000000000000 _ZN6Pcint110enablePinsENS_3PinE
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:107    .text._ZN6Pcint111disablePinsENS_3PinE:0000000000000000 _ZN6Pcint111disablePinsENS_3PinE
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:132    .text._ZN6Pcint112getLastErrorEv:0000000000000000 _ZN6Pcint112getLastErrorEv
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:146    .text._Z23pcint1InterruptCallbackv:0000000000000000 _Z23pcint1InterruptCallbackv
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:157    .text.__vector_4:0000000000000000 __vector_4
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:201    .text.startup._GLOBAL__sub_I_pcint1:0000000000000000 _GLOBAL__sub_I_pcint1
+C:\Users\Docker\AppData\Local\Temp\ccpt39aP.s:225    .bss.pcint1:0000000000000000 pcint1
+
+UNDEFINED SYMBOLS
+__do_global_ctors
+__do_clear_bss
