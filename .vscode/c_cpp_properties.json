@@ -3,18 +3,14 @@
         {
             "name": "AVR",
             "includePath": [
-                "${workspaceFolder}/**",
-                "${workspaceFolder}/lib/**",
-                "/usr/lib/gcc/avr/*/include/**",
-                "/usr/lib/avr/include/**"
-
-        ],
+                "/home/paulo/Code/oximetroAVR/lib/**"
+            ],
             "defines": [
                 "__AVR_ATmega328P__"
             ],
-            "compilerPath": "",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
+            "compilerPath": "/usr/bin/avr-gcc",
+            "cStandard": "${default}",
+            "cppStandard": "${default}",
             "intelliSenseMode": "gcc-x64",
             "compilerArgs": [
                 "-g",
@@ -26,7 +22,9 @@
                 "-fno-threadsafe-statics",
                 "-ffunction-sections",
                 "-fdata-sections",
-                "-pipe"
+                "-pipe",
+                "-mmcu=atmega328p",
+                "-DF_CPU=16000000UL"
             ],
             "configurationProvider": "ms-vscode.makefile-tools"
         }
