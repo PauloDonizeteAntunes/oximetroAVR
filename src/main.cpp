@@ -1,6 +1,6 @@
 #include "../lib/funsape/funsapeLibGlobalDefines.hpp"
 #include "../lib/funsape/peripheral/funsapeLibUsart0.hpp"
-#include "../lib/max30102/src/MAX30102.h"
+#include "../lib/MAX30102.h"
 #include "../lib/twi_master.h"
 
 void usartConfg(){
