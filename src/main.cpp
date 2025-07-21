@@ -4,7 +4,7 @@
 #include "../lib/twi_master.h"
 
 void usartConfg(){
-    usart0.setBaudRate(Usart0::BaudRate::BAUD_RATE_9600);
+    usart0.setBaudRate(Usart0::BaudRate::BAUD_RATE_57600);
     usart0.init();               // primeiro init
     usart0.enableTransmitter();  // depois habilita TX
     usart0.stdio();              // só agora vincula printf() ao usart0
@@ -54,7 +54,7 @@ uint8_t getAvailableSamples() {
 bool initMAX30102() {
 
         // Inicializar TWI
-    tw_init(TW_FREQ_400K, true);
+    tw_init(TW_FREQ_400K, false);
 
     // Endereço do MAX30102
 
@@ -80,7 +80,7 @@ bool initMAX30102() {
 
 
     //Sim e spo02 que configura o samplerate de todo mundo
-    uint8_t spo2_config = MAX30102_SPO2_ADC_RGE_4096 |
+    uint8_t spo2_config = MAX30102_SPO2_ADC_RGE_16384 |
                          MAX30102_SPO2_SR_1000 |
                          MAX30102_SPO2_PW_411;
     writeRegister(MAX30102_SPO2_CONFIG, spo2_config);
@@ -88,10 +88,11 @@ bool initMAX30102() {
 
     //Red led config
     writeRegister(MAX30102_LED1_PA, 0x60);
-    writeRegister(MAX30102_LED2_PA, 0x60);
+    writeRegister(MAX30102_LED2_PA, 0);
     printf("setup de led\n");
 
     return true;
+
 
 }
 
@@ -108,10 +109,15 @@ int main(void)
     while(1){
         uint32_t red, ir;
         readFIFO(&red, &ir);
-        printf("Red: %lu, IR: %lu", red, ir);
-        delayMs(1000);
 
+        // if (ir < 50000){
+        //     printf(" No finger?\n");
+        //     continue;
+        // }
 
+        printf("Red: %lu, IR: %lu\n", red, ir);
+
+        delayMs(10);
     }
 
     return 0;
