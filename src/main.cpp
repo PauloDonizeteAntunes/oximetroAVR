@@ -23,7 +23,7 @@ uint8_t readRegister(uint8_t reg) {
     return value;
 }
 
-void readFIFOData(uint32_t* red, uint32_t* ir) {
+void readFIFO(uint32_t* red, uint32_t* ir) {
     uint8_t reg = MAX30102_FIFO_DATA;
     uint8_t fifo_data[6]; // 3 bytes RED + 3 bytes IR
 
@@ -33,15 +33,11 @@ void readFIFOData(uint32_t* red, uint32_t* ir) {
     tw_master_receive(MAX30102_I2C_ADDRESS, fifo_data, 6);
 
     // Reconstruct 18-bit values
-    *red = ((uint32_t)fifo_data[0] << 16) |
-           ((uint32_t)fifo_data[1] << 8) |
-           (uint32_t)fifo_data[2];
-    *red &= 0x3FFFF; // Mask to 18 bits
+    *red = ((uint32_t)fifo_data[0] << 16) | ((uint32_t)fifo_data[1] << 8) | fifo_data[2];
+    *red &= 0x03FFFF;  // Mask para 18 bits
 
-    *ir = ((uint32_t)fifo_data[3] << 16) |
-          ((uint32_t)fifo_data[4] << 8) |
-          (uint32_t)fifo_data[5];
-    *ir &= 0x3FFFF; // Mask to 18 bits
+    *ir = ((uint32_t)fifo_data[3] << 16) | ((uint32_t)fifo_data[4] << 8) | fifo_data[5];
+    *ir &= 0x03FFFF;   // Mask para 18 bits
 }
 
 uint8_t getAvailableSamples() {
@@ -91,14 +87,13 @@ bool initMAX30102() {
     printf("setup de config\n");
 
     //Red led config
-    writeRegister(MAX30102_LED1_PA, 0x24);
-    writeRegister(MAX30102_LED2_PA, 0x24);
+    writeRegister(MAX30102_LED1_PA, 0x60);
+    writeRegister(MAX30102_LED2_PA, 0x60);
     printf("setup de led\n");
 
     return true;
 
 }
-
 
 
 int main(void)
@@ -111,6 +106,10 @@ int main(void)
     }
 
     while(1){
+        uint32_t red, ir;
+        readFIFO(&red, &ir);
+        printf("Red: %lu, IR: %lu", red, ir);
+        delayMs(1000);
 
 
     }
