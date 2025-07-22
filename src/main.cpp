@@ -1,7 +1,10 @@
 #include "../lib/funsape/funsapeLibGlobalDefines.hpp"
 #include "../lib/funsape/peripheral/funsapeLibUsart0.hpp"
+#include "../lib/funsape/peripheral/funsapeLibInt0.hpp"
 #include "../lib/MAX30102.h"
 #include "../lib/twi_master.h"
+
+volatile bool fifo_rdy = 0;
 
 void usartConfg(){
     usart0.setBaudRate(Usart0::BaudRate::BAUD_RATE_57600);
@@ -40,16 +43,6 @@ void readFIFO(uint32_t* red, uint32_t* ir) {
     *ir &= 0x03FFFF;   // Mask para 18 bits
 }
 
-uint8_t getAvailableSamples() {
-    uint8_t write_ptr = readRegister(MAX30102_FIFO_WR_PTR);
-    uint8_t read_ptr = readRegister(MAX30102_FIFO_RD_PTR);
-
-    if (write_ptr >= read_ptr) {
-        return write_ptr - read_ptr;
-    } else {
-        return (32 - read_ptr) + write_ptr; // FIFO is 32 samples deep
-    }
-}
 
 bool initMAX30102() {
 
@@ -76,18 +69,37 @@ bool initMAX30102() {
     //setup
     writeRegister(MAX30102_MODE_CONFIG, MAX30102_MODE_RESET);
     writeRegister(MAX30102_MODE_CONFIG, MAX30102_MODE_HEART_RATE);
+    delayMs(100);
     printf("setup de coracao\n");
 
 
     //Sim e spo02 que configura o samplerate de todo mundo
     uint8_t spo2_config = MAX30102_SPO2_ADC_RGE_16384 |
-                         MAX30102_SPO2_SR_1000 |
+                         MAX30102_SPO2_SR_800 |
                          MAX30102_SPO2_PW_411;
     writeRegister(MAX30102_SPO2_CONFIG, spo2_config);
     printf("setup de config\n");
 
+
+    //Configura avg da fifo e habilita INT0 para quando a fifo estiver com X samples configuradas
+    uint8_t fifo_config = MAX30102_SAMPLEAVG_32 |       // Sem averaging adicional no FIFO
+                         MAX30102_ROLLOVER_EN |         // Habilita rollover
+                         0x0F;                          // Almost full = 15 samples (32-17=15)
+    writeRegister(MAX30102_FIFO_CONFIG, fifo_config);
+    printf("setup de FIFO\n");
+
+    // IMPORTANTE: Configurar interrupções do MAX30102 - APENAS FIFO Almost Full
+    writeRegister(MAX30102_INT_ENABLE_1, MAX30102_INT_A_FULL);  // Apenas FIFO Almost Full
+    writeRegister(MAX30102_INT_ENABLE_2, 0x00);                 // Não usar temperatura
+    printf("setup de interrupcoes\n");
+
+    // Limpar quaisquer interrupções pendentes lendo os registradores de status
+    readRegister(MAX30102_INT_STATUS_1);
+    readRegister(MAX30102_INT_STATUS_2);
+    printf("interrupcoes limpas\n");
+
     //Red led config
-    writeRegister(MAX30102_LED1_PA, 0x60);
+    writeRegister(MAX30102_LED1_PA, 0x0F);
     writeRegister(MAX30102_LED2_PA, 0);
     printf("setup de led\n");
 
@@ -96,6 +108,16 @@ bool initMAX30102() {
 
 }
 
+uint8_t getAvailableSamples() {
+    uint8_t write_ptr = readRegister(MAX30102_FIFO_WR_PTR);
+    uint8_t read_ptr = readRegister(MAX30102_FIFO_RD_PTR);
+
+    if (write_ptr >= read_ptr) {
+        return write_ptr - read_ptr;
+    } else {
+        return (32 - read_ptr) + write_ptr; // FIFO is 32 samples deep
+    }
+}
 
 int main(void)
 {
@@ -105,6 +127,14 @@ int main(void)
         printf("Failed to initialize MAX30102\n");
         return -1;
     }
+
+    //init inicialize
+    setBit(PORTD, PD2);
+    int0.init(Int0::SenseMode::LOW_LEVEL);
+    int0.clearInterruptRequest();
+    int0.activateInterrupt();
+
+    sei();
 
     while(1){
         uint32_t red, ir;
@@ -117,8 +147,13 @@ int main(void)
 
         printf("Red: %lu, IR: %lu\n", red, ir);
 
-        delayMs(10);
     }
 
     return 0;
+}
+
+void int0InterruptCallback(void)
+{
+    fifo_rdy = true;
+    printf("========================INT0-FOI-ACIONADA========================================");
 }
