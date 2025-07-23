@@ -6,6 +6,20 @@
 
 volatile bool fifo_rdy = 0;
 
+#define BUFFER_SIZE 100
+#define MIN_PEAK_DISTANCE 10  // Mínima distância entre picos (em amostras)
+#define PEAK_THRESHOLD 20     // Threshold para detecção de pico
+
+// Buffer circular para armazenar amostras
+static uint32_t sample_buffer[BUFFER_SIZE];
+static uint8_t buffer_index = 0;
+static bool buffer_full = false;
+
+// Array para armazenar intervalos entre batimentos
+static uint16_t beat_intervals[10];
+static uint8_t interval_index = 0;
+static uint32_t last_peak_time = 0;
+
 void usartConfg(){
     usart0.setBaudRate(Usart0::BaudRate::BAUD_RATE_57600);
     usart0.init();               // primeiro init
@@ -74,17 +88,17 @@ bool initMAX30102() {
 
 
     //Sim e spo02 que configura o samplerate de todo mundo
-    uint8_t spo2_config = MAX30102_SPO2_ADC_RGE_16384 |
-                         MAX30102_SPO2_SR_800 |
+    uint8_t spo2_config = MAX30102_SPO2_ADC_RGE_4096 |
+                         MAX30102_SPO2_SR_50 |
                          MAX30102_SPO2_PW_411;
     writeRegister(MAX30102_SPO2_CONFIG, spo2_config);
     printf("setup de config\n");
 
 
     //Configura avg da fifo e habilita INT0 para quando a fifo estiver com X samples configuradas
-    uint8_t fifo_config = MAX30102_SAMPLEAVG_32 |       // Sem averaging adicional no FIFO
+    uint8_t fifo_config = MAX30102_SAMPLEAVG_4 |       // Sem averaging adicional no FIFO
                          MAX30102_ROLLOVER_EN |         // Habilita rollover
-                         0x0F;                          // Almost full = 15 samples (32-17=15)
+                         0x02;                          // 30 amostra levanta INT0
     writeRegister(MAX30102_FIFO_CONFIG, fifo_config);
     printf("setup de FIFO\n");
 
@@ -99,7 +113,7 @@ bool initMAX30102() {
     printf("interrupcoes limpas\n");
 
     //Red led config
-    writeRegister(MAX30102_LED1_PA, 0x0F);
+    writeRegister(MAX30102_LED1_PA, 0x1F);
     writeRegister(MAX30102_LED2_PA, 0);
     printf("setup de led\n");
 
@@ -130,23 +144,39 @@ int main(void)
 
     //init inicialize
     setBit(PORTD, PD2);
-    int0.init(Int0::SenseMode::LOW_LEVEL);
+    int0.init(Int0::SenseMode::FALLING_EDGE);
     int0.clearInterruptRequest();
     int0.activateInterrupt();
 
     sei();
 
     while(1){
-        uint32_t red, ir;
-        readFIFO(&red, &ir);
+        if (fifo_rdy) {
+            uint8_t available = getAvailableSamples();
+            uint32_t red_samples[32];  // Buffer para amostras
 
-        // if (ir < 50000){
-        //     printf(" No finger?\n");
-        //     continue;
-        // }
+            if (available > 0) {
 
-        printf("Red: %lu, IR: %lu\n", red, ir);
+                // Ler todas as amostras disponíveis de uma vez
+                for (uint8_t i = 0; i < available; i++) {
+                    uint32_t red, ir;
+                    readFIFO(&red, &ir);
+                    red_samples[i] = red;
+                    printf("Red: %lu, IR: %lu\n", red, ir);
 
+                }
+
+                //Limpa INT0 para que seja possivel nova setagem do pino
+                readRegister(MAX30102_INT_STATUS_1);
+                readRegister(MAX30102_INT_STATUS_2);
+            }
+
+
+
+            int0.clearInterruptRequest();
+            fifo_rdy = false;
+
+        }
     }
 
     return 0;
@@ -155,5 +185,4 @@ int main(void)
 void int0InterruptCallback(void)
 {
     fifo_rdy = true;
-    printf("========================INT0-FOI-ACIONADA========================================");
 }
