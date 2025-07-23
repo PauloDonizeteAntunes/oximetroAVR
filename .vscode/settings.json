@@ -10,7 +10,7 @@
   ],
   "AVR.device.type": "atmega328p",
   "AVR.programmer.type": "arduino",
-  "AVR.programmer.port": "/dev/ttyUSB1",
+  "AVR.programmer.port": "/dev/ttyUSB2",
   "AVR.device.frequency": 16000000,
   "AVR.programmer.rate": 115200
 }

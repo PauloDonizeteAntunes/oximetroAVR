@@ -89,14 +89,14 @@ bool initMAX30102() {
 
     //Sim e spo02 que configura o samplerate de todo mundo
     uint8_t spo2_config = MAX30102_SPO2_ADC_RGE_4096 |
-                         MAX30102_SPO2_SR_50 |
+                         MAX30102_SPO2_SR_800 |
                          MAX30102_SPO2_PW_411;
     writeRegister(MAX30102_SPO2_CONFIG, spo2_config);
     printf("setup de config\n");
 
 
     //Configura avg da fifo e habilita INT0 para quando a fifo estiver com X samples configuradas
-    uint8_t fifo_config = MAX30102_SAMPLEAVG_4 |       // Sem averaging adicional no FIFO
+    uint8_t fifo_config = MAX30102_SAMPLEAVG_1 |       // Sem averaging adicional no FIFO
                          MAX30102_ROLLOVER_EN |         // Habilita rollover
                          0x02;                          // 30 amostra levanta INT0
     writeRegister(MAX30102_FIFO_CONFIG, fifo_config);
@@ -114,7 +114,7 @@ bool initMAX30102() {
 
     //Red led config
     writeRegister(MAX30102_LED1_PA, 0x1F);
-    writeRegister(MAX30102_LED2_PA, 0);
+    writeRegister(MAX30102_LED2_PA, 0x1F);
     printf("setup de led\n");
 
     return true;
@@ -133,8 +133,92 @@ uint8_t getAvailableSamples() {
     }
 }
 
+volatile unsigned long timer0_millis = 0;
+volatile unsigned long timer0_overflow_count = 0;
+
+ISR(TIMER0_COMPA_vect) {
+    timer0_millis++;
+}
+
+unsigned long millis() {
+    unsigned long m;
+
+    uint8_t oldSREG = SREG;   // Salva o status de interrupções
+    cli();                    // Desabilita interrupções
+    m = timer0_millis;        // Lê o contador
+    SREG = oldSREG;           // Restaura o status de interrupções
+
+    return m;
+}
+
+bool checkForBeat(int32_t sample) {
+    static int32_t prevSample = 0;
+    static int32_t thresh = 20000;
+    static bool rising = false;
+    static uint32_t lastBeatTime = 0;
+    static int32_t maxValue = 0;
+    static int32_t minValue = 65535;
+    static uint16_t sampleCount = 0;
+    static int32_t peakValue = 0;
+    static uint8_t risingCount = 0;  // Contador para garantir subida consistente
+
+    bool beatDetected = false;
+    uint32_t now = millis();
+
+    // Atualiza valores min/max
+    if (sample > maxValue) maxValue = sample;
+    if (sample < minValue) minValue = sample;
+
+    sampleCount++;
+
+    // Ajusta threshold a cada 50 amostras
+    if (sampleCount % 50 == 0) {
+        thresh = minValue + ((maxValue - minValue) * 10 / 100); // 75% para ser mais seletivo
+    }
+
+    if (sample > thresh) {
+        if (!rising && (sample - prevSample) > 100) {  // Subida mais significativa
+            rising = true;
+            peakValue = sample;
+            risingCount = 1;
+        }
+
+        // Conta amostras consecutivas subindo
+        if (rising && sample > prevSample) {
+            risingCount++;
+            if (sample > peakValue) {
+                peakValue = sample;
+            }
+        }
+
+        // Detecta quando começa a descer após subida consistente
+        if (rising && risingCount >= 3 && (sample < peakValue - 300)) {  // Pelo menos 3 amostras subindo e queda de 300
+            // Intervalo mínimo de 750ms (máximo 80 BPM)
+            if ((now - lastBeatTime) >= 750) {
+                lastBeatTime = now;
+                beatDetected = true;
+            }
+            rising = false;
+            peakValue = 0;
+            risingCount = 0;
+        }
+    } else {
+        rising = false;
+        peakValue = 0;
+        risingCount = 0;
+    }
+
+    prevSample = sample;
+    return beatDetected;
+}
+
 int main(void)
 {
+    TCCR0A = (1 << WGM01);                      // Modo CTC
+    TCCR0B = (1 << CS01) | (1 << CS00);         // Prescaler 64
+    OCR0A = 249;                                // Valor de comparação
+    TIMSK0 |= (1 << OCIE0A);                    // Habilita interrupção
+
     usartConfg();
 
     if (!initMAX30102()) {
@@ -150,8 +234,11 @@ int main(void)
 
     sei();
 
+    uint32_t lastBeat = 0;  // fora do while(1)
+
     while(1){
         if (fifo_rdy) {
+
             uint8_t available = getAvailableSamples();
             uint32_t red_samples[32];  // Buffer para amostras
 
@@ -162,14 +249,28 @@ int main(void)
                     uint32_t red, ir;
                     readFIFO(&red, &ir);
                     red_samples[i] = red;
-                    printf("Red: %lu, IR: %lu\n", red, ir);
+                    // printf("Red: %lu, IR: %lu\n", red, ir);
 
+                if (checkForBeat(ir)) {
+                    printf("Temos um beat\n");
+
+                    uint32_t now = millis();
+                    uint32_t delta = now - lastBeat;
+                    lastBeat = now;
+
+                if (delta > 100 && delta < 2500) { // Apenas BPM entre 30-200
+                    uint32_t bpm = 60000UL / delta;
+                    printf("BPM %lu (delta: %lums)\n", bpm, delta);
+                } else {
+                    printf("Invalid interval: %lums (ignored)\n", delta);
                 }
+            }
 
                 //Limpa INT0 para que seja possivel nova setagem do pino
                 readRegister(MAX30102_INT_STATUS_1);
                 readRegister(MAX30102_INT_STATUS_2);
             }
+        }
 
 
 
