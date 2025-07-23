@@ -2,16 +2,14 @@
     "configurations": [
         {
             "name": "AVR",
-            "includePath": [
-                "/home/paulo/Code/oximetroAVR/lib/**"
-            ],
-            "defines": [
-                "__AVR_ATmega328P__"
-            ],
+            "intelliSenseMode": "${default}",
             "compilerPath": "/usr/bin/avr-gcc",
             "cStandard": "${default}",
             "cppStandard": "${default}",
-            "intelliSenseMode": "gcc-x64",
+            "includePath": [
+                "/home/server/code/projectAVR/oximetroAVR/lib/**",
+                "/home/server/code/projectAVR/oximetroAVR/**"
+            ],
             "compilerArgs": [
                 "-g",
                 "-Os",
@@ -25,8 +23,7 @@
                 "-pipe",
                 "-mmcu=atmega328p",
                 "-DF_CPU=16000000UL"
-            ],
-            "configurationProvider": "ms-vscode.makefile-tools"
+            ]
         }
     ],
     "version": 4

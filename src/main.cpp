@@ -113,8 +113,8 @@ bool initMAX30102() {
     printf("interrupcoes limpas\n");
 
     //Red led config
-    writeRegister(MAX30102_LED1_PA, 0x1F);
-    writeRegister(MAX30102_LED2_PA, 0x1F);
+    writeRegister(MAX30102_LED1_PA, 0x3F);
+    writeRegister(MAX30102_LED2_PA, 0x3F);
     printf("setup de led\n");
 
     return true;
