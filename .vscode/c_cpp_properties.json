@@ -7,8 +7,7 @@
             "cStandard": "${default}",
             "cppStandard": "${default}",
             "includePath": [
-                "/home/server/code/projectAVR/oximetroAVR/lib/**",
-                "/home/server/code/projectAVR/oximetroAVR/**"
+                "/home/paulo/Code/oximetroAVR/lib/**"
             ],
             "compilerArgs": [
                 "-g",

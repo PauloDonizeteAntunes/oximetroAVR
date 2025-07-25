@@ -6,15 +6,15 @@
   "AVR.programmer.tool": "/usr/bin/avrdude",
   "AVR.programmer.definitions": "/etc/avrdude.conf",
   "AVR.source.libraries": [
-    // "/home/paulo/Code/oximetroAVR/lib",
-    "/home/server/code/projectAVR/oximetroAVR/lib/",
-    "/home/server/code/projectAVR/oximetroAVR/"
+    "/home/paulo/Code/oximetroAVR/lib",
+    // "/home/server/code/projectAVR/oximetroAVR/lib/",
+    // "/home/server/code/projectAVR/oximetroAVR/"
 
   ],
   "AVR.hex.dump.enabled":true,
   "AVR.device.type": "atmega328p",
   "AVR.programmer.type": "arduino",
-  "AVR.programmer.port": "/dev/ttyUSB2",
+  "AVR.programmer.port": "/dev/ttyUSB0",
   "AVR.device.frequency": 16000000,
   "AVR.programmer.rate": 115200
 }

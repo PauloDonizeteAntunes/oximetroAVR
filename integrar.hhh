@@ -1,0 +1,243 @@
+#include <avr/io.h>
+#include <avr/pgmspace.h>
+#include <util/delay.h>
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+// Definições de tipos para economizar memória
+typedef int16_t data_point_t;    // Dados do sensor (-32768 a 32767)
+typedef uint8_t sample_index_t;  // Índice de amostra (0-255, ajuste conforme necessário)
+typedef float float_t;           // Tipo float
+
+// Configurações do sistema
+#define MAX_SAMPLES 200          // Máximo de amostras que podemos armazenar
+#define MAX_PEAKS 20             // Máximo de picos detectáveis
+#define MIN_PEAK_HEIGHT 29900    // Altura mínima para considerar um pico R
+#define SAMPLING_FREQUENCY 62.5f // Frequência de amostragem em Hz
+
+// Buffers de dados em RAM (considere usar EEPROM se necessário)
+static data_point_t channel1_data[MAX_SAMPLES];
+static data_point_t channel2_data[MAX_SAMPLES];
+static sample_index_t peak_buffer[MAX_PEAKS];
+
+// Contador de amostras
+static uint8_t sample_count = 0;
+
+// Dados de exemplo armazenados na Flash (PROGMEM)
+const data_point_t sample_data[][2] PROGMEM = {
+    {30095, 30094}, {30102, 30102}, {30102, 30104}, {30074, 30096},
+    {30079, 30092}, {30014, 30015}, {29882, 29890}, {29896, 29890},
+    {29897, 29880}, {29813, 29815}, {29815, 29807}, {29826, 29823},
+    {29843, 29839}, {29861, 29856}, {29871, 29868}, {29888, 29886},
+    {29904, 29896}, {29909, 29904}, {29942, 29941}, {29988, 29990},
+    {29993, 29993}, {29993, 29994}, {29995, 29995}, {29993, 29994},
+    {29990, 29991}, {29994, 29993}, {29997, 29993}, {30002, 30001},
+    {30015, 30015}, {30058, 30057}, {30063, 30062}, {30063, 30063},
+    {30075, 30073}, {30074, 30074}, {30077, 30076}, {30095, 30094},
+    {30094, 30095}, {30089, 30092}, {30095, 30095}, {30102, 30103},
+    {30100, 30100}, {30100, 30101}, {30098, 30099}, {30095, 30096},
+    {30097, 30097}, {30092, 30094}, {30094, 30096}, {30092, 30092},
+    {30055, 30072}, {29865, 29869}, {29832, 29832}, {29829, 29828},
+    {29836, 29829}, {29838, 29835}, {29862, 29859}, {29883, 29875},
+    {29887, 29885}, {29907, 29904}, {29936, 29932}, {29988, 29986},
+    {29995, 29994}, {30004, 30003}, {30009, 30009}, {30014, 30015},
+    {30011, 30013}, {30005, 30008}, {30002, 30003}, {29990, 29990},
+    {29986, 29985}, {29999, 29997}, {30001, 30000}, {30014, 30012},
+    {30019, 30018}, {30028, 30029}, {30038, 30037}, {30048, 30046},
+    {30037, 30041}, {30054, 30054}, {30062, 30062}, {30073, 30074},
+    {30078, 30077}, {30077, 30077}, {30082, 30083}, {30081, 30080},
+    {30077, 30077}, {30082, 30082}, {30078, 30079}, {30084, 30085},
+    {30068, 30079}, {29926, 29933}, {29859, 29863}, {29817, 29820},
+    {29831, 29826}, {29798, 29798}, {29807, 29802}, {29818, 29814},
+    {29830, 29830}, {29855, 29850}, {29864, 29860}, {29919, 29919},
+    {29936, 29933}, {29949, 29947}, {29960, 29959}, {29972, 29972},
+    {29976, 29977}, {29979, 29981}, {29988, 29990}, {29970, 29975},
+    {29971, 29971}, {29927, 29927}, {29921, 29919}, {29924, 29922},
+    {29930, 29930}, {29935, 29933}, {29948, 29944}, {29949, 29949},
+    {29968, 29967}, {29978, 29975}, {29983, 29982}, {30021, 30020},
+    {30024, 30022}, {30032, 30030}, {30036, 30036}, {30043, 30041},
+    {30051, 30051}, {30053, 30053}, {30054, 30054}, {30058, 30055},
+    {30057, 30057}, {30067, 30069}, {30055, 30071}, {30052, 30065},
+    {29998, 30011}, {29877, 29909}, {29817, 29826}, {29786, 29786},
+    {29759, 29759}, {29759, 29755}, {29793, 29792}, {29796, 29792},
+    {29818, 29811}, {29829, 29828}, {29844, 29842}, {29854, 29847},
+    {29870, 29864}, {29877, 29876}, {29905, 29900}, {29919, 29916},
+    {29962, 29962}, {29969, 29968}
+};
+
+#define SAMPLE_DATA_SIZE (sizeof(sample_data) / sizeof(sample_data[0]))
+
+// Função para carregar dados da Flash para RAM
+void load_sample_data(void) {
+    sample_count = (SAMPLE_DATA_SIZE > MAX_SAMPLES) ? MAX_SAMPLES : SAMPLE_DATA_SIZE;
+
+    for (uint8_t i = 0; i < sample_count; i++) {
+        channel1_data[i] = pgm_read_word(&sample_data[i][0]);
+        channel2_data[i] = pgm_read_word(&sample_data[i][1]);
+    }
+}
+
+// Função otimizada para encontrar picos
+uint8_t find_peaks(const data_point_t* data, uint8_t data_size,
+                   sample_index_t* peaks, float_t min_distance_samples) {
+    uint8_t peak_count = 0;
+
+    if (data_size < 3) return 0;  // Precisa de pelo menos 3 pontos
+
+    uint8_t peak_width_samples = (uint8_t)(min_distance_samples / 5.0f);
+    if (peak_width_samples < 2) peak_width_samples = 2;
+
+    sample_index_t last_peak_idx = 0;
+
+    for (uint8_t i = peak_width_samples; i < (data_size - peak_width_samples); i++) {
+        // Verifica se está acima do limiar mínimo
+        if (data[i] > MIN_PEAK_HEIGHT) {
+            uint8_t is_local_max = 1;
+
+            // Verifica janela à direita
+            for (uint8_t j = 1; j <= peak_width_samples; j++) {
+                if (data[i + j] > data[i]) {
+                    is_local_max = 0;
+                    break;
+                }
+            }
+
+            // Verifica janela à esquerda (só se ainda for máximo local)
+            if (is_local_max) {
+                for (uint8_t j = 1; j <= peak_width_samples; j++) {
+                    if (data[i - j] > data[i]) {
+                        is_local_max = 0;
+                        break;
+                    }
+                }
+            }
+
+            // Se é pico local e respeitou a distância mínima
+            if (is_local_max && ((i - last_peak_idx) >= min_distance_samples)) {
+                if (peak_count < MAX_PEAKS) {
+                    peaks[peak_count] = i;
+                    peak_count++;
+                    last_peak_idx = i;
+                }
+            }
+        }
+    }
+
+    return peak_count;
+}
+
+// Função para calcular BPM
+float_t calculate_bpm(const data_point_t* data_channel, uint8_t data_size, float_t fs_val) {
+    float_t min_distance_samples = fs_val * 0.5f;  // Mínimo 0.5 segundos entre picos
+
+    uint8_t peak_count = find_peaks(data_channel, data_size, peak_buffer, min_distance_samples);
+
+    if (peak_count < 2) {
+        return NAN;  // Não há picos suficientes
+    }
+
+    float_t total_interval_sec = 0.0f;
+    uint8_t num_intervals = 0;
+
+    // Calcular intervalos entre picos
+    for (uint8_t i = 0; i < peak_count - 1; i++) {
+        float_t interval_samples = (float_t)(peak_buffer[i + 1] - peak_buffer[i]);
+        float_t interval_sec = interval_samples / fs_val;
+
+        if (interval_sec > 0.0f) {
+            total_interval_sec += interval_sec;
+            num_intervals++;
+        }
+    }
+
+    if (num_intervals == 0) {
+        return NAN;
+    }
+
+    // BPM = (Número de batimentos - 1) * 60 / Tempo total
+    return ((float_t)(peak_count - 1) * 60.0f) / total_interval_sec;
+}
+
+// Configuração do UART para debug (opcional)
+void uart_init(uint16_t baud) {
+    uint16_t ubrr = F_CPU / 16 / baud - 1;
+    UBRR0H = (uint8_t)(ubrr >> 8);
+    UBRR0L = (uint8_t)ubrr;
+    UCSR0B = (1 << RXEN0) | (1 << TXEN0);  // Habilita RX e TX
+    UCSR0C = (1 << UCSZ01) | (1 << UCSZ00); // 8 bits de dados
+}
+
+void uart_putchar(char c) {
+    while (!(UCSR0A & (1 << UDRE0)));
+    UDR0 = c;
+}
+
+void uart_puts(const char* str) {
+    while (*str) {
+        uart_putchar(*str++);
+    }
+}
+
+// Função para imprimir float com 2 casas decimais
+void print_float(float_t value) {
+    if (isnan(value)) {
+        uart_puts("NaN");
+        return;
+    }
+
+    int16_t integer_part = (int16_t)value;
+    int16_t decimal_part = (int16_t)((value - integer_part) * 100);
+
+    if (decimal_part < 0) decimal_part = -decimal_part;
+
+    char buffer[16];
+    snprintf(buffer, sizeof(buffer), "%d.%02d", integer_part, decimal_part);
+    uart_puts(buffer);
+}
+
+// Função principal
+int main(void) {
+    // Inicialização do sistema
+    uart_init(9600);  // Inicializa UART a 9600 bps
+
+    uart_puts("Sistema ECG BPM iniciado\r\n");
+
+    // Carrega dados de exemplo
+    load_sample_data();
+
+    uart_puts("Dados carregados: ");
+    char buffer[8];
+    snprintf(buffer, sizeof(buffer), "%d", sample_count);
+    uart_puts(buffer);
+    uart_puts(" amostras\r\n");
+
+    // Calcula BPM para ambos os canais
+    float_t bpm_channel1 = calculate_bpm(channel1_data, sample_count, SAMPLING_FREQUENCY);
+    float_t bpm_channel2 = calculate_bpm(channel2_data, sample_count, SAMPLING_FREQUENCY);
+
+    // Exibe resultados
+    uart_puts("BPM Canal 1: ");
+    print_float(bpm_channel1);
+    uart_puts("\r\n");
+
+    uart_puts("BPM Canal 2: ");
+    print_float(bpm_channel2);
+    uart_puts("\r\n");
+
+    // Loop principal
+    while (1) {
+        // Aqui você pode adicionar código para:
+        // - Ler dados do ADC em tempo real
+        // - Processar novos dados
+        // - Enviar dados via comunicação serial
+        // - Atualizar displays, etc.
+
+        _delay_ms(1000);  // Delay de 1 segundo
+
+        // Exemplo: piscar LED para indicar funcionamento
+        // PORTB ^= (1 << PB5);  // Toggle LED no pino PB5 (Arduino Uno)
+    }
+
+    return 0;
+}
