@@ -99,8 +99,8 @@ bool initMAX30102() {
     // printf("interrupcoes limpas\n");
 
     //Red led config
-    writeRegister(MAX30102_LED1_PA, 0x1F);
-    writeRegister(MAX30102_LED2_PA, 0x1F);
+    writeRegister(MAX30102_LED1_PA, 0x60);
+    writeRegister(MAX30102_LED2_PA, 0x60);
     // printf("setup de led\n");
 
     return true;
@@ -143,11 +143,73 @@ uint32_t calcularTendencia(const uint32_t valores[3]) {
 }
 
 // Configurações do BPM
-#define MAX_PEAKS 20
 #define SAMPLE_RATE 62.5f
-#define MIN_DISTANCE_SAMPLES 31
-#define ARRAY_SIZE 625
+#define MAX_VALES 300
+#define VARIACAO_MINIMA 170
+#define QUEDA_ADICIONAL 100  // tolerância para continuação da queda
 
+uint8_t detectar_vales_queda_e_subida(const uint32_t* dados, uint16_t tamanho, uint16_t* indices_vales, uint16_t max_vales) {
+    uint8_t total_vales = 0;
+    uint16_t i = 1;
+
+    while (i < tamanho - 1 && total_vales < max_vales) {
+        // Verifica se houve uma queda inicial
+        if (dados[i] < dados[i - 1]) {
+            uint16_t inicio_queda = i - 1;
+            uint32_t valor_inicio = dados[inicio_queda];
+
+            // Continua descendo para achar o ponto mais baixo
+            uint16_t melhor_vale = i;
+            uint32_t menor_valor = dados[i];
+
+            while (i < tamanho && dados[i] < dados[i - 1]) {
+                if (dados[i] < menor_valor) {
+                    menor_valor = dados[i];
+                    melhor_vale = i;
+                }
+                i++;
+            }
+
+            int32_t variacao_queda = valor_inicio - menor_valor;
+            if (variacao_queda >= VARIACAO_MINIMA) {
+                // Aguarda a subida de pelo menos VARIACAO_MINIMA
+                uint32_t valor_mais_baixo = menor_valor;
+
+                while (i < tamanho && dados[i] < valor_mais_baixo + VARIACAO_MINIMA) {
+                    if (dados[i] < valor_mais_baixo) {
+                        valor_mais_baixo = dados[i];
+                        melhor_vale = i; // ainda caindo
+                    }
+                    i++;
+                }
+
+                // Quando subir o suficiente, considera esse vale
+                indices_vales[total_vales++] = melhor_vale;
+            }
+        } else {
+            i++;
+        }
+    }
+
+    return total_vales;
+}
+
+float calcular_bpm(const uint16_t* indices_vales, uint8_t total_vales, float fs_amostragem) {
+    if (total_vales < 2) return 0.0f;
+
+    float soma_intervalos = 0.0f;
+
+    for (uint8_t i = 1; i < total_vales; i++) {
+        uint16_t delta = indices_vales[i] - indices_vales[i - 1];
+        float tempo_segundos = delta / fs_amostragem;
+        soma_intervalos += tempo_segundos;
+    }
+
+    float media_intervalo = soma_intervalos / (total_vales - 1);
+    float bpm = 60.0f / media_intervalo;
+
+    return bpm;
+}
 
 
 int main(void)
@@ -172,6 +234,12 @@ int main(void)
     uint32_t tendeciaIr[3];
     uint8_t controle = 16;
     uint8_t x = 0;
+
+    uint32_t bpmAmostra[300];
+    uint16_t  bpmIndex = 0;
+
+    const uint32_t tamanho = sizeof(bpmAmostra) / sizeof(bpmAmostra[0]);
+    uint16_t indices_vales[MAX_VALES];
 
     while(1){
 
@@ -205,8 +273,23 @@ int main(void)
                             tendeciaIr[i] = 0;
                         }
 
-                        printf("%lu\n\r", retorno1);
+                        bpmAmostra[bpmIndex++] = retorno1;
+                        if(bpmIndex == 300){
+                            uint8_t total_vales = detectar_vales_queda_e_subida(bpmAmostra, tamanho, indices_vales, MAX_VALES);
+                                printf("Total de vales detectados: %u\n", total_vales);
+                                for (uint8_t i = 0; i < total_vales; i++) {
+                                    uint16_t idx = indices_vales[i];
+                                    printf("Vale %u: índice %u, valor %u\n", i + 1, idx, bpmAmostra[idx]);
+                                }
 
+
+                              float bpm = calcular_bpm(indices_vales, total_vales, 62.5f);
+                              uint16_t parte_inteira = (uint16_t)bpm;
+                              uint16_t parte_decimal = (uint16_t)((bpm - parte_inteira) * 100);
+
+                              printf("BPM estimado: %u.%02u\n\r", parte_inteira, parte_decimal);
+                          bpmIndex = 0;
+                        }
                     }
                 }
 
