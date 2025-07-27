@@ -5,6 +5,8 @@
 #include "../lib/twi_master.h"
 
 volatile bool fifo_rdy = 0;
+#define SAMPLE_RATE 21f
+
 
 void usartConfg(){
     usart0.setBaudRate(Usart0::BaudRate::BAUD_RATE_57600);
@@ -143,7 +145,6 @@ uint32_t calcularTendencia(const uint32_t valores[3]) {
 }
 
 // Configurações do BPM
-#define SAMPLE_RATE 62.5f
 #define MAX_VALES 300
 #define VARIACAO_MINIMA 170
 #define QUEDA_ADICIONAL 100  // tolerância para continuação da queda
@@ -246,12 +247,11 @@ int main(void)
         uint8_t available = getAvailableSamples();
 
         if (fifo_rdy) {
-
             if (available > 0) {
                 for (uint8_t i = 0; i < available; i++) {
 
                     uint32_t red, ir;
-                    uint32_t redMedia, irMedia;
+                    uint32_t irMedia;
 
                     for (int i = 0; i < controle; i++)
                     {
@@ -260,7 +260,6 @@ int main(void)
                         irMedia = ir + irMedia;
 
                     }
-
                     irMedia = irMedia/controle;
                     tendeciaIr[x] = irMedia;
                     x++;
