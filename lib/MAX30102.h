@@ -110,5 +110,13 @@
 #define MAX30102_FIFO_SIZE          32
 #define MAX30102_PART_ID_VALUE      0x15
 
+bool initMAX30102();
+void readFIFO(uint32_t* red, uint32_t* ir);
+uint8_t getAvailableSamples();
+
+//Twi function
+uint8_t readRegister(uint8_t reg);
+void writeRegister(uint8_t reg, uint8_t value);
+
 
 #endif // MAX30102_HPP
