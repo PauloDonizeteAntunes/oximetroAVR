@@ -7,6 +7,7 @@
   "AVR.programmer.definitions": "/etc/avrdude.conf",
   "AVR.source.libraries": [
     "/home/paulo/Code/oximetroAVR/lib",
+    "/home/paulo/Code/oximetroAVR/fonts"
     // "/home/server/code/projectAVR/oximetroAVR/lib/",
     // "/home/server/code/projectAVR/oximetroAVR/"
 

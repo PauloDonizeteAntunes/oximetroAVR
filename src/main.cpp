@@ -4,6 +4,9 @@
 #include "../lib/MAX30102.h"
 #include "../lib/twi_master.h"
 #include "../lib/calcMaster.h"
+#include "../lib/main_.h"
+#include "../lib/st7735.h"
+#include "../fonts/Font_8_Retro.h"
 
 volatile bool fifo_rdy = 0;
 volatile bool bpm_rdy = 0;
@@ -88,10 +91,45 @@ int main(void)
 
     sei();
 
+
+    LCD_Init(2, 3);
+
+    // TESTE BÁSICO - Apenas uma cor sólida primeiro
+    LCD_Rect_Fill(0, 0, 160, 128, BLACK);
+    // _delay_ms(2000);
+
+    //IFSC moment
+    LCD_Circle(8, 118, 4, 1, 1, RED);
+
+    //Linha 1
+    LCD_Rect_Fill(4, 101, 9, 9, LIME);
+    LCD_Rect_Fill(4, 87, 9, 9, LIME);
+
+    //Linha 2
+    LCD_Rect_Fill(15, 114, 9, 9, LIME);
+    LCD_Rect_Fill(15, 101, 9, 9, LIME);
+
+    //Linha 3
+    LCD_Rect_Fill(27, 114, 9, 9, LIME);
+    LCD_Rect_Fill(27, 101, 9, 9, LIME);
+    LCD_Rect_Fill(27,  87, 9, 9, LIME);
+
+    //Linha 4
+    LCD_Rect_Fill(39, 114, 9, 9, LIME);
+    LCD_Rect_Fill(39, 101, 9, 9, LIME);
+
+    LCD_Orientation(0, 2);
+    LCD_Font(48, 18, "-=IFSC=-", _8_Retro, 1, WHITE);
+    LCD_Font(48, 36, "Paulo", _8_Retro, 1, WHITE);
+    // _delay_ms(1000);
+
+
+
     while (1) {
         if(fifo_rdy){
             processarLeituras();
         }
+
     }
 
     return 0;
