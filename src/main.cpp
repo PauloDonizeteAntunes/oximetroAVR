@@ -8,8 +8,18 @@
 #include "../lib/st7735.h"
 #include "../fonts/Font_8_Retro.h"
 
+#include "../lib/fatFs/mmc_avr.h"
+#include "../lib/fatFs/ff.h"
+
+
 volatile bool fifo_rdy = 0;
 volatile bool bpm_rdy = 0;
+volatile uint16_t bpm_parte_int = 0;
+volatile uint16_t bpm_parte_dec = 0;
+
+volatile uint16_t last_bpm_parte_int = 0;
+volatile uint16_t last_bpm_parte_dec = 0;
+
 
 uint32_t tendeciaIr[3];
 uint8_t controle = 16;
@@ -29,11 +39,13 @@ void usartConfg(){
     usart0.stdio();              // só agora vincula // printf() ao usart0
 }
 
-void processarLeituras(void) {
+void processarLeituras(volatile uint16_t* parte_int, volatile uint16_t* parte_dec) {
 
         uint8_t available = getAvailableSamples();
 
         if (available > 0) {
+            fifo_rdy = false;
+
             for (uint8_t i = 0; i < available; i++) {
                 uint32_t red, ir;
                 uint32_t irMedia = 0;
@@ -60,10 +72,10 @@ void processarLeituras(void) {
                     if (bpmIndex >= tamanho) {
                         bpmIndex = 0;
                         float bpm = detectarValesEBPM(
-                            bpmAmostra, tamanho, indices_vales, 10);
-                        uint16_t parte_int = (uint16_t)bpm;
-                        uint16_t parte_dec = (uint16_t)((bpm - parte_int) * 100);
-                        printf("BPM estimado: %u.%02u\n\r", parte_int, parte_dec);
+                        bpmAmostra, tamanho, indices_vales, 10);
+                        *parte_int = (uint16_t)bpm;
+                        *parte_dec = (uint16_t)((bpm - *parte_int) * 100);
+                        // printf("BPM estimado: %u.%02u\n\r", parte_int, parte_dec);
                     }
                 }
             }
@@ -71,7 +83,6 @@ void processarLeituras(void) {
             readRegister(MAX30102_INT_STATUS_1);
             readRegister(MAX30102_INT_STATUS_2);
             int0.clearInterruptRequest();
-            fifo_rdy = false;
         }
 }
 
@@ -84,16 +95,9 @@ int main(void)
 
     printf("COMECOU\n\r");
 
-    if (!initMAX30102()) {
-        // printf("Failed to initialize MAX30102\n");
-        return -1;
-    }
-
     sei();
 
-
     LCD_Init(2, 3);
-
     // TESTE BÁSICO - Apenas uma cor sólida primeiro
     LCD_Rect_Fill(0, 0, 160, 128, BLACK);
     // _delay_ms(2000);
@@ -123,12 +127,42 @@ int main(void)
     LCD_Font(48, 36, "Paulo", _8_Retro, 1, WHITE);
     // _delay_ms(1000);
 
+    char str[30];
+    snprintf(str, 30, "BPM: %u.%02u\n\r", 0, 0);
+    LCD_Rect_Fill(65, 54, 52, 16, BLACK);
+    LCD_Font(28, 70, str, _8_Retro, 1, WHITE);
+
+
+    // LCD_Orientation(0, 0);
+
+    if (!initMAX30102()) {
+        // printf("Failed to initialize MAX30102\n");
+        return -1;
+    }
 
 
     while (1) {
         if(fifo_rdy){
-            processarLeituras();
+            processarLeituras(&bpm_parte_int, &bpm_parte_dec);
+
+            if(bpm_parte_int != last_bpm_parte_int || bpm_parte_dec != last_bpm_parte_dec){
+                // printf("BPM estimado: %u.%02u\n\r", bpm_parte_int, bpm_parte_dec);
+                last_bpm_parte_dec = bpm_parte_dec;
+                last_bpm_parte_int = bpm_parte_int;
+
+                bpm_rdy = true;
+            }
+
         }
+
+        if(bpm_rdy == true){
+            snprintf(str, 30, "BPM: %u.%02u\n\r", bpm_parte_int, bpm_parte_dec);
+            LCD_Rect_Fill(65, 54, 52, 16, BLACK);
+            LCD_Font(28, 70, str, _8_Retro, 1, WHITE);
+
+            bpm_rdy = false;
+        }
+
 
     }
 
