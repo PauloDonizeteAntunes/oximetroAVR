@@ -15,7 +15,7 @@
   "AVR.hex.dump.enabled":true,
   "AVR.device.type": "atmega328p",
   "AVR.programmer.type": "arduino",
-  "AVR.programmer.port": "/dev/ttyUSB0",
+  "AVR.programmer.port": "/dev/ttyUSB12",
   "AVR.device.frequency": 16000000,
   "AVR.programmer.rate": 115200
 }

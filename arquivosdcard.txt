@@ -1,0 +1,87 @@
+  //codigo da main
+
+  (lembra de importar as duas lbis)
+
+#include "../lib/fatFs/mmc_avr.h"
+#include "../lib/fatFs/ff.h"
+
+    timer0.setCompareAValue(155);
+    timer0.init(Timer0::Mode::CTC_OCRA, Timer0::ClockSource::PRESCALER_1024);
+    timer0.clearCompareAInterruptRequest();
+    timer0.activateCompareAInterrupt();
+    printf("[  OK  ] TIMER0 configured!\r");
+
+    sei();
+
+    FRESULT sdCardResult = FR_OK;
+    FATFS sdCardVolume;
+    uint16_t aux16 = 0;
+    char_t sdCardFileName[14];
+    char_t sdCardBuffer[50];
+    FIL sdCardFile;
+
+    SPCR = (1<<SPE)|(1<<MSTR)|(1<<SPR1)|(1<<SPR0); // já está no mais lento
+
+    printf("[  OK  ] SD card confg!\r");
+    sdCardCreate(LOCATION_PB2);
+    printf("[  OK  ] SD card locate!\r");
+
+    sdCardResult = f_mount(&sdCardVolume, "", 1);
+    printf("[  OK  ] SD card mont!\r");
+    if(sdCardResult != FR_OK) {
+        printf("[ FAIL ] SD card mount failed with error %u!\r", sdCardResult);
+        systemHalt();
+    }
+    printf("[  OK  ] SD card mounted!\r");
+
+    // -------------------------------------------------------------------------
+    // SD card - Create a new file ---------------------------------------------
+
+    for(aux16 = 1; aux16 < 10000; aux16++) {
+        sprintf(sdCardFileName, "FILE%04u.txt", aux16);
+        sdCardResult = f_open(&sdCardFile, sdCardFileName, FA_CREATE_NEW | FA_WRITE);
+        if(sdCardResult == FR_OK) {
+            break;
+        }
+    }
+    printf("[ INFO ] File '%s' created.\r", sdCardFileName);
+
+    sprintf(sdCardBuffer, "Teste de escrita no arquivo %s\r\n", sdCardFileName);
+    UINT bytesWritten;
+    sdCardResult = f_write(&sdCardFile, sdCardBuffer, strlen(sdCardBuffer), &bytesWritten);
+
+    if (sdCardResult != FR_OK || bytesWritten != strlen(sdCardBuffer)) {
+        printf("[ FAIL ] Erro ao escrever no arquivo! Código: %u\r", sdCardResult);
+        systemHalt();
+    } else {
+        printf("[  OK  ] Escrita realizada com sucesso (%u bytes).\r", bytesWritten);
+    }
+
+    // Força sincronismo dos dados
+    f_sync(&sdCardFile);
+    delayMs(100);
+
+    // Fecha o arquivo
+sdCardResult = f_close(&sdCardFile);
+if (sdCardResult != FR_OK) {
+    printf("[ FAIL ] Erro ao fechar arquivo! Código: %u (", sdCardResult);
+    switch(sdCardResult) {
+        case FR_INVALID_OBJECT: printf("objeto inválido"); break;
+        case FR_NOT_READY: printf("drive não pronto"); break;
+        case FR_DISK_ERR: printf("erro no disco"); break;
+        case FR_INT_ERR: printf("erro interno"); break;
+        default: printf("erro desconhecido"); break;
+    }
+    printf(")\r");
+    systemHalt();
+} else {
+    printf("[  OK  ] Arquivo '%s' fechado com sucesso.\r", sdCardFileName);
+}
+
+===================----- Fora da main intTimer
+
+void timer0CompareACallback(void)
+{
+    // cplBit(PORTD, PD3);
+    mmc_disk_timerproc();
+}
