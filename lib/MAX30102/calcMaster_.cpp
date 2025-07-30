@@ -1,4 +1,17 @@
+//!
+//! \file           calcMaster.cpp
+//! \brief          Funções auxiliares para análise de sinal do sensor MAX30102
+//! \author         Paulo Donizete Antunes Junior
+//! \date           2025-07-30
+//! \version        1.0
+//! \details        Cálculo de tendência, detecção de vales e cálculo do BPM
+//!
+
 #include "calcMaster.h"
+
+// -----------------------------------------------------------------------------
+// Função auxiliar: calcula tendência com base em três valores consecutivos
+// -----------------------------------------------------------------------------
 
 uint32_t calcularTendencia(const uint32_t valores[3]) {
     uint32_t a = valores[0];
@@ -25,7 +38,6 @@ uint32_t calcularTendencia(const uint32_t valores[3]) {
 
 // -----------------------------------------------------------------------------
 // Função auxiliar: calcula média das maiores variações absolutas entre amostras
-// Otimizações: uso de bit shifts, early exit, redução de comparações
 // -----------------------------------------------------------------------------
 uint16_t mediaMaioresVariacoes(const uint32_t* dados, uint16_t tamanho, uint8_t qtdMaiores) {
     if (tamanho < 2 || qtdMaiores == 0) return 0;
@@ -83,8 +95,6 @@ uint16_t mediaMaioresVariacoes(const uint32_t* dados, uint16_t tamanho, uint8_t 
 
 // -----------------------------------------------------------------------------
 // Função principal: detecta vales e calcula BPM
-// Otimizações: redução de acessos à memória, loop unrolling parcial,
-// eliminação de comparações redundantes
 // -----------------------------------------------------------------------------
 float detectarValesEBPM(const uint32_t* dados, uint16_t tamanho, uint16_t* indices_vales, uint8_t top_variacao) {
     if (tamanho < 3) return 0.0f;
