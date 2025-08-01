@@ -66,6 +66,8 @@ static bool modoContinuo = false;
 
 /*
 4 - Falha na inicializacao
+0 - ativa modo continuo
+1 - desativa modo continuo
 */
 
 //====================================
@@ -149,6 +151,12 @@ int main(void)
 
                 last_bpm_parte_dec = bpm_parte_dec;
                 last_bpm_parte_int = bpm_parte_int;
+
+                if(last_bpm_parte_dec >= 150 || last_bpm_parte_dec <= 40){
+                    buzzerSignal(0);
+                }else{
+                    buzzerSignal(1);
+                }
 
                 bpm_rdy = true;
             }
@@ -366,6 +374,10 @@ void buzzerSignal(uint8_t bips) {
     if(bips == 0){
         modoContinuo = true;
     }else{
+        modoContinuo = false;
+    }
+
+    if(bips == 1){
         modoContinuo = false;
     }
 
